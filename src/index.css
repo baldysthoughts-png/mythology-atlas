@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #14161c;
+  --bg-elevated: #1b1e26;
+  --bg-card: #20232d;
+  --bg-card-hover: #262a35;
+  --ink: #ece7db;
+  --ink-dim: #b9b5a8;
+  --ink-faint: #7d7a70;
+  --rule: #2e313b;
+  --rule-strong: #3a3e4a;
+
+  --gold: #c9a227;
+  --copper: #a9714a;
+  --verdigris: #4f7a6c;
+  --slate-blue: #5b7495;
+  --amber: #b98a3d;
+  --violet: #7c6e8c;
+  --teal-gray: #5c8080;
+  --rust: #9b5b53;
+  --stone: #6b6d76;
+  --lapis: #3b5c7e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.deity-reading-column {
+  width: 100%;
+  max-width: 900px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.deity-reading-column > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+#root,
+#root > *,
+main,
+section,
+article,
+header,
+nav,
+form,
+div,
+img,
+svg,
+video,
+canvas,
+figure,
+figcaption,
+p,
+li,
+span,
+a,
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 1023px) {
+  .deity-reading-column {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+img,
+svg,
+video,
+canvas,
+iframe,
+object,
+embed {
+  display: block;
+  height: auto;
+}
+
+p,
+li,
+span,
+div,
+button,
+a {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.font-display { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
+.font-mono-label { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+
+::selection { background: var(--gold); color: #14161c; }
+a { color: inherit; }
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

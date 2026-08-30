@@ -1,0 +1,218 @@
+﻿import type { Source } from './types';
+
+export const sources: Source[] = [
+  {
+    id: 'src-lambert-millard-atrahasis',
+    sourceCategory: 'AcademicBook',
+    citation: "Lambert, W.G. & Millard, A.R., Atra-hasis: The Babylonian Story of the Flood (1969)",
+  },
+  {
+    id: 'src-george-gilgamesh-edition',
+    sourceCategory: 'AcademicBook',
+    citation: 'George, A.R., The Babylonian Gilgamesh Epic: Introduction, Critical Edition and Cuneiform Texts (2003)',
+  },
+  {
+    id: 'src-black-et-al-eteca',
+    sourceCategory: 'UniversityResource',
+    citation: 'Black, J. et al., The Electronic Text Corpus of Sumerian Literature (ETCSL), University of Oxford',
+    url: 'https://etcsl.orinst.ox.ac.uk/',
+  },
+  {
+    id: 'src-british-museum-cuneiform',
+    sourceCategory: 'MuseumCollection',
+    citation: 'British Museum, Cuneiform tablet collection (Mesopotamia)',
+  },
+  {
+    id: 'src-sitchin-12th-planet',
+    sourceCategory: 'ModernPublication',
+    citation: 'Sitchin, Z., The 12th Planet (Stein and Day, New York, 1976)',
+    url: 'https://search.worldcat.org/title/The-12th-planet/oclc/1859901',
+  },
+  {
+    id: 'src-oracc-amgg-anunna',
+    sourceCategory: 'UniversityResource',
+    citation: 'Brisch, N., "Anunna (Anunnaku, Anunnaki)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/anunna/',
+  },
+  {
+    id: 'src-oracc-amgg-an',
+    sourceCategory: 'UniversityResource',
+    citation: 'Stevens, K., "An/Anu (god)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/an/',
+  },
+  {
+    id: 'src-oracc-amgg-enki',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Enki/Ea"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/enki/',
+  },
+  {
+    id: 'src-oracc-amgg-nanna',
+    sourceCategory: 'UniversityResource',
+    citation: 'Stone, A., "Nanna/Suen/Sin (god)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/nannasuen/',
+  },
+  {
+    id: 'src-oracc-amgg-utu',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Utu/Šamaš"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/utu/',
+  },
+  {
+    id: 'src-oracc-amgg-ereshkigal',
+    sourceCategory: 'UniversityResource',
+    citation: 'Heffron, Y., "Ereškigal (goddess)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/erekigal/',
+  },
+  {
+    id: 'src-oracc-amgg-nergal',
+    sourceCategory: 'UniversityResource',
+    citation: 'Heffron, Y., "Nergal (god)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/nergal/',
+  },
+  {
+    id: 'src-primary-nergal-ereshkigal-ea357',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Nergal and Ereshkigal (Akkadian literary tablet, EA 357; Middle Babylonian recension from el-Amarna)',
+    url: 'https://cdli.earth/artifacts/270856',
+  },
+  {
+    id: 'src-primary-nebuchadnezzar-nergal-kutha',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Nebuchadnezzar II 032 (Neo-Babylonian royal inscription; RIBo Q005503)',
+    url: 'https://oracc.museum.upenn.edu/ribo/Q005503',
+  },
+  {
+    id: 'src-primary-ashurbanipal-227-nergal',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurbanipal 227 (Neo-Assyrian royal inscription; RINAP 5, Q007635)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q007635',
+  },
+  {
+    id: 'src-primary-ashur-dan-ii-1',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Aššur-dān II 1 (Neo-Assyrian royal inscription; RIAo/RIA 3, Q006013)',
+    url: 'https://oracc.museum.upenn.edu/riao/ria3/Q006013/',
+  },
+  {
+    id: 'src-primary-shamash-shuma-ukin-4-nabu',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Šamaš-šuma-ukin 4 (Neo-Babylonian royal inscription; RIBo/Babylon 6, Q006314)',
+    url: 'https://oracc.museum.upenn.edu/ribo/babylon6/Q006314',
+  },
+  {
+    id: 'src-primary-enki-world-order',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Enki and the World Order (Sumerian composition; ETCSL 1.1.3)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr113.htm',
+  },
+  {
+    id: 'src-primary-enki-ninhursag',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Enki and Ninhursag (Sumerian composition)',
+  },
+  {
+    id: 'src-primary-inana-ebih',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Inana and Ebih (Sumerian composition; ETCSL 1.3.2)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr132.htm',
+  },
+  {
+    id: 'src-primary-inanna-descent',
+    sourceCategory: 'PrimaryAncientText',
+    citation: "Inana's Descent to the Netherworld (Sumerian composition; ETCSL 1.4.1)",
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr141.htm',
+  },
+  {
+    id: 'src-primary-nanna-journey-nippur',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Nanna-Suen’s Journey to Nippur (Sumerian composition; ETCSL 1.5.1)',
+    url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?charenc=j&text=t.1.5.1',
+  },
+  {
+    id: 'src-primary-ninurta-lugale',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ninurta’s Exploits (Lugal-e; Sumerian composition; ETCSL 1.6.2)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr162.htm',
+  },
+  {
+    id: 'src-primary-sumerian-king-list',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'The Sumerian King List (Sumerian composition; ETCSL 2.1.1)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section2/tr211.htm',
+  },
+  {
+    id: 'src-primary-atrahasis',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Atra-ḫasīs (Akkadian composition; Old Babylonian recension, Tablets I–III)',
+  },
+  {
+    id: 'src-primary-gilgamesh-enkidu-netherworld',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Gilgamesh, Enkidu and the Netherworld (Sumerian composition; ETCSL 1.8.1.4)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr1814.htm',
+  },
+  {
+    id: 'src-primary-gilgamesh-v',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Epic of Gilgamesh, Standard Babylonian version, Tablet V',
+  },
+  {
+    id: 'src-primary-gilgamesh-xi',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Epic of Gilgamesh, Standard Babylonian version, Tablet XI',
+  },
+  {
+    id: 'src-primary-enuma-elish',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Enūma eliš (Babylonian Creation Epic)',
+  },
+  {
+    id: 'src-tanaka-dress-identity',
+    sourceCategory: 'UniversityResource',
+    citation: 'Tanaka, T.-L. W. P. H., Dress and Identity in Old Babylonian Texts (PhD dissertation, University of California, Berkeley, 2013)',
+    url: 'https://escholarship.org/uc/item/2tn5315h',
+  },
+  {
+    id: 'src-black-green-gods-demons',
+    sourceCategory: 'AcademicBook',
+    citation: 'Black, J. & Green, A., Gods, Demons and Symbols of Ancient Mesopotamia: An Illustrated Dictionary (1992)',
+  },
+  {
+    id: 'src-van-de-mieroop-history',
+    sourceCategory: 'AcademicBook',
+    citation: 'Van De Mieroop, M., A History of the Ancient Near East, ca. 3000–323 BC (3rd ed., 2015)',
+  },
+  {
+    id: 'src-crawford-sumer-cities',
+    sourceCategory: 'AcademicBook',
+    citation: 'Crawford, H., Sumer and the Sumerians (2nd ed., 2004)',
+  },
+  {
+    id: 'src-foster-before-muses',
+    sourceCategory: 'AcademicBook',
+    citation: 'Foster, B.R., Before the Muses: An Anthology of Akkadian Literature (3rd ed., 2005)',
+  },
+  {
+    id: 'src-bottero-mesopotamia',
+    sourceCategory: 'AcademicBook',
+    citation: 'Bottéro, J., Mesopotamia: Writing, Reasoning, and the Gods (1992)',
+  },
+  {
+    id: 'src-oracc-amgg-marduk',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Marduk"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/marduk/',
+  },
+  {
+    id: 'src-oracc-amgg-nabu',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Nabu"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/nabu/',
+  },
+  {
+    id: 'src-assyrian-royal-inscriptions',
+    sourceCategory: 'PrimaryAncientText',
+    citation: "Corpus of Neo-Assyrian royal inscriptions (e.g. inscriptions of Ashurnasirpal II, Esarhaddon, Ashurbanipal) repeatedly invoking Aššur as Assyria's state god and the source of royal legitimacy",
+  },
+];
