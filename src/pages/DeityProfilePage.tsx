@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getEntity, getContentSections, getRelationshipsFor, getEntity as getEntityGeneric } from '../data';
 import type { Deity } from '../data/types';
@@ -25,35 +25,35 @@ export function DeityProfilePage() {
   const relationships = getRelationshipsFor(deity.id);
   const dedicatedArtwork =
     deity.id === 'deity-enki'
-      ? '/enki-card.png'
+      ? '/mythology-atlas/enki-card.png'
       : deity.id === 'deity-an'
-        ? '/an-card.png'
+        ? '/mythology-atlas/an-card.png'
       : deity.id === 'deity-inanna'
-        ? '/inanna-card.png'
+        ? '/mythology-atlas/inanna-card.png'
         : deity.id === 'deity-utu'
-          ? '/utu-card.png'
+          ? '/mythology-atlas/utu-card.png'
           : deity.id === 'deity-ninhursag'
-            ? '/ninhursag-card.png'
+            ? '/mythology-atlas/ninhursag-card.png'
             : deity.id === 'deity-nanna'
-              ? '/nanna-card.png'
+              ? '/mythology-atlas/nanna-card.png'
               : deity.id === 'deity-enlil'
-                ? '/enlil-card.png'
+                ? '/mythology-atlas/enlil-card.png'
                 : deity.id === 'deity-ereshkigal'
-                  ? '/ereshkigal-card.png'
+                  ? '/mythology-atlas/ereshkigal-card.png'
                   : deity.id === 'deity-nergal'
-                    ? '/nergal-card.png'
+                    ? '/mythology-atlas/nergal-card.png'
                     : deity.id === 'deity-marduk'
-                      ? '/marduk-card.png'
+                      ? '/mythology-atlas/marduk-card.png'
                       : deity.id === 'deity-tiamat'
-                        ? '/tiamat-card.png'
+                        ? '/mythology-atlas/tiamat-card.png'
                         : deity.id === 'deity-dumuzi'
-                          ? '/dumuzi-card.png'
+                          ? '/mythology-atlas/dumuzi-card.png'
                           : deity.id === 'deity-ninurta'
-                            ? '/ninurta-card.png'
+                            ? '/mythology-atlas/ninurta-card.png'
                             : deity.id === 'deity-nabu'
-                              ? '/nabu-card.png'
+                              ? '/mythology-atlas/nabu-card.png'
                               : deity.id === 'deity-ashur'
-                                ? '/ashur-card.png'
+                                ? '/mythology-atlas/ashur-card.png'
                   : undefined;
   // Some deities now have a richer, prose-and-claims "Roles and Domains" / "Symbols
   // and Iconography" ContentSection from the content-depth pass. Where that exists,
@@ -85,7 +85,7 @@ export function DeityProfilePage() {
               />
             </div>
           ) : (
-            <ImagePlaceholder label={`${deity.canonicalName} — deity artwork`} aspect="aspect-[4/3]" />
+            <ImagePlaceholder label={`${deity.canonicalName} â€” deity artwork`} aspect="aspect-[4/3]" />
           )}
           <div className="mt-5 flex items-start justify-between gap-3">
             <div className="min-w-0 flex-1">
@@ -99,7 +99,7 @@ export function DeityProfilePage() {
               )}
               <p className="mt-2 text-xs leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
                 {deity.cultures.join(' / ')}
-                {cultCenter ? ` · primary cult center: ${cultCenter.canonicalName}` : ''}
+                {cultCenter ? ` Â· primary cult center: ${cultCenter.canonicalName}` : ''}
               </p>
             </div>
             <div className="shrink-0 pt-1">
@@ -138,7 +138,7 @@ export function DeityProfilePage() {
                 Symbols
               </h2>
               <p className="text-sm" style={{ color: 'var(--ink-dim)' }}>
-                {deity.symbols.join(' · ')}
+                {deity.symbols.join(' Â· ')}
               </p>
             </section>
           )}
@@ -179,10 +179,11 @@ export function DeityProfilePage() {
             </section>
           )}
 
-          {/* Related Figures — the core "hop" interaction the whole navigation model is built on */}
+          {/* Related Figures â€” the core "hop" interaction the whole navigation model is built on */}
           <RelatedEntityList title="Related Figures" ids={deity.relatedFigureIds} />
         </div>
       </div>
     </div>
   );
 }
+

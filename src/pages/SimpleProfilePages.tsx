@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getEntity, getContentSections } from '../data';
 import type { Story, AncientText, Topic, Place } from '../data/types';
@@ -17,7 +17,7 @@ export function StoryProfilePage() {
   if (!story) return <Navigate to="/library/stories" replace />;
   const sections = getContentSections(story.contentSectionIds);
   const storyImageMap: Record<string, string> = {
-    'story-atrahasis-flood': '/featured-flood-story.png',
+    'story-atrahasis-flood': '/mythology-atlas/featured-flood-story.png',
   };
   const storyImage = storyImageMap[story.id];
 
@@ -31,7 +31,7 @@ export function StoryProfilePage() {
             className="aspect-[16/9] w-full rounded-md object-cover"
           />
         ) : (
-          <ImagePlaceholder label={`${story.canonicalName} — story scene`} aspect="aspect-[16/9]" />
+          <ImagePlaceholder label={`${story.canonicalName} â€” story scene`} aspect="aspect-[16/9]" />
         )}
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
@@ -92,7 +92,7 @@ export function TextProfilePage() {
   return (
     <div className="space-y-8">
       <div>
-        <ImagePlaceholder label={`${text.canonicalName} — tablet / manuscript`} aspect="aspect-[16/9]" />
+        <ImagePlaceholder label={`${text.canonicalName} â€” tablet / manuscript`} aspect="aspect-[16/9]" />
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
             {text.canonicalName}
@@ -100,7 +100,7 @@ export function TextProfilePage() {
           <EntityTypeBadge type="AncientText" />
         </div>
         <p className="mt-1.5 text-xs" style={{ color: 'var(--ink-faint)' }}>
-          {text.language} · {text.compositionPeriod}
+          {text.language} Â· {text.compositionPeriod}
         </p>
       </div>
 
@@ -183,7 +183,7 @@ export function PlaceProfilePage() {
   return (
     <div className="space-y-8">
       <div>
-        <ImagePlaceholder label={`${place.canonicalName} — ancient city`} aspect="aspect-[16/9]" />
+        <ImagePlaceholder label={`${place.canonicalName} â€” ancient city`} aspect="aspect-[16/9]" />
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
             {place.canonicalName}
@@ -203,3 +203,4 @@ export function PlaceProfilePage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { useRecentlyViewed } from '../lib/recentlyViewed';
 import { getEntity, entityHref } from '../data';
 import { EntityTypeBadge } from '../components/Badges';
@@ -11,13 +11,13 @@ import type { AnyEntity } from '../data/types';
 const FEATURED_DISCOVERIES: { title: string; dek: string; to: string; size: 'feature' | 'standard' }[] = [
   {
     title: 'Who Were the Anunnaki?',
-    dek: 'The most searched — and most misunderstood — term in Mesopotamian religion, with ancient usage and modern theory kept clearly apart.',
+    dek: 'The most searched â€” and most misunderstood â€” term in Mesopotamian religion, with ancient usage and modern theory kept clearly apart.',
     to: '/divine-group/group-anunnaki',
     size: 'feature',
   },
   { title: 'The Mesopotamian Flood Story', dek: 'Three surviving accounts, compared side by side.', to: '/topic/topic-flood-tradition', size: 'standard' },
   { title: 'Inside the Epic of Gilgamesh', dek: "Mesopotamia's fullest surviving literary work.", to: '/text/text-gilgamesh', size: 'standard' },
-  { title: 'How Old Is the Eridu Genesis?', dek: 'The earliest — and most damaged — flood account.', to: '/text/text-eridu-genesis', size: 'standard' },
+  { title: 'How Old Is the Eridu Genesis?', dek: 'The earliest â€” and most damaged â€” flood account.', to: '/text/text-eridu-genesis', size: 'standard' },
 ];
 
 const LIBRARY_ENTRIES: { label: string; to: string; icon: (p: { className?: string }) => React.ReactElement }[] = [
@@ -29,30 +29,30 @@ const LIBRARY_ENTRIES: { label: string; to: string; icon: (p: { className?: stri
 ];
 
 const CONTINUE_LEARNING_IMAGE_MAP: Record<string, string> = {
-  Enki: '/enki-card.png',
-  Anunnaki: '/anunnaki-card.png',
-  Ninhursag: '/ninhursag-card.png',
-  Utu: '/utu-card.png',
-  'Epic of Gilgamesh': '/featured-gilgamesh.png',
-  'deity-enki': '/enki-card.png',
-  'deity-an': '/an-card.png',
-  'deity-ashur': '/ashur-card.png',
-  'deity-dumuzi': '/dumuzi-card.png',
-  'deity-enlil': '/enlil-card.png',
-  'deity-ereshkigal': '/ereshkigal-card.png',
-  'deity-inanna': '/inanna-card.png',
-  'deity-marduk': '/marduk-card.png',
-  'deity-nabu': '/nabu-card.png',
-  'deity-nanna': '/nanna-card.png',
-  'deity-nergal': '/nergal-card.png',
-  'deity-ninurta': '/ninurta-card.png',
-  'deity-tiamat': '/tiamat-card.png',
-  'group-anunnaki': '/anunnaki-card.png',
-  'deity-ninhursag': '/ninhursag-card.png',
-  'deity-utu': '/utu-card.png',
-  'text-gilgamesh': '/featured-gilgamesh.png',
-  'story-atrahasis-flood': '/featured-flood-story.png',
-  'topic-flood-tradition': '/featured-flood-story.png',
+  Enki: '/mythology-atlas/enki-card.png',
+  Anunnaki: '/mythology-atlas/anunnaki-card.png',
+  Ninhursag: '/mythology-atlas/ninhursag-card.png',
+  Utu: '/mythology-atlas/utu-card.png',
+  'Epic of Gilgamesh': '/mythology-atlas/featured-gilgamesh.png',
+  'deity-enki': '/mythology-atlas/enki-card.png',
+  'deity-an': '/mythology-atlas/an-card.png',
+  'deity-ashur': '/mythology-atlas/ashur-card.png',
+  'deity-dumuzi': '/mythology-atlas/dumuzi-card.png',
+  'deity-enlil': '/mythology-atlas/enlil-card.png',
+  'deity-ereshkigal': '/mythology-atlas/ereshkigal-card.png',
+  'deity-inanna': '/mythology-atlas/inanna-card.png',
+  'deity-marduk': '/mythology-atlas/marduk-card.png',
+  'deity-nabu': '/mythology-atlas/nabu-card.png',
+  'deity-nanna': '/mythology-atlas/nanna-card.png',
+  'deity-nergal': '/mythology-atlas/nergal-card.png',
+  'deity-ninurta': '/mythology-atlas/ninurta-card.png',
+  'deity-tiamat': '/mythology-atlas/tiamat-card.png',
+  'group-anunnaki': '/mythology-atlas/anunnaki-card.png',
+  'deity-ninhursag': '/mythology-atlas/ninhursag-card.png',
+  'deity-utu': '/mythology-atlas/utu-card.png',
+  'text-gilgamesh': '/mythology-atlas/featured-gilgamesh.png',
+  'story-atrahasis-flood': '/mythology-atlas/featured-flood-story.png',
+  'topic-flood-tradition': '/mythology-atlas/featured-flood-story.png',
 };
 
 function getContinueLearningImage(entity: AnyEntity, viewedName?: string): string | undefined {
@@ -100,7 +100,7 @@ export function HomePage() {
                 Explore Ancient Mesopotamia
               </h1>
               <p className="mt-4 max-w-lg text-[15px] leading-relaxed sm:text-base" style={{ color: 'var(--ink-dim)' }}>
-                Sumer, Akkad, Babylon, and Assyria — the deities, texts, and myths of the world's earliest cities,
+                Sumer, Akkad, Babylon, and Assyria â€” the deities, texts, and myths of the world's earliest cities,
                 with ancient evidence and modern interpretation kept visibly apart.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -215,7 +215,7 @@ export function HomePage() {
                     style={{ boxShadow: 'inset 0 0 0 1px color-mix(in srgb, var(--gold) 12%, transparent)' }}
                   />
                   <img
-                    src="/featured-anunnaki.png"
+                    src="/mythology-atlas/featured-anunnaki.png"
                     alt="Anunnaki divine assembly"
                     className="h-full w-full object-cover"
                     style={{ objectPosition: 'center' }}
@@ -259,7 +259,7 @@ export function HomePage() {
                       }}
                     >
                       <img
-                        src="/featured-flood-story.png"
+                        src="/mythology-atlas/featured-flood-story.png"
                         alt="Flood vessel in a flood scene"
                         className="h-full w-full object-cover"
                         style={{ objectPosition: 'center' }}
@@ -275,7 +275,7 @@ export function HomePage() {
                       }}
                     >
                       <img
-                        src="/featured-gilgamesh.png"
+                        src="/mythology-atlas/featured-gilgamesh.png"
                         alt="Gilgamesh and Enkidu"
                         className="h-full w-full object-cover"
                         style={{ objectPosition: 'center' }}
@@ -291,7 +291,7 @@ export function HomePage() {
                       }}
                     >
                       <img
-                        src="/featured-eridu-genesis.png"
+                        src="/mythology-atlas/featured-eridu-genesis.png"
                         alt="Damaged tablet with Eridu Genesis imagery"
                         className="h-full w-full object-cover"
                         style={{ objectPosition: 'center' }}
@@ -328,7 +328,7 @@ export function HomePage() {
         </div>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed" style={{ color: 'var(--ink-dim)' }}>
           Every claim in this atlas carries one of these labels, so you always know what kind of evidence you're
-          looking at — ancient text, archaeology, scholarly reading, or modern theory.
+          looking at â€” ancient text, archaeology, scholarly reading, or modern theory.
         </p>
         <div className="mt-6">
           <EvidenceSpectrum />
@@ -371,3 +371,4 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+

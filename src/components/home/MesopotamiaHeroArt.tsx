@@ -1,8 +1,8 @@
-export function MesopotamiaHeroArt() {
+﻿export function MesopotamiaHeroArt() {
   return (
     <>
       <img
-        src="/hero-mesopotamia.png"
+        src="/mythology-atlas/hero-mesopotamia.png"
         alt="Reconstruction-inspired view of an ancient Mesopotamian city and monumental ziggurat"
         className="absolute inset-0 h-full w-full select-none"
         style={{
@@ -22,3 +22,4 @@ export function MesopotamiaHeroArt() {
     </>
   );
 }
+
