@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { getEntity, getContentSections } from '../data';
 import type { Story, AncientText, Topic, Place } from '../data/types';
 import { EntityTypeBadge } from '../components/Badges';
@@ -64,9 +64,14 @@ export function StoryProfilePage() {
           </h2>
           <div className="flex flex-wrap gap-2">
             {story.themes.map((t) => (
-              <span key={t} className="rounded-full px-3 py-1 text-xs" style={{ background: 'var(--bg-card)', border: '1px solid var(--rule)', color: 'var(--ink-dim)' }}>
+              <Link
+                key={t}
+                to={`/search?q=${encodeURIComponent(t)}`}
+                className="focus-ring rounded-full px-3 py-1 text-xs transition-opacity hover:opacity-80"
+                style={{ background: 'var(--bg-card)', border: '1px solid var(--rule)', color: 'var(--ink-dim)' }}
+              >
                 {t}
-              </span>
+              </Link>
             ))}
           </div>
         </section>
@@ -115,9 +120,14 @@ export function TextProfilePage() {
           </h2>
           <div className="flex flex-wrap gap-2">
             {text.themes.map((t) => (
-              <span key={t} className="rounded-full px-3 py-1 text-xs" style={{ background: 'var(--bg-card)', border: '1px solid var(--rule)', color: 'var(--ink-dim)' }}>
+              <Link
+                key={t}
+                to={`/search?q=${encodeURIComponent(t)}`}
+                className="focus-ring rounded-full px-3 py-1 text-xs transition-opacity hover:opacity-80"
+                style={{ background: 'var(--bg-card)', border: '1px solid var(--rule)', color: 'var(--ink-dim)' }}
+              >
                 {t}
-              </span>
+              </Link>
             ))}
           </div>
         </section>

@@ -3,7 +3,7 @@ import type { AnyEntity, EntityType } from '../data/types';
 
 export interface SearchResult {
   entity: AnyEntity;
-  matchedOn: 'name' | 'alias';
+  matchedOn: 'name' | 'alias' | 'theme';
   matchedText: string;
 }
 
@@ -29,10 +29,12 @@ export function searchEntities(query: string): SearchResult[] {
 
   for (const entity of Object.values(allEntities)) {
     const name = norm(entity.canonicalName);
+
     if (name.includes(q)) {
       results.push({ entity, matchedOn: 'name', matchedText: entity.canonicalName });
       continue;
     }
+
     const aliases = (entity as any).alternativeNames as string[] | undefined;
     if (aliases) {
       const hit = aliases.find((a) => norm(a).includes(q));
@@ -41,9 +43,16 @@ export function searchEntities(query: string): SearchResult[] {
         continue;
       }
     }
+
+    const themes = (entity as any).themes as string[] | undefined;
+    if (themes) {
+      const hit = themes.find((theme) => norm(theme).includes(q));
+      if (hit) {
+        results.push({ entity, matchedOn: 'theme', matchedText: hit });
+      }
+    }
   }
 
-  // Grouped, stable order: entity type group order, then alphabetical.
   results.sort((a, b) => {
     const ga = GROUP_ORDER.indexOf(a.entity.entityType);
     const gb = GROUP_ORDER.indexOf(b.entity.entityType);
@@ -56,10 +65,12 @@ export function searchEntities(query: string): SearchResult[] {
 
 export function groupResults(results: SearchResult[]) {
   const groups = new Map<EntityType, SearchResult[]>();
+
   for (const r of results) {
     if (!groups.has(r.entity.entityType)) groups.set(r.entity.entityType, []);
     groups.get(r.entity.entityType)!.push(r);
   }
+
   return Array.from(groups.entries()).map(([type, items]) => ({
     type,
     label: entityTypeBadgeLabel[type],
