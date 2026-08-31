@@ -158,15 +158,6 @@ export function TopicProfilePage() {
         <EntityTypeBadge type="Topic" />
       </div>
 
-      <section>
-        <h2 className="font-mono-label mb-2 text-xs font-semibold tracking-[0.14em] uppercase" style={{ color: 'var(--ink-faint)' }}>
-          Overview
-        </h2>
-        <p className="font-display text-[17px] leading-relaxed" style={{ color: 'var(--ink)' }}>
-          {topic.overview}
-        </p>
-      </section>
-
       {sections.map((s) => (
         <ContentSectionBlock key={s.id} section={s} />
       ))}
