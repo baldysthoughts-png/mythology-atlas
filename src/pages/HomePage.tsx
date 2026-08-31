@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useRecentlyViewed } from '../lib/recentlyViewed';
 import { getEntity, entityHref } from '../data';
 import { EntityTypeBadge } from '../components/Badges';
@@ -11,13 +11,13 @@ import type { AnyEntity } from '../data/types';
 const FEATURED_DISCOVERIES: { title: string; dek: string; to: string; size: 'feature' | 'standard' }[] = [
   {
     title: 'Who Were the Anunnaki?',
-    dek: 'The most searched â€” and most misunderstood â€” term in Mesopotamian religion, with ancient usage and modern theory kept clearly apart.',
+    dek: 'The most searched — and most misunderstood — term in Mesopotamian religion, with ancient usage and modern theory kept clearly apart.',
     to: '/divine-group/group-anunnaki',
     size: 'feature',
   },
   { title: 'The Mesopotamian Flood Story', dek: 'Three surviving accounts, compared side by side.', to: '/topic/topic-flood-tradition', size: 'standard' },
   { title: 'Inside the Epic of Gilgamesh', dek: "Mesopotamia's fullest surviving literary work.", to: '/text/text-gilgamesh', size: 'standard' },
-  { title: 'How Old Is the Eridu Genesis?', dek: 'The earliest â€” and most damaged â€” flood account.', to: '/text/text-eridu-genesis', size: 'standard' },
+  { title: 'How Old Is the Eridu Genesis?', dek: 'The earliest — and most damaged — flood account.', to: '/text/text-eridu-genesis', size: 'standard' },
 ];
 
 const LIBRARY_ENTRIES: { label: string; to: string; icon: (p: { className?: string }) => React.ReactElement }[] = [
@@ -100,7 +100,7 @@ export function HomePage() {
                 Explore Ancient Mesopotamia
               </h1>
               <p className="mt-4 max-w-lg text-[15px] leading-relaxed sm:text-base" style={{ color: 'var(--ink-dim)' }}>
-                Sumer, Akkad, Babylon, and Assyria â€” the deities, texts, and myths of the world's earliest cities,
+                Sumer, Akkad, Babylon, and Assyria — the deities, texts, and myths of the world's earliest cities,
                 with ancient evidence and modern interpretation kept visibly apart.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -328,7 +328,7 @@ export function HomePage() {
         </div>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed" style={{ color: 'var(--ink-dim)' }}>
           Every claim in this atlas carries one of these labels, so you always know what kind of evidence you're
-          looking at â€” ancient text, archaeology, scholarly reading, or modern theory.
+          looking at — ancient text, archaeology, scholarly reading, or modern theory.
         </p>
         <div className="mt-6">
           <EvidenceSpectrum />
@@ -371,4 +371,3 @@ function SectionEyebrow({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-

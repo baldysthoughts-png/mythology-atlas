@@ -1,4 +1,4 @@
-﻿export function MesopotamiaHeroArt() {
+export function MesopotamiaHeroArt() {
   return (
     <>
       <img
@@ -22,4 +22,3 @@
     </>
   );
 }
-

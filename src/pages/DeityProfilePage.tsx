@@ -1,4 +1,4 @@
-﻿import { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import { getEntity, getContentSections, getRelationshipsFor, getEntity as getEntityGeneric } from '../data';
 import type { Deity } from '../data/types';
@@ -85,7 +85,7 @@ export function DeityProfilePage() {
               />
             </div>
           ) : (
-            <ImagePlaceholder label={`${deity.canonicalName} â€” deity artwork`} aspect="aspect-[4/3]" />
+            <ImagePlaceholder label={`${deity.canonicalName} — deity artwork`} aspect="aspect-[4/3]" />
           )}
           <div className="mt-5 flex items-start justify-between gap-3">
             <div className="min-w-0 flex-1">
@@ -99,7 +99,7 @@ export function DeityProfilePage() {
               )}
               <p className="mt-2 text-xs leading-relaxed" style={{ color: 'var(--ink-faint)' }}>
                 {deity.cultures.join(' / ')}
-                {cultCenter ? ` Â· primary cult center: ${cultCenter.canonicalName}` : ''}
+                {cultCenter ? ` · primary cult center: ${cultCenter.canonicalName}` : ''}
               </p>
             </div>
             <div className="shrink-0 pt-1">
@@ -138,7 +138,7 @@ export function DeityProfilePage() {
                 Symbols
               </h2>
               <p className="text-sm" style={{ color: 'var(--ink-dim)' }}>
-                {deity.symbols.join(' Â· ')}
+                {deity.symbols.join(' · ')}
               </p>
             </section>
           )}
@@ -179,11 +179,10 @@ export function DeityProfilePage() {
             </section>
           )}
 
-          {/* Related Figures â€” the core "hop" interaction the whole navigation model is built on */}
+          {/* Related Figures — the core "hop" interaction the whole navigation model is built on */}
           <RelatedEntityList title="Related Figures" ids={deity.relatedFigureIds} />
         </div>
       </div>
     </div>
   );
 }
-
