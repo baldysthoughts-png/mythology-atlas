@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+﻿import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
 import { RecentlyViewedProvider } from './lib/recentlyViewed';
 import { HomePage } from './pages/HomePage';
@@ -17,7 +17,7 @@ import { deities, divineGroups, stories, texts, topics } from './data';
 function App() {
   return (
     <RecentlyViewedProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/mythology-atlas">
         <AppShell>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -54,3 +54,4 @@ function App() {
 }
 
 export default App;
+
