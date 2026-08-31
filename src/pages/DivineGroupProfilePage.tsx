@@ -3,7 +3,7 @@ import { useParams, Navigate } from 'react-router-dom';
 import { getEntity, getContentSections } from '../data';
 import type { DivineGroup } from '../data/types';
 import { EntityTypeBadge } from '../components/Badges';
-import { ImagePlaceholder } from '../components/ImagePlaceholder';
+
 import { ContentSectionBlock, RelatedEntityList } from '../components/ContentSectionBlock';
 import { useRecentlyViewed } from '../lib/recentlyViewed';
 
@@ -23,7 +23,17 @@ export function DivineGroupProfilePage() {
   return (
     <div className="space-y-8">
       <div>
-        <ImagePlaceholder label={`${group.canonicalName} — divine group`} aspect="aspect-[4/3]" />
+        <div
+  className="relative aspect-[4/3] w-full overflow-hidden rounded-md"
+  style={{ background: 'var(--bg-card)', border: '1px solid var(--rule)' }}
+>
+  <img
+    src="/mythology-atlas/featured-anunnaki.png"
+    alt="Anunnaki divine assembly"
+    className="h-full w-full object-cover"
+    style={{ objectPosition: 'center' }}
+  />
+</div>
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-3xl font-medium" style={{ color: 'var(--ink)' }}>
             {group.canonicalName}
