@@ -15,9 +15,9 @@ const FEATURED_DISCOVERIES: { title: string; dek: string; to: string; size: 'fea
     to: '/divine-group/group-anunnaki',
     size: 'feature',
   },
-  { title: 'The Mesopotamian Flood Story', dek: 'Three surviving accounts, compared side by side.', to: '/topic/topic-flood-tradition', size: 'standard' },
-  { title: 'Inside the Epic of Gilgamesh', dek: "Mesopotamia's fullest surviving literary work.", to: '/text/text-gilgamesh', size: 'standard' },
-  { title: 'How Old Is the Eridu Genesis?', dek: 'The earliest — and most damaged — flood account.', to: '/text/text-eridu-genesis', size: 'standard' },
+  { title: 'The Mesopotamian Flood Story', dek: 'Atrahasis, Gilgamesh Tablet XI, and the Eridu Genesis compared side by side.', to: '/topic/topic-flood-tradition', size: 'standard' },
+  { title: 'Inside the Epic of Gilgamesh', dek: "The epic, its tablets, its transmission, and the flood episode of Tablet XI.", to: '/text/text-gilgamesh', size: 'standard' },
+  { title: 'The Eridu Genesis', dek: 'A fragmentary Sumerian creation-and-flood composition preserved on a damaged tablet.', to: '/text/text-eridu-genesis', size: 'standard' },
 ];
 
 const LIBRARY_ENTRIES: { label: string; to: string; icon: (p: { className?: string }) => React.ReactElement }[] = [
@@ -281,7 +281,7 @@ export function HomePage() {
                         style={{ objectPosition: 'center' }}
                       />
                     </div>
-                  ) : d.title === 'How Old Is the Eridu Genesis?' ? (
+                  ) : d.title === 'The Eridu Genesis' ? (
                     <div
                       className="relative aspect-square w-full overflow-hidden rounded-md"
                       style={{
