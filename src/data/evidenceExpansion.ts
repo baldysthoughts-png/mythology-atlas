@@ -1,4 +1,4 @@
-﻿import type { Claim, ContentSection } from './types';
+import type { Claim, ContentSection } from './types';
 
 // ============================================================
 // EXPANDED CLAIMS — new interpretive/historical assertions
@@ -862,11 +862,56 @@ export const expandedClaims: Claim[] = [
   },
   {
     id: 'claim-eridu-genesis-fragmentary',
-    statement: 'The Eridu Genesis survives on a single, significantly damaged Sumerian tablet from Nippur, meaning large sections of its flood narrative — including the stated reason for the flood — are simply missing rather than absent from the original composition.',
+    statement: 'The principal surviving manuscript of the Eridu Genesis is the Old Babylonian Sumerian tablet CBS 10673 joined to CBS 10867 from Nippur, dated by the Penn Museum to about 1650 BCE. Only the lower third of the original six-column tablet survives, leaving substantial gaps in the composition.',
     aboutEntityIds: ['text-eridu-genesis'],
     claimType: 'Descriptive',
     evidenceClassification: 'ArchaeologicalEvidence',
-    evidenceLinks: [{ sourceId: 'src-lambert-millard-atrahasis', evidenceRole: 'Supports', locator: 'Appendix, physical description' }],
+    evidenceLinks: [{ sourceId: 'src-penn-cbs10673', evidenceRole: 'Supports', locator: 'CBS 10673 + CBS 10867; object description, provenience, date, and physical preservation' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-genesis-creation',
+    statement: 'The surviving Sumerian text describes An, Enlil, Enki, and Ninhursag as having fashioned humanity and also describes the multiplication of animals.',
+    aboutEntityIds: ['text-eridu-genesis'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-eridu-genesis', evidenceRole: 'Supports', locator: 'Segment A' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-genesis-cities',
+    statement: 'The text connects the descent of kingship from heaven with the establishment of five cities: Eridu, Bad-tibira, Larak, Sippar, and Shuruppak, each associated with a divine patron.',
+    aboutEntityIds: ['text-eridu-genesis'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-eridu-genesis', evidenceRole: 'Supports', locator: 'Segment B' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-genesis-warning',
+    statement: 'Ziusudra is identified as a king and gudug priest. He receives a warning beside a wall that a flood has been decreed and that the divine assembly has decided the seed of humanity is to be destroyed.',
+    aboutEntityIds: ['text-eridu-genesis'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-eridu-genesis', evidenceRole: 'Supports', locator: 'Segment C' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-genesis-seven-days',
+    statement: 'The surviving text explicitly states that windstorms, waves, and the flood rocked Ziusudra\'s huge boat for seven days and seven nights before Utu appeared and illuminated heaven and earth.',
+    aboutEntityIds: ['text-eridu-genesis'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-eridu-genesis', evidenceRole: 'Supports', locator: 'Segment D, lines 1-11' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-genesis-aftermath',
+    statement: 'After the flood, Ziusudra opens the boat to the light of Utu and sacrifices oxen and sheep. Later, animals disembark, An and Enlil grant Ziusudra life like a god, and he is settled in Dilmun because he preserved animals and the seed of humanity.',
+    aboutEntityIds: ['text-eridu-genesis'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-eridu-genesis', evidenceRole: 'Supports', locator: 'Segments D-E' }],
     status: 'Published',
   },
   {
@@ -981,7 +1026,7 @@ export const expandedContentSections: ContentSection[] = [
   cs('cs-atrahasis-overview', 'text-atrahasis', 'What Is This Text?',
     "Atrahasis is an Akkadian composition recounting the creation of humanity to relieve the gods of labor, humanity's subsequent overpopulation, and the escalating divine responses that culminate in a great flood, survived by the text's namesake protagonist, Atrahasis, through Enki's intervention."),
   cs('cs-eridu-genesis-overview', 'text-eridu-genesis', 'What Is This Text?',
-    "The Eridu Genesis is a Sumerian composition, surviving only in a single damaged tablet, that appears to have covered the creation of humanity, the founding of the first cities (including Eridu), and a great flood survived by a figure named Ziusudra — making it, where it can be read at all, the earliest attested version of the Mesopotamian flood tradition."),
+    "The Eridu Genesis is a fragmentarily preserved Sumerian composition whose principal Old Babylonian manuscript comes from Nippur. The surviving text connects the creation of humanity, the establishment of the first cities and kingship, and a great flood survived by Ziusudra. It preserves one of the earliest surviving written forms of the Mesopotamian flood tradition."),
 
   cs('cs-creation-overview', 'topic-creation', 'Overview',
     "Mesopotamian creation accounts frequently describe humanity being fashioned to relieve the gods of labor that had previously fallen to lesser deities. Different traditions attribute the act to different deities — Enki and Ninhursag in some Sumerian material, a more collective divine effort in Atrahasis, and Marduk specifically in the later Babylonian Enuma Elish — and describe different materials and methods for humanity's creation.",
@@ -1435,12 +1480,12 @@ export const expandedContentSections: ContentSection[] = [
 
   // ---------------- FLOOD TRADITION ----------------
   cs('cs-flood-tradition-earliest-evidence', 'topic-flood-tradition', 'Earliest Evidence',
-    "The earliest surviving Mesopotamian flood account is generally identified with the Eridu Genesis, a Sumerian composition surviving on a single, significantly damaged tablet — meaning the earliest attested version of the tradition is also, ironically, the least completely preserved.",
+    "The earliest surviving Mesopotamian flood account is generally identified with the Eridu Genesis, a fragmentarily preserved Sumerian composition whose principal Old Babylonian manuscript comes from Nippur. Only part of the original composition survives, making this early witness to the tradition substantially less complete than the later Atrahasis and Gilgamesh accounts.",
     ['claim-eridu-genesis-fragmentary']),
   cs('cs-flood-tradition-major-examples', 'topic-flood-tradition', 'Important Examples',
     "The three major surviving Mesopotamian flood accounts covered in this atlas are the Eridu Genesis (Sumerian, fragmentary), Atrahasis (Akkadian, Old Babylonian recension, the fullest surviving version), and the flood episode within Tablet XI of the Epic of Gilgamesh (Akkadian, Standard Babylonian version)."),
   cs('cs-flood-tradition-changes-over-time', 'topic-flood-tradition', 'How the Idea Changes Over Time',
-    "Across the Sumerian-to-Babylonian span these texts represent, the basic flood-and-survivor structure remains stable, but supporting detail shifts: the survivor's name changes (Ziusudra in Eridu Genesis, Atrahasis in the Atrahasis text, Utnapishtim in Gilgamesh), and later versions such as Gilgamesh Tablet XI preserve considerably more narrative detail — the specific duration, the bird-release sequence, the named landing site — than the more fragmentary earlier Eridu Genesis."),
+    "Across the Sumerian-to-Babylonian span these texts represent, the basic flood-and-survivor structure remains stable, but supporting detail shifts. The survivor's name changes from Ziusudra in the Eridu Genesis to Atrahasis in the Atrahasis text and Utnapishtim in Gilgamesh. The Eridu Genesis itself preserves a seven-day-and-seven-night flood, while Gilgamesh Tablet XI preserves additional details absent from the surviving Sumerian manuscript, including the bird-release sequence and a named landing site."),
   cs('cs-flood-tradition-similarities', 'topic-flood-tradition', 'Similarities Across Texts',
     "All three traditions feature a single forewarned human survivor instructed to build a vessel and preserve life, a pattern scholars treat as a stable core structure across the Mesopotamian flood tradition. Atrahasis and the Gilgamesh flood episode specifically share the reed-wall warning scene in near-identical language, one of the closest verbal parallels between any two Mesopotamian literary compositions.",
     ['claim-flood-shared-motif', 'claim-flood-gilgamesh-atrahasis-close-parallel']),
@@ -1526,8 +1571,68 @@ export const expandedContentSections: ContentSection[] = [
 
   // ---------------- ERIDU GENESIS ----------------
   cs('cs-eridu-genesis-preservation', 'text-eridu-genesis', 'State of Preservation',
-    "The Eridu Genesis survives on a single, significantly damaged Sumerian tablet from Nippur. Large sections — including the stated reason for the flood, the divine deliberation, the warning scene, the vessel's construction, and the flood's duration — are simply missing from the surviving fragment rather than confirmed to be absent from the original composition.",
+    "The principal surviving manuscript is the badly damaged Old Babylonian Sumerian tablet CBS 10673 joined to CBS 10867, excavated at Nippur and now held by the Penn Museum. The surviving piece represents only the lower third of what was originally a six-column tablet of roughly 260 lines, so large portions of the composition are lost.",
     ['claim-eridu-genesis-fragmentary']),
+
+  cs('cs-eridu-genesis-manuscript', 'text-eridu-genesis', 'Manuscript and Findspot',
+    "The principal manuscript comes from Nippur in southern Mesopotamia. Penn Museum catalog number CBS 10673 joins CBS 10867. Its physical condition is crucial for interpreting the composition: many apparent narrative gaps result from broken or missing portions of the tablet rather than demonstrable omissions in the ancient story.",
+    ['claim-eridu-genesis-fragmentary']),
+
+  cs('cs-eridu-genesis-date', 'text-eridu-genesis', 'Approximate Date',
+    "The surviving Nippur manuscript is Old Babylonian and is dated by the Penn Museum to about 1650 BCE. That is a date for the surviving copy, not necessarily the first composition of the story. The tradition represented by the tablet may be older, but the surviving evidence does not allow a precise date for its original composition.",
+    ['claim-eridu-genesis-fragmentary']),
+
+  cs('cs-eridu-genesis-creation', 'text-eridu-genesis', 'Creation of Humanity',
+    "Despite its fragmentary condition, the surviving beginning preserves a creation setting. An, Enlil, Enki, and Ninhursag are described as having fashioned the black-headed people, a conventional Sumerian expression for humanity. The text also describes animals multiplying across the land.",
+    ['claim-eridu-genesis-creation']),
+
+  cs('cs-eridu-genesis-cities', 'text-eridu-genesis', 'Kingship and the First Cities',
+    "The composition links civilization with kingship descending from heaven. It names five early cities in sequence: Eridu, Bad-tibira, Larak, Sippar, and Shuruppak. Eridu is placed first and is assigned to Nudimmud, a name of Enki. The passage therefore connects divine order, kingship, cities, irrigation, and organized human society before the flood.",
+    ['claim-eridu-genesis-cities']),
+
+  cs('cs-eridu-genesis-ziusudra', 'text-eridu-genesis', 'Ziusudra',
+    "The flood survivor is Ziusudra, identified in the surviving text as both a king and a gudug priest. He is characterized as humble, reverent, and attentive to divine communication. Ziusudra occupies the role later filled by Atrahasis in the Akkadian Atrahasis tradition and by Utnapishtim in the Epic of Gilgamesh, although the precise literary relationship among these traditions must be distinguished from simple similarity.",
+    ['claim-eridu-genesis-warning']),
+
+  cs('cs-eridu-genesis-warning', 'text-eridu-genesis', 'The Divine Decision and Warning',
+    "The surviving passage says that An, Enlil, Enki, and Ninhursag bound the gods by oath. Ziusudra then hears a message beside a wall. The message announces that a flood will sweep over the land and that a decision has been made to destroy the seed of humanity. The verdict of the divine assembly is described as irrevocable. Because the tablet breaks shortly afterward, much of what followed the warning is lost.",
+    ['claim-eridu-genesis-warning']),
+
+  cs('cs-eridu-genesis-boat', 'text-eridu-genesis', 'What Survives of the Boat Episode',
+    "The tablet does not preserve a continuous account of the vessel's construction. Roughly thirty-eight lines are missing between the warning and the point where the narrative resumes during the storm. When the readable text returns, Ziusudra is already aboard what the composition calls a huge boat. Its construction instructions, dimensions, loading procedure, and much of the preparation for the flood are therefore unknown from this manuscript.",
+    ['claim-eridu-genesis-fragmentary']),
+
+  cs('cs-eridu-genesis-flood', 'text-eridu-genesis', 'What the Text Actually Says: The Flood',
+    "The readable flood passage describes windstorms and gales rising together and the flood sweeping over the land. Waves and storms rock the huge boat for seven days and seven nights. The duration is therefore explicitly preserved in the Eridu Genesis and should not be treated as one of the tablet's missing details.",
+    ['claim-eridu-genesis-seven-days']),
+
+  cs('cs-eridu-genesis-utu', 'text-eridu-genesis', 'Utu and the Return of Light',
+    "After seven days and seven nights, Utu, the Sumerian sun god, appears and illuminates heaven and earth. Ziusudra opens the huge boat so that Utu's rays can enter. Ziusudra then prostrates himself before Utu, marking the return of divine light after the destructive storm.",
+    ['claim-eridu-genesis-seven-days']),
+
+  cs('cs-eridu-genesis-sacrifice', 'text-eridu-genesis', 'Sacrifice After the Flood',
+    "The surviving text explicitly says that Ziusudra sacrifices oxen and offers numerous sheep after emerging from the flood. This sacrificial response belongs to the preserved Sumerian narrative itself rather than being reconstructed solely from later Mesopotamian flood traditions.",
+    ['claim-eridu-genesis-aftermath']),
+
+  cs('cs-eridu-genesis-dilmun', 'text-eridu-genesis', 'Ziusudra, Immortality, and Dilmun',
+    "In the surviving aftermath, animals disembark onto the earth and Ziusudra prostrates himself before An and Enlil. The gods treat him favorably and grant him life like a god and eternal life. Because he preserved animals and the seed of humanity, Ziusudra is settled in Dilmun, described in the text as an overseas land where the sun rises.",
+    ['claim-eridu-genesis-aftermath']),
+
+  cs('cs-eridu-genesis-missing', 'text-eridu-genesis', 'What Is Missing From the Tablet',
+    "The composition must be read with its physical damage constantly in view. Large gaps interrupt the creation section, the transition to kingship and cities, the events immediately preceding the flood, the period between Ziusudra's warning and the storm, and parts of the aftermath. The precise motive for sending the flood is not preserved in the readable text. Detailed boat-building instructions are also lost. By contrast, the divine decision to destroy humanity, the seven-day-and-seven-night duration, Ziusudra's sacrifice, and his final fate are genuinely preserved.",
+    ['claim-eridu-genesis-fragmentary', 'claim-eridu-genesis-warning', 'claim-eridu-genesis-seven-days', 'claim-eridu-genesis-aftermath']),
+
+  cs('cs-eridu-genesis-relationship', 'text-eridu-genesis', 'Relationship to Atrahasis and Gilgamesh',
+    "The Eridu Genesis belongs to the wider Mesopotamian flood tradition alongside the Akkadian Atrahasis narrative and the flood account embedded in Tablet XI of the Epic of Gilgamesh. All preserve a divinely announced catastrophic flood and an exceptional human survivor. The survivor's name and many narrative details differ, and the damaged state of the Sumerian text makes it difficult to demonstrate a simple direct line of textual dependence from this manuscript to the later Akkadian compositions."),
+
+  cs('cs-eridu-genesis-scholarly', 'text-eridu-genesis', 'Scholarly Questions',
+    "Important questions remain open because so much of the tablet is missing. Scholars continue to examine how the Sumerian composition relates to other flood traditions, how much older its underlying tradition may be than the surviving Old Babylonian copy, and how its creation, city-founding, kingship, and flood episodes originally fit together as a complete literary work."),
+
+  cs('cs-eridu-genesis-editions', 'text-eridu-genesis', 'Source / Edition Information',
+    "The title Eridu Genesis is a modern scholarly label prominently associated with Thorkild Jacobsen's 1981 study, The Eridu Genesis. The composition is also presented by the University of Oxford's Electronic Text Corpus of Sumerian Literature as The Flood story, catalogued as ETCSL 1.7.4. The principal archaeological witness is Penn Museum tablet CBS 10673 joined to CBS 10867."),
+
+  cs('cs-eridu-genesis-why-matters', 'text-eridu-genesis', 'Why It Matters',
+    "The Eridu Genesis is important because it preserves an early Sumerian form of a complex tradition linking humanity's creation, the establishment of cities and kingship, divine judgment through a catastrophic flood, survival through Ziusudra, sacrifice, and the granting of extraordinary life afterward. Its fragmentary condition limits what can be reconstructed, but what actually survives is substantially richer than a simple reference to an early flood story."),
 
   // ---------------- PLACES ----------------
   cs('cs-place-eridu-context', 'place-eridu', 'Historical Importance',

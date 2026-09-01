@@ -1,6 +1,24 @@
-﻿import type { Source } from './types';
+import type { Source } from './types';
 
 export const sources: Source[] = [
+  {
+    id: 'src-primary-eridu-genesis',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'The Flood Story / Eridu Genesis (Sumerian composition; ETCSL 1.7.4)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr174.htm',
+  },
+  {
+    id: 'src-jacobsen-eridu-genesis',
+    sourceCategory: 'PeerReviewedArticle',
+    citation: 'Jacobsen, T., "The Eridu Genesis," Journal of Biblical Literature 100.4 (1981): 513–529',
+    url: 'https://doi.org/10.2307/3266116',
+  },
+  {
+    id: 'src-penn-cbs10673',
+    sourceCategory: 'ArchaeologicalArtifact',
+    citation: 'Penn Museum, Flood Tablet / Deluge Tablet, CBS10673, Nippur, Old Babylonian period, ca. 1650 BCE',
+    url: 'https://collections.penn.museum/collections/object/97591',
+  },
   {
     id: 'src-lambert-millard-atrahasis',
     sourceCategory: 'AcademicBook',

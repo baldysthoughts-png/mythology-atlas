@@ -94,10 +94,25 @@ export function TextProfilePage() {
   if (!text) return <Navigate to="/library/texts" replace />;
   const sections = getContentSections(text.contentSectionIds);
 
+  const textImageMap: Record<string, string> = {
+    'text-gilgamesh': '/mythology-atlas/featured-gilgamesh.png',
+    'text-eridu-genesis': '/mythology-atlas/featured-eridu-genesis.png',
+  };
+
+  const textImage = textImageMap[text.id];
+
   return (
     <div className="space-y-8">
       <div>
-        <ImagePlaceholder label={`${text.canonicalName} — tablet / manuscript`} aspect="aspect-[16/9]" />
+        {textImage ? (
+          <img
+            src={textImage}
+            alt={text.canonicalName}
+            className="aspect-[16/9] w-full rounded-md object-cover"
+          />
+        ) : (
+          <ImagePlaceholder label={`${text.canonicalName} — tablet / manuscript`} aspect="aspect-[16/9]" />
+        )}
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
             {text.canonicalName}
@@ -149,6 +164,12 @@ export function TopicProfilePage() {
   if (!topic) return <Navigate to="/library/topics" replace />;
   const sections = getContentSections(topic.contentSectionIds);
 
+  const topicImageMap: Record<string, string> = {
+    'topic-flood-tradition': '/mythology-atlas/featured-flood-story.png',
+  };
+
+  const topicImage = topicImageMap[topic.id];
+
   return (
     <div className="space-y-8">
       <div className="flex items-start justify-between gap-3">
@@ -157,6 +178,14 @@ export function TopicProfilePage() {
         </h1>
         <EntityTypeBadge type="Topic" />
       </div>
+
+      {topicImage && (
+        <img
+          src={topicImage}
+          alt={topic.canonicalName}
+          className="aspect-[16/9] w-full rounded-md object-cover"
+        />
+      )}
 
       {sections.map((s) => (
         <ContentSectionBlock key={s.id} section={s} />
