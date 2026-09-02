@@ -133,6 +133,23 @@ export const deities: Deity[] = [
     contentSectionIds: ['cs-nanna-overview', 'cs-nanna-names', 'cs-nanna-roles', 'cs-nanna-cult-center', 'cs-nanna-what-we-know', 'cs-nanna-why-it-matters', 'cs-nanna-ancient-textual-tradition', 'cs-nanna-family'],
   },
   {
+    id: 'deity-ningal',
+    entityType: 'Deity',
+    canonicalName: 'Ningal',
+    alternativeNames: ['Nikkal'],
+    slug: 'ningal',
+    status: 'published',
+    cultures: ['Sumerian', 'Akkadian'],
+    primaryCultCenterId: 'place-ur',
+    roles: ['Divine consort', 'Queenship'],
+    associatedPlaceIds: ['place-ur'],
+    associatedStoryIds: [],
+    ancientTextIds: [],
+    relatedFigureIds: ['deity-nanna', 'deity-utu', 'deity-inanna'],
+    contentSectionIds: [],
+  },
+
+  {
     id: 'deity-ereshkigal',
     entityType: 'Deity',
     canonicalName: 'Ereshkigal',

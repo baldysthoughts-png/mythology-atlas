@@ -1,7 +1,7 @@
 import type { Place } from './types';
 
 export const places: Place[] = [
-  { id: 'place-ur', entityType: 'Place', canonicalName: 'Ur', slug: 'ur', status: 'published', placeType: 'city', associatedDeityIds: ['deity-nanna'] , contentSectionIds: ['cs-place-ur-context'] },
+  { id: 'place-ur', entityType: 'Place', canonicalName: 'Ur', slug: 'ur', status: 'published', placeType: 'city', associatedDeityIds: ['deity-nanna', 'deity-ningal', 'deity-inanna'] , contentSectionIds: ['cs-place-ur-context', 'cs-place-ur-ziggurat', 'cs-place-ur-religious-life', 'cs-place-ur-third-dynasty', 'cs-place-ur-royal-cemetery', 'cs-place-ur-trade', 'cs-place-ur-city-life', 'cs-place-ur-later-history', 'cs-place-ur-archaeology'] },
   { id: 'place-uruk', entityType: 'Place', canonicalName: 'Uruk', slug: 'uruk', status: 'published', placeType: 'city', associatedDeityIds: ['deity-inanna', 'deity-an'] , contentSectionIds: ['cs-place-uruk-context'] },
   { id: 'place-eridu', entityType: 'Place', canonicalName: 'Eridu', slug: 'eridu', status: 'published', placeType: 'city', associatedDeityIds: ['deity-enki'], historicalNotes: 'Traditionally regarded in Sumerian literature as one of the oldest cities and the primary cult center of Enki.' , contentSectionIds: ['cs-place-eridu-context'] },
   { id: 'place-nippur', entityType: 'Place', canonicalName: 'Nippur', slug: 'nippur', status: 'published', placeType: 'city', associatedDeityIds: ['deity-enlil'] , contentSectionIds: ['cs-place-nippur-context'] },

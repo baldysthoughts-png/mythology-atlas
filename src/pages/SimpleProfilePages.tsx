@@ -97,6 +97,9 @@ export function TextProfilePage() {
   const textImageMap: Record<string, string> = {
     'text-gilgamesh': '/mythology-atlas/featured-gilgamesh.png',
     'text-eridu-genesis': '/mythology-atlas/featured-eridu-genesis.png',
+    'text-descent-of-inanna': '/mythology-atlas/featured-descent-inanna.png',
+    'text-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag.png',
+    'text-sumerian-king-list': '/mythology-atlas/featured-sumerian-king-list.png',
   };
 
   const textImage = textImageMap[text.id];
@@ -210,10 +213,27 @@ export function PlaceProfilePage() {
 
   const sections = getContentSections(place.contentSectionIds);
 
+  const placeImageMap: Record<string, string> = {
+    'place-ur': '/mythology-atlas/featured-ur.png',
+  };
+
+  const placeImage = placeImageMap[place.id];
+
   return (
     <div className="space-y-8">
       <div>
-        <ImagePlaceholder label={`${place.canonicalName} — ancient city`} aspect="aspect-[16/9]" />
+        {placeImage ? (
+          <img
+            src={placeImage}
+            alt={place.canonicalName}
+            className="aspect-[16/9] w-full rounded-md object-cover"
+          />
+        ) : (
+          <ImagePlaceholder
+            label={`${place.canonicalName} — ancient city`}
+            aspect="aspect-[16/9]"
+          />
+        )}
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
             {place.canonicalName}
