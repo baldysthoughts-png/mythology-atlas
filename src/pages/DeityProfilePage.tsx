@@ -36,7 +36,9 @@ export function DeityProfilePage() {
             ? '/mythology-atlas/ninhursag-card.png'
             : deity.id === 'deity-nanna'
               ? '/mythology-atlas/nanna-card.png'
-              : deity.id === 'deity-enlil'
+              : deity.id === 'deity-ningal'
+                ? '/mythology-atlas/ningal-card.png'
+                : deity.id === 'deity-enlil'
                 ? '/mythology-atlas/enlil-card.png'
                 : deity.id === 'deity-ereshkigal'
                   ? '/mythology-atlas/ereshkigal-card.png'
@@ -60,7 +62,7 @@ export function DeityProfilePage() {
   // suppress the older keyword-tag block below so the page doesn't show both a rich
   // and a legacy version of the same section.
   const sectionLabels = new Set(sections.map((s) => s.sectionLabel));
-  const hasRichRoles = sectionLabels.has('Roles and Domains');
+  const hasRichRoles = sectionLabels.has('Roles and Domains') || sectionLabels.has('Roles and Status');
   const hasRichSymbols = sectionLabels.has('Symbols and Iconography');
   const hasAncientSourcesSection = sectionLabels.has('Ancient Sources');
 

@@ -215,6 +215,16 @@ export function PlaceProfilePage() {
 
   const placeImageMap: Record<string, string> = {
     'place-ur': '/mythology-atlas/featured-ur.png',
+    'place-uruk': '/mythology-atlas/featured-uruk.png',
+    'place-eridu': '/mythology-atlas/featured-eridu.png',
+    'place-nippur': '/mythology-atlas/featured-nippur.png',
+    'place-lagash': '/mythology-atlas/featured-lagash.png',
+    'place-kish': '/mythology-atlas/featured-kish.png',
+    'place-babylon': '/mythology-atlas/featured-babylon.png',
+    'place-nineveh': '/mythology-atlas/featured-nineveh.png',
+    'place-ashur': '/mythology-atlas/featured-ashur.png',
+    'place-kutha': '/mythology-atlas/featured-kutha.png',
+    'place-borsippa': '/mythology-atlas/featured-borsippa.png',
   };
 
   const placeImage = placeImageMap[place.id];

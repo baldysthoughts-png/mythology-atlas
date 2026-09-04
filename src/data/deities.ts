@@ -43,7 +43,7 @@ export const deities: Deity[] = [
     cultures: ['Sumerian', 'Akkadian'],
     primaryCultCenterId: 'place-uruk',
     roles: ['Sky', 'Highest divine authority in the pantheon'],
-    associatedPlaceIds: ['place-uruk'],
+    associatedPlaceIds: ['place-uruk', 'place-ur'],
     associatedStoryIds: [],
     ancientTextIds: [],
     relatedFigureIds: ['deity-enlil', 'deity-enki', 'deity-inanna'],
@@ -59,11 +59,11 @@ export const deities: Deity[] = [
     cultures: ['Sumerian', 'Akkadian', 'Babylonian', 'Assyrian'],
     primaryCultCenterId: 'place-uruk',
     roles: ['Love', 'War', 'Fertility', 'Political power'],
-    associatedPlaceIds: ['place-uruk'],
+    associatedPlaceIds: ['place-uruk', 'place-ur'],
     associatedStoryIds: ['story-descent-of-inanna'],
     ancientTextIds: ['text-descent-of-inanna'],
-    relatedFigureIds: ['deity-ereshkigal', 'deity-dumuzi', 'deity-utu'],
-    contentSectionIds: ['cs-inanna-overview', 'cs-inanna-names', 'cs-inanna-roles', 'cs-inanna-family', 'cs-inanna-myths', 'cs-inanna-textual-tradition', 'cs-inanna-ancient-sources', 'cs-inanna-scholarly', 'cs-inanna-what-we-know', 'cs-inanna-why-matters'],
+    relatedFigureIds: ['deity-nanna', 'deity-ningal', 'deity-utu', 'deity-ereshkigal', 'deity-dumuzi'],
+    contentSectionIds: ['cs-inanna-overview', 'cs-inanna-names', 'cs-inanna-roles', 'cs-inanna-cult-centers', 'cs-inanna-family', 'cs-inanna-myths', 'cs-inanna-textual-tradition', 'cs-inanna-ancient-sources', 'cs-inanna-scholarly', 'cs-inanna-what-we-know', 'cs-inanna-why-matters'],
   },
   {
     id: 'deity-ninhursag',
@@ -129,8 +129,8 @@ export const deities: Deity[] = [
     associatedPlaceIds: ['place-ur'],
     associatedStoryIds: [],
     ancientTextIds: [],
-    relatedFigureIds: ['deity-utu', 'deity-inanna'],
-    contentSectionIds: ['cs-nanna-overview', 'cs-nanna-names', 'cs-nanna-roles', 'cs-nanna-cult-center', 'cs-nanna-what-we-know', 'cs-nanna-why-it-matters', 'cs-nanna-ancient-textual-tradition', 'cs-nanna-family'],
+    relatedFigureIds: ['deity-ningal', 'deity-utu', 'deity-inanna'],
+    contentSectionIds: ['cs-nanna-overview', 'cs-nanna-names', 'cs-nanna-roles', 'cs-nanna-cult-center', 'cs-nanna-priesthood', 'cs-nanna-symbols', 'cs-nanna-what-we-know', 'cs-nanna-why-it-matters', 'cs-nanna-ancient-textual-tradition', 'cs-nanna-family'],
   },
   {
     id: 'deity-ningal',
@@ -146,7 +146,7 @@ export const deities: Deity[] = [
     associatedStoryIds: [],
     ancientTextIds: [],
     relatedFigureIds: ['deity-nanna', 'deity-utu', 'deity-inanna'],
-    contentSectionIds: [],
+    contentSectionIds: ['cs-ningal-overview', 'cs-ningal-names', 'cs-ningal-roles', 'cs-ningal-ur-cult', 'cs-ningal-family', 'cs-ningal-ancient-textual-evidence', 'cs-ningal-what-we-know', 'cs-ningal-why-it-matters'],
   },
 
   {

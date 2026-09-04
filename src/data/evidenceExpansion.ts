@@ -19,6 +19,61 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-eridu-abu-shahrayn-site',
+    statement: 'Ancient Eridu is identified with the archaeological site of Abu Shahrayn in southern Iraq, where occupation extended across several millennia.',
+    aboutEntityIds: ['place-eridu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-quenet-et-al-eridu-2022', evidenceRole: 'Supports', locator: 'Abu Shahrayn identified as ancient Eridu; Site 1 occupation from the sixth through second millennia BCE' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-eabzu-precinct',
+    statement: 'The principal sacred precinct at Eridu was the E-abzu complex associated with Enki, within which the E-unir ziggurat remained a major monumental feature.',
+    aboutEntityIds: ['place-eridu', 'deity-enki'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-quenet-et-al-eridu-2022', evidenceRole: 'Supports', locator: 'Site 1: E-abzu monumental complex, temenos wall, and E-unir ziggurat identified as the abode of Enki' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-temple-sequence',
+    statement: 'Excavations beneath the later sacred architecture at Eridu revealed a sequence of eighteen architectural levels whose pottery and building remains became fundamental for establishing the archaeological periodization of the Ubaid period.',
+    aboutEntityIds: ['place-eridu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-quenet-et-al-eridu-2022', evidenceRole: 'Supports', locator: 'Temple Sounding: eighteen architectural levels and their importance for Ubaid periodization' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-long-occupation',
+    statement: 'Archaeological evidence at Eridu documents occupation extending from the sixth millennium BCE into the Bronze Age and later periods, showing that the site had a long history beyond its symbolic antiquity in Sumerian literature.',
+    aboutEntityIds: ['place-eridu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-quenet-et-al-eridu-2022', evidenceRole: 'Supports', locator: 'Site 1 and surrounding areas: Chalcolithic and Bronze Age occupation spanning the sixth through second millennia BCE' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-eridu-modern-excavations',
+    statement: 'Modern archaeological investigation at Eridu has included major twentieth-century excavations and renewed Iraqi-Italian-French fieldwork at Abu Shahrayn in the twenty-first century.',
+    aboutEntityIds: ['place-eridu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-quenet-et-al-eridu-2022', evidenceRole: 'Supports', locator: 'Research history and renewed Archaeological Mission at Eridu fieldwork in 2019 and 2022' },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-enki-abzu',
     statement: 'Enki was understood to dwell in the Abzu, a subterranean body of fresh water beneath his temple at Eridu, which grounded his association with fresh water and craftsmanship in a specific cosmological location.',
     aboutEntityIds: ['deity-enki', 'place-eridu'],
@@ -96,6 +151,529 @@ export const expandedClaims: Claim[] = [
     evidenceLinks: [
       { sourceId: 'src-primary-atrahasis', evidenceRole: 'Supports', locator: 'creation and divine labor context' },
       { sourceId: 'src-lambert-millard-atrahasis', evidenceRole: 'Contextualizes', locator: 'discussion of creation traditions and birth/creation figures' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-ezida-nabu',
+    statement: 'Borsippa was a principal cult center of Nabu, whose major sanctuary there was the temple known as Ezida.',
+    aboutEntityIds: ['place-borsippa', 'deity-nabu'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-shamash-shuma-ukin-4-nabu', evidenceRole: 'Supports', locator: 'Šamaš-šuma-ukin 4, obverse line 10: Nabu dwells in Ezida at Borsippa, identified as his cult center' },
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Contextualizes', locator: 'Ezida as the temple of Nabu at Borsippa' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-birs-nimrud',
+    statement: 'Ancient Borsippa is identified with the archaeological site known today as Birs Nimrud.',
+    aboutEntityIds: ['place-borsippa'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Supports', locator: 'Borsippa identified with Birs Nimrud' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-priest-archives',
+    statement: 'The priestly archives of Borsippa preserve more than two hundred cuneiform texts connected with personnel serving the Ezida temple of Nabu.',
+    aboutEntityIds: ['place-borsippa', 'deity-nabu'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Supports', locator: '224 texts from the priestly archives of Borsippa associated with the Ezida temple' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-temple-workforce',
+    statement: 'The surviving Ezida archives document specialized temple personnel including brewers, bakers, butchers, and oxherds who supplied food for the regular cult of Nabu.',
+    aboutEntityIds: ['place-borsippa', 'deity-nabu'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Supports', locator: 'Archives of brewers, bakers, butchers, and oxherds serving the temple of Nabu' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-ezida-royal-patronage',
+    statement: 'Ezida received substantial royal patronage from Babylonian kings during the sixth century BCE and ranked among the most important sanctuaries of the Babylonian realm.',
+    aboutEntityIds: ['place-borsippa', 'deity-nabu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Supports', locator: 'Ezida favored by sixth-century Babylonian kings and described as an especially important sanctuary' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-borsippa-archive-chronology',
+    statement: 'The Borsippa priestly archive spans material from the reign of Ashurbanipal into the early fifth century BCE, providing evidence for temple life across the Neo-Babylonian and early Achaemenid periods.',
+    aboutEntityIds: ['place-borsippa'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-borsippa-priest-archives', evidenceRole: 'Supports', locator: 'Archive texts dated from the reign of Ashurbanipal through the second year of Xerxes' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kutha-tell-ibrahim',
+    statement: 'Ancient Kutha is identified with the archaeological site of Tell Ibrahim in central Iraq.',
+    aboutEntityIds: ['place-kutha'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-bm-kutha-tell-ibrahim', evidenceRole: 'Supports', locator: 'British Museum provenance identifying Tell Ibrahim as Kutha' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kutha-nergal-cult-center',
+    statement: 'Kutha was the principal cult center of Nergal in Mesopotamian religious tradition.',
+    aboutEntityIds: ['place-kutha', 'deity-nergal'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nergal', evidenceRole: 'Supports', locator: 'Nergal entry: cult centers and temples; Kutha as principal cult center' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kutha-emeslam-temple',
+    statement: 'Nergal’s major sanctuary at Kutha was the temple known as Emeslam.',
+    aboutEntityIds: ['place-kutha', 'deity-nergal'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-nebuchadnezzar-nergal-kutha', evidenceRole: 'Supports', locator: 'Nebuchadnezzar II 032, column ii line 69–column iii line 4: work on Emeslam and construction at Cutha' },
+      { sourceId: 'src-oracc-amgg-nergal', evidenceRole: 'Contextualizes', locator: 'Nergal entry: Kutha and Emeslam' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kutha-nebuchadnezzar-building',
+    statement: 'A Neo-Babylonian inscription of Nebuchadnezzar II records royal building activity at Kutha together with work on Nergal’s temple Emeslam.',
+    aboutEntityIds: ['place-kutha', 'deity-nergal'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-nebuchadnezzar-nergal-kutha', evidenceRole: 'Supports', locator: 'Nebuchadnezzar II 032, column ii line 69–column iii line 4' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kutha-rassam-excavation',
+    statement: 'Nineteenth-century excavation at Tell Ibrahim by Hormuzd Rassam recovered cuneiform material now preserved in the British Museum.',
+    aboutEntityIds: ['place-kutha'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-bm-kutha-tell-ibrahim', evidenceRole: 'Supports', locator: 'British Museum tablet 42496: excavated at Tell Ibrahim by Hormuzd Rassam' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-qalat-sherqat',
+    statement: 'Ancient Ashur is identified with the archaeological site of Qal’at Sherqat on the Tigris in northern Iraq.',
+    aboutEntityIds: ['place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Supports', locator: 'World Heritage identification of Ashur with Qal’at Sherqat' },
+      { sourceId: 'src-met-assyrian-origins-ashur', evidenceRole: 'Contextualizes', locator: 'Archaeological site and excavation history of Ashur on the Tigris' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-early-capital',
+    statement: 'Ashur developed into the first major political capital of Assyria and remained one of the civilization’s most important religious centers even after later kings established capitals elsewhere.',
+    aboutEntityIds: ['place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Supports', locator: 'Ashur as the first capital of Assyria and continuing religious center' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-city-deity-identity',
+    statement: 'The city of Ashur and the god Aššur shared the same name, and the city’s religious identity became closely connected with the political ideology of the Assyrian state.',
+    aboutEntityIds: ['place-ashur', 'deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Contextualizes', locator: 'Ashur as the religious capital of Assyria' },
+      { sourceId: 'src-primary-ashur-dan-ii-1', evidenceRole: 'Supports', locator: 'Aššur-dān II 1: divine appointment of the king and royal action by command of Aššur' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-monumental-sacred-city',
+    statement: 'The archaeological remains of Ashur include major temples, ziggurats, palaces, fortifications, residences, and royal tombs, demonstrating the city’s combined religious, political, and urban functions.',
+    aboutEntityIds: ['place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Supports', locator: 'Temples, three ziggurats, palaces, houses, fortifications, and royal burial structures' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-long-occupation',
+    statement: 'Ashur preserves a long history of settlement extending from the third millennium BCE through Assyrian imperial history and into later periods.',
+    aboutEntityIds: ['place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Supports', locator: 'Long occupation history beginning in the third millennium BCE' },
+      { sourceId: 'src-met-assyrian-origins-ashur', evidenceRole: 'Contextualizes', locator: 'Archaeological sequence and material history of Ashur' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ashur-modern-excavations',
+    statement: 'Large-scale scientific excavation at Ashur began in 1903 under Walter Andrae and revealed much of the city’s monumental architecture, residential areas, temples, palaces, and material culture.',
+    aboutEntityIds: ['place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-met-assyrian-origins-ashur', evidenceRole: 'Supports', locator: 'German excavations at Ashur beginning in 1903 under Walter Andrae' },
+      { sourceId: 'src-unesco-ashur-world-heritage', evidenceRole: 'Contextualizes', locator: 'Archaeological remains and urban monuments of Ashur' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-sennacherib-capital',
+    statement: 'Nineveh became the principal capital of the Neo-Assyrian Empire under Sennacherib around 700 BCE and remained the royal center of his successors until the city was destroyed in 612 BCE.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-nineveh-tentative', evidenceRole: 'Supports', locator: 'Nineveh established as the Assyrian capital by Sennacherib about 700 BCE and occupied by his successors until 612 BCE' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-walls-gates',
+    statement: 'The fortified city of Nineveh was enclosed by a wall circuit extending for more than twelve kilometers, with multiple monumental gates providing access through the defenses.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-nineveh-tentative', evidenceRole: 'Supports', locator: 'City wall circumference of more than 12 km and excavated city gates' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-southwest-palace',
+    statement: 'Sennacherib’s Southwest Palace at Nineveh was a major Neo-Assyrian royal complex whose rooms and courtyards were decorated with extensive carved stone reliefs.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-bm-assyria-nineveh', evidenceRole: 'Supports', locator: 'Southwest Palace of Sennacherib: rooms, courtyards, and carved stone wall panels' },
+      { sourceId: 'src-unesco-nineveh-tentative', evidenceRole: 'Contextualizes', locator: 'Re-excavated throne-room suite of Sennacherib’s palace at Kuyunjik' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-ashurbanipal-library-tablets',
+    statement: 'More than 30,000 cuneiform clay tablets were recovered from the ruins of Nineveh, including material associated with the scholarly collections conventionally known as Ashurbanipal’s Library.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-bm-ashurbanipal-library-project', evidenceRole: 'Supports', locator: 'More than 30,000 cuneiform clay tablets found in the ruins of Nineveh' },
+      { sourceId: 'src-george-gilgamesh-edition', evidenceRole: 'Contextualizes', locator: 'Introduction, on the Nineveh library and the Gilgamesh manuscript tradition' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-long-occupation',
+    statement: 'The principal mound of Nineveh preserves evidence for a very long history of settlement, extending from approximately the sixth millennium BCE into the first millennium CE.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-nineveh-tentative', evidenceRole: 'Supports', locator: 'Kuyunjik occupation from approximately 6000 BCE to around 600 CE' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nineveh-destruction-612',
+    statement: 'Nineveh ceased to function as the capital of the Neo-Assyrian Empire after its destruction in 612 BCE.',
+    aboutEntityIds: ['place-nineveh'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-nineveh-tentative', evidenceRole: 'Supports', locator: 'Destruction of Nineveh in 612 BCE' },
+      { sourceId: 'src-bm-ashurbanipal-library-project', evidenceRole: 'Contextualizes', locator: 'Conquest of Nineveh in 612 BCE and archaeological context of the library remains' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-neo-babylonian-capital',
+    statement: 'Babylon served as the capital of the Neo-Babylonian Empire from 626 to 539 BCE and developed a monumental urban landscape of walls, gates, palaces, temples, and ceremonial architecture.',
+    aboutEntityIds: ['place-babylon'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Supports', locator: 'World Heritage property description: Neo-Babylonian capital, walls, gates, palaces, temples, and urbanism' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-ishtar-processional-way',
+    statement: 'The Ishtar Gate and Processional Way formed major ceremonial elements of Neo-Babylonian Babylon and were decorated with distinctive glazed-brick animal imagery.',
+    aboutEntityIds: ['place-babylon'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Supports', locator: 'Ishtar Gate and Processional Way within the monumental Neo-Babylonian city' },
+      { sourceId: 'src-smb-babylon-collection', evidenceRole: 'Supports', locator: 'Babylon collection: Ishtar Gate and Processional Way glazed-brick architectural material' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-esagila-etemenanki',
+    statement: 'Babylon’s principal sacred landscape included the Esagila temple of Marduk and the Etemenanki ziggurat, monumental structures at the religious heart of the city.',
+    aboutEntityIds: ['place-babylon', 'deity-marduk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Supports', locator: 'Babylon monumental religious architecture, including Esagila and the Etemenanki ziggurat' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-nebuchadnezzar-rebuilding',
+    statement: 'Much of the monumental Neo-Babylonian city visible archaeologically reflects major rebuilding and construction undertaken during the reign of Nebuchadnezzar II.',
+    aboutEntityIds: ['place-babylon'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Supports', locator: 'Neo-Babylonian monumental architecture and the reign of Nebuchadnezzar II' },
+      { sourceId: 'src-smb-babylon-collection', evidenceRole: 'Contextualizes', locator: 'Excavated and reconstructed architectural remains from Neo-Babylonian Babylon' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-long-urban-history',
+    statement: 'Babylon had a history extending back into the third millennium BCE and remained an important urban center under successive political powers long before and after its Neo-Babylonian peak.',
+    aboutEntityIds: ['place-babylon'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Supports', locator: 'World Heritage synthesis: Babylon dates back to the third millennium BCE and was the seat of successive empires' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-babylon-modern-excavations',
+    statement: 'Systematic archaeological excavation at Babylon by the Deutsche Orient-Gesellschaft beginning in 1899 established much of the modern understanding of the city’s topography and monumental architecture.',
+    aboutEntityIds: ['place-babylon'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-smb-babylon-collection', evidenceRole: 'Supports', locator: 'German excavations at Babylon and the formation of the Berlin Babylon collection' },
+      { sourceId: 'src-unesco-babylon-world-heritage', evidenceRole: 'Contextualizes', locator: 'Archaeological history and surviving monumental urban remains' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-large-mound-complex',
+    statement: 'Ancient Kish occupied an extensive archaeological landscape made up of more than forty mounds spread across approximately twenty-four square kilometers.',
+    aboutEntityIds: ['place-kish'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-kish-studies', evidenceRole: 'Supports', locator: 'Introduction: more than forty mounds distributed across a 24 km² area' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-hursagkalama-uhaimir',
+    statement: 'The archaeological landscape of Kish included the eastern complex known as Hursagkalama, associated with the Ingharra mounds, and a western sector dominated by the ziggurat at Uhaimir.',
+    aboutEntityIds: ['place-kish'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-kish-studies', evidenceRole: 'Supports', locator: 'Introduction: Hursagkalama/Ingharra in the east and Uhaimir ziggurat in the west' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-long-occupation',
+    statement: 'Kish preserves evidence for a very long history of occupation, with remains extending from at least around 3000 BCE into the first millennium CE.',
+    aboutEntityIds: ['place-kish'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-kish-studies', evidenceRole: 'Supports', locator: 'Introduction: earliest remains at least as early as 3000 BCE and latest remains into the seventh century CE' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-kingship-after-flood',
+    statement: 'In the Sumerian King List tradition, Kish is presented as the first city to receive kingship after the flood.',
+    aboutEntityIds: ['place-kish', 'text-sumerian-king-list'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-sumerian-king-list', evidenceRole: 'Supports', locator: 'Post-flood sequence: kingship descends to Kish' },
+      { sourceId: 'src-isac-kish-studies', evidenceRole: 'Contextualizes', locator: 'Introduction: Kish and the post-flood descent of kingship' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-zababa-patron',
+    statement: 'Zababa was a warrior god and the principal patron deity of Kish.',
+    aboutEntityIds: ['place-kish'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-zababa', evidenceRole: 'Supports', locator: 'Zababa entry: patron deity and cult place at Kish' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kish-modern-excavations',
+    statement: 'Major archaeological excavations at Kish were carried out from 1923 to 1933 by a joint expedition of the Field Museum and the University of Oxford, investigating numerous mounds across the ancient city.',
+    aboutEntityIds: ['place-kish'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-kish-studies', evidenceRole: 'Supports', locator: 'Publication overview: 1923–1933 excavations and investigation of seventeen mounds' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-tell-al-hiba',
+    statement: 'Ancient Lagash is identified with the archaeological site of Tell al-Hiba in southern Iraq.',
+    aboutEntityIds: ['place-lagash'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-penn-lagash-project', evidenceRole: 'Supports', locator: 'Lagash Archaeological Project at Tell al-Hiba' },
+      { sourceId: 'src-mcmahon-et-al-lagash-2023', evidenceRole: 'Supports', locator: 'Tell al-Hiba identified as ancient Lagash' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-third-millennium-city',
+    statement: 'Lagash developed into a major urban center during the third millennium BCE and formed part of one of the most important Sumerian city-states of southern Mesopotamia.',
+    aboutEntityIds: ['place-lagash'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-penn-lagash-project', evidenceRole: 'Supports', locator: 'Overview of third-millennium Lagash and its archaeological history' },
+      { sourceId: 'src-mcmahon-et-al-lagash-2023', evidenceRole: 'Supports', locator: 'Third-millennium urban occupation at Lagash' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-multicentric-urbanism',
+    statement: 'Archaeological and geophysical research indicates that Lagash had a complex, multi-centered urban form rather than one uniformly dense settlement, with inhabited zones separated by waterways and less densely occupied areas.',
+    aboutEntityIds: ['place-lagash'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-mcmahon-et-al-lagash-2023', evidenceRole: 'Supports', locator: 'Dense urbanism, multiple settlement sectors, waterways, and economic multi-centrism' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-craft-production',
+    statement: 'Excavations at Lagash provide evidence for specialized craft production and economic activity within different parts of the city.',
+    aboutEntityIds: ['place-lagash'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-mcmahon-et-al-lagash-2023', evidenceRole: 'Supports', locator: 'Excavated neighborhoods and evidence for specialized production and economic activity' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-temples',
+    statement: 'Excavations at Lagash have revealed major temple complexes, including the Ibgal associated with Inanna and the Bagara associated with Ningirsu.',
+    aboutEntityIds: ['place-lagash', 'deity-inanna'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-penn-lagash-project', evidenceRole: 'Supports', locator: 'Excavated sacred architecture at Tell al-Hiba, including the Ibgal and Bagara temple areas' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-lagash-girsu-distinction',
+    statement: 'Lagash and Girsu were distinct ancient urban centers within the wider Lagash state; archaeological finds from Girsu at modern Tello should therefore not automatically be described as discoveries from the city of Lagash itself.',
+    aboutEntityIds: ['place-lagash'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-penn-lagash-project', evidenceRole: 'Contextualizes', locator: 'Tell al-Hiba as Lagash within the broader Lagash city-state landscape' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nippur-ekur-enlil',
+    statement: 'Nippur was the principal cult center of Enlil, whose major sanctuary there was the Ekur temple complex.',
+    aboutEntityIds: ['place-nippur', 'deity-enlil'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-nippur-expedition', evidenceRole: 'Supports', locator: 'Nippur as the sacred city of Enlil and location of the Ekur sanctuary' },
+      { sourceId: 'src-mccown-haines-nippur-i', evidenceRole: 'Supports', locator: 'Temple of Enlil excavations and architectural remains' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nippur-scribal-quarter',
+    statement: 'Excavations at Nippur uncovered a substantial scribal quarter containing tablets that provide important evidence for education, administration, and literary culture in Mesopotamia.',
+    aboutEntityIds: ['place-nippur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-mccown-haines-nippur-i', evidenceRole: 'Supports', locator: 'Scribal Quarter excavations and tablet-bearing contexts' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nippur-long-occupation',
+    statement: 'Archaeological soundings at Nippur document a long sequence of occupation extending across multiple periods of Mesopotamian history.',
+    aboutEntityIds: ['place-nippur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-mccown-haines-nippur-i', evidenceRole: 'Supports', locator: 'Soundings and occupational sequence at Nippur' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nippur-urban-landscape',
+    statement: 'Archaeological investigation at Nippur has identified major elements of the urban landscape, including temple districts, residential areas, defensive works, and waterways.',
+    aboutEntityIds: ['place-nippur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-nippur-expedition', evidenceRole: 'Supports', locator: 'Overview of excavated temple, residential, city-wall, and canal areas' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nippur-modern-excavations',
+    statement: 'Nippur became one of the major sites of Mesopotamian archaeology through late nineteenth-century excavations and later long-term University of Chicago fieldwork.',
+    aboutEntityIds: ['place-nippur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      { sourceId: 'src-isac-nippur-expedition', evidenceRole: 'Supports', locator: 'History of excavation at Nippur' },
+      { sourceId: 'src-mccown-haines-nippur-i', evidenceRole: 'Contextualizes', locator: 'University of Chicago excavation publication' },
     ],
     status: 'Published',
   },
@@ -239,6 +817,73 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-uruk-early-urban-center',
+    statement: 'By the late fourth and early third millennia BCE, Uruk had developed into one of the oldest and largest urban centers of Mesopotamia.',
+    aboutEntityIds: ['place-uruk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-dai-uruk-warka', evidenceRole: 'Supports', locator: 'Uruk project overview: urban growth in the fourth and early third millennia BCE' },
+      { sourceId: 'src-adams-nissen-uruk-countryside', evidenceRole: 'Supports', locator: 'Introduction: Uruk as one of the oldest and largest Mesopotamian urban centers' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-uruk-monumental-sanctuaries',
+    statement: 'Uruk contained major monumental sanctuary districts, including the Eanna complex associated especially with Inanna/Ishtar and the Anu sanctuary.',
+    aboutEntityIds: ['place-uruk', 'deity-inanna', 'deity-an'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-dai-uruk-warka', evidenceRole: 'Supports', locator: 'Uruk project results: Eanna and Anu sanctuary districts' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-uruk-early-writing-administration',
+    statement: 'Uruk preserves some of the earliest evidence for cuneiform writing and the complex administrative systems associated with the Late Uruk period.',
+    aboutEntityIds: ['place-uruk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-dai-uruk-warka', evidenceRole: 'Supports', locator: 'Uruk project overview: early cuneiform and complex administration in the Late Uruk period' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-uruk-wall-canals',
+    statement: 'By the beginning of the third millennium BCE, Uruk possessed an extensive city wall and an internal canal system that formed major elements of its urban landscape.',
+    aboutEntityIds: ['place-uruk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-dai-uruk-warka', evidenceRole: 'Supports', locator: 'Uruk project overview: urban canals and approximately 9 km city wall' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-uruk-modern-archaeology',
+    statement: 'German archaeological research at Uruk/Warka began in 1912 and has developed into a long-running program of excavation, architectural study, and archaeological analysis.',
+    aboutEntityIds: ['place-uruk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-dai-uruk-warka', evidenceRole: 'Supports', locator: 'Uruk project history and research program, begun in 1912' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-uruk-gilgamesh-literary-tradition',
+    statement: 'Mesopotamian literary tradition presents Gilgamesh as king of Uruk, making the city central to the narratives associated with him; this literary association should not be treated as proof that every episode of the Gilgamesh tradition is historical.',
+    aboutEntityIds: ['place-uruk', 'text-gilgamesh'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-george-gilgamesh-edition', evidenceRole: 'Supports', locator: 'Introduction and Gilgamesh tradition: Gilgamesh as king of Uruk' },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-an-uruk-eanna-cult',
     statement: 'From the third millennium onward, with interruptions, An/Anu was worshipped at Uruk together with Inanna/Ishtar in the Eanna temple complex.',
     aboutEntityIds: ['deity-an', 'place-uruk'],
@@ -315,12 +960,100 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-nanna-ningal-consort',
+    statement: 'Ningal was the consort of Nanna/Suen and formed with him the principal divine pair associated with Ur and Ekišnugal.',
+    aboutEntityIds: ['deity-nanna', 'deity-ningal', 'place-ur'],
+    claimType: 'Genealogical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nanna', evidenceRole: 'Supports', locator: 'Nanna/Suen/Sin entry: family and divine relationships' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nanna-utu-inanna-children',
+    statement: 'Utu and Inanna are presented as children of Nanna and Ningal in an important Mesopotamian divine-family tradition, although individual texts and periods can preserve different genealogical arrangements.',
+    aboutEntityIds: ['deity-nanna', 'deity-ningal', 'deity-utu', 'deity-inanna'],
+    claimType: 'Genealogical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nanna', evidenceRole: 'Supports', locator: 'Nanna/Suen/Sin entry: family and divine relationships' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nanna-crescent-symbol',
+    statement: 'The lunar crescent was a principal symbol of Nanna/Suen/Sin, and the curved horns of a bull could also evoke the shape and power of the crescent moon.',
+    aboutEntityIds: ['deity-nanna'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nanna', evidenceRole: 'Supports', locator: 'Nanna/Suen/Sin entry: iconography and symbolism' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-nanna-high-priestess-ur',
+    statement: 'Royal daughters were repeatedly appointed as high priestesses of Nanna at Ur, linking the lunar cult with royal institutions and the sacred precinct of the city.',
+    aboutEntityIds: ['deity-nanna', 'place-ur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nanna', evidenceRole: 'Supports', locator: 'Nanna/Suen/Sin entry: Ur cult and priesthood' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ningal-nikkal-name',
+    statement: 'Ningal is the Sumerian name of the goddess, while Nikkal is an Akkadian form of her name.',
+    aboutEntityIds: ['deity-ningal'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-nanna', evidenceRole: 'Supports', locator: 'Nanna/Suen/Sin entry: divine genealogy and Ningal/Nikkal' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ningal-queen-ekishnugal-ur',
+    statement: 'A royal inscription from Ur addresses Ningal as queen of Ekišnugal and beloved of Ur.',
+    aboutEntityIds: ['deity-ningal', 'place-ur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-ningal-ur-inscription', evidenceRole: 'Supports', locator: 'Q003844, lines 1–4' },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-ningal-giparu-ur',
+    statement: 'A Neo-Assyrian inscription from Ur records Sîn-balāssu-iqbi rebuilding the Gipāru for Ningal and describes her as the beloved wife of Sîn.',
+    aboutEntityIds: ['deity-ningal', 'deity-nanna', 'place-ur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      { sourceId: 'src-primary-ningal-ur-inscription', evidenceRole: 'Supports', locator: 'Q003844, lines 5–17' },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-inanna-ishtar-name-shift',
     statement: 'Ishtar is the Akkadian name corresponding to Sumerian Inanna, and the historical continuity between the two names is well established. This does not mean every later Ishtar tradition can simply be projected back onto every Sumerian Inanna text in exactly the same form.',
     aboutEntityIds: ['deity-inanna'],
     claimType: 'Historical',
     evidenceClassification: 'ScholarlyConsensus',
     evidenceLinks: [{ sourceId: 'src-black-green-gods-demons', evidenceRole: 'Supports', locator: 'Inanna/Ishtar entry' }],
+    status: 'Published',
+  },
+  {
+    id: 'claim-inanna-ur-cult-attested',
+    statement: 'Ur was among the Mesopotamian cities where Inanna/Ishtar had an attested cult presence, while Uruk remained one of her principal and most important cult centers.',
+    aboutEntityIds: ['deity-inanna', 'place-ur', 'place-uruk'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      { sourceId: 'src-oracc-amgg-inanna', evidenceRole: 'Supports', locator: 'Inana/Ištar entry: cult places, including Uruk and Ur' },
+    ],
     status: 'Published',
   },
   {
@@ -1102,9 +1835,12 @@ export const expandedContentSections: ContentSection[] = [
   cs('cs-inanna-roles', 'deity-inanna', 'Roles and Domains',
     "Inanna was broadly associated with love, sexuality, warfare, fertility, and political or divine power in Mesopotamian tradition. These associations are real and important, but the exact balance and expression of each role changed by composition, place, and historical period, so they are best understood as broad historical patterns rather than one unchanged theology across every period and text.",
     ['claim-inanna-broad-roles']),
+  cs('cs-inanna-cult-centers', 'deity-inanna', 'Cult Centers and Wider Worship',
+    'Uruk was one of the principal and most important centers of Inanna’s worship, especially through the Eanna temple complex. Her cult, however, was not confined to Uruk. Inanna/Ishtar was worshipped in other Mesopotamian cities as well, including Ur. This wider cultic presence should not be confused with primary-cult-center status: Uruk remains the principal city associated with Inanna in this profile, while Ur represents an additional historically attested center of her worship.',
+    ['claim-inanna-ur-cult-attested']),
   cs('cs-inanna-family', 'deity-inanna', 'Family and Divine Relationships',
-    "In Inanna’s Descent to the Netherworld, Ereshkigal is presented as Inanna’s sister and ruler of the underworld. Dumuzi becomes central to the story’s substitution sequence after Inanna’s return. These relationships are presented here as text-specific literary relationships rather than as a universal genealogy applying unchanged across all traditions.",
-    ['claim-inanna-ereshkigal-sister', 'claim-inanna-dumuzi-substitute']),
+    "In an important Mesopotamian genealogical tradition, Inanna and Utu are presented as children of Nanna and Ningal. In Inanna’s Descent to the Netherworld, Ereshkigal is presented as Inanna’s sister and ruler of the underworld, while Dumuzi becomes central to the story’s substitution sequence after Inanna’s return. These relationships should not be combined into one universal and unchanging family tree, because individual texts, cities, languages, and historical periods can preserve different genealogical arrangements.",
+    ['claim-nanna-utu-inanna-children', 'claim-inanna-ereshkigal-sister', 'claim-inanna-dumuzi-substitute']),
   cs('cs-inanna-myths', 'deity-inanna', 'Major Myths and Literary Roles',
     "Inanna’s Descent to the Netherworld is one of the central Sumerian narratives for understanding the goddess. The goddess descends to the underworld, passes through seven gates, and at each gate is required to remove one item of clothing or adornment. In the story, Inanna dies in the underworld and is later restored only after a substitute is required by underworld law. Dumuzi is ultimately designated in that substitution sequence.",
     ['claim-inanna-descent-seven-gates', 'claim-inanna-dumuzi-substitute']),
@@ -1222,8 +1958,49 @@ export const expandedContentSections: ContentSection[] = [
     "Nanna-Suen appears directly in surviving Sumerian literary tradition. In Nanna-Suen’s Journey to Nippur, he prepares to travel to Nippur and explicitly identifies Enlil as his father and Ninlil as his mother. This passage provides direct evidence for one Sumerian presentation of Nanna-Suen’s divine relationships while avoiding the assumption that the same genealogy applied unchanged in every later tradition of Sîn.",
     ['claim-nanna-enlil-ninlil-parentage-journey']),
   cs('cs-nanna-family', 'deity-nanna', 'Family and Divine Relationships',
-    'In the Sumerian composition Nanna-Suen’s Journey to Nippur, Nanna-Suen explicitly identifies Enlil as his father and Ninlil as his mother. This provides direct textual evidence for that genealogy within this composition, but it should not be treated as a universal family scheme applying unchanged to every period or tradition.',
-    ['claim-nanna-enlil-ninlil-parentage-journey']),
+    'Nanna/Suen appears within several important Mesopotamian divine-family traditions. In the Sumerian composition Nanna-Suen’s Journey to Nippur, he explicitly identifies Enlil as his father and Ninlil as his mother. Ningal is widely attested as his consort and forms with him the principal divine pair associated with Ur. Utu, the sun god, and Inanna are also presented as children of Nanna and Ningal in an important Mesopotamian genealogical tradition. These relationships should not be treated as a single unchanging family tree, however, because individual compositions, cities, languages, and historical periods can preserve different genealogical arrangements.',
+    ['claim-nanna-enlil-ninlil-parentage-journey', 'claim-nanna-ningal-consort', 'claim-nanna-utu-inanna-children']),
+
+  cs('cs-nanna-priesthood', 'deity-nanna', 'Priesthood and Royal Patronage',
+    'The cult of Nanna at Ur was closely connected with royal institutions. Across different periods, daughters of kings were repeatedly appointed as high priestesses of the moon god, linking the royal household directly with Nanna’s sanctuary and sacred precinct. The office gave these women an important ceremonial and institutional role within the cult and helped reinforce the relationship between divine authority, the city of Ur, and political power. This long-lived priestly tradition is one of the clearest examples of the way Nanna’s worship intersected with Mesopotamian kingship.',
+    ['claim-nanna-high-priestess-ur']),
+
+  cs('cs-nanna-symbols', 'deity-nanna', 'Symbols and Lunar Imagery',
+    'The crescent moon was one of the principal symbols of Nanna/Suen/Sîn and became one of the most recognizable signs of the Mesopotamian moon god. Lunar imagery could also overlap with bull symbolism: the curved horns of a bull could evoke the shape of the crescent, while the bull itself conveyed strength, fertility, and divine power. Such imagery connected Nanna not only with the visible moon in the night sky but also with a broader symbolic language used in Mesopotamian religion and royal art.',
+    ['claim-nanna-crescent-symbol']),
+
+  // ---------------- NINGAL ----------------
+  cs('cs-ningal-overview', 'deity-ningal', 'Overview',
+    'Ningal was a Mesopotamian goddess closely associated with Ur and the divine household of the moon god Nanna/Suen/Sîn. She was widely regarded as Nanna’s consort and is also known by the form Nikkal in Akkadian tradition. A royal inscription from Ur addresses her as queen of Ekišnugal and beloved of Ur, while also describing her as the beloved wife of Sîn. These titles show that Ningal was not merely a secondary figure attached to the moon god, but an important goddess with her own status within the sacred and civic identity of Ur.',
+    ['claim-ningal-nikkal-name', 'claim-nanna-ningal-consort', 'claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur']),
+
+  cs('cs-ningal-names', 'deity-ningal', 'Names and Languages',
+    'Ningal is the Sumerian name of the goddess, while Nikkal is an Akkadian form associated with the same divine figure. As with other Mesopotamian deities whose names occur in more than one language, the relationship between Ningal and Nikkal should not be treated as though one name simply replaced the other at a single moment. The forms belong to overlapping linguistic and historical traditions.',
+    ['claim-ningal-nikkal-name']),
+
+  cs('cs-ningal-ur-cult', 'deity-ningal', 'Ur, Ekišnugal, and the Gipāru',
+    'Ur was a central setting for the worship of Ningal alongside Nanna/Suen. A royal inscription from the city addresses Ningal as queen of Ekišnugal and beloved of Ur, titles that place her directly within the sacred identity of the city and its principal lunar sanctuary. The same inscription describes her as the beloved wife of Sîn and records the rebuilding of the Gipāru for her. This evidence shows that Ningal possessed a distinct cultic presence at Ur rather than appearing only as an extension of her divine consort.',
+    ['claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur', 'claim-nanna-ningal-consort']),
+
+  cs('cs-ningal-family', 'deity-ningal', 'Family and Divine Relationships',
+    'Ningal is widely attested as the consort of Nanna/Suen and forms with him the principal divine pair associated with Ur. In an important Mesopotamian genealogical tradition, Utu, the sun god, and Inanna are presented as children of Nanna and Ningal. As with other Mesopotamian divine genealogies, these relationships should not be treated as one universal and unchanging family tree, since individual texts, cities, languages, and historical periods can preserve different arrangements.',
+    ['claim-nanna-ningal-consort', 'claim-nanna-utu-inanna-children']),
+
+  cs('cs-ningal-roles', 'deity-ningal', 'Roles and Status',
+    'Ningal held an important divine status within the religious life of Ur. An inscription from the city addresses her as queen of Ekišnugal and beloved of Ur, while also identifying her as the beloved wife of Sîn. These titles associate Ningal with divine queenship, the sacred household of the moon god, and the civic identity of Ur itself. Her importance should therefore not be reduced simply to her role as Nanna’s consort; the surviving evidence presents her as a goddess honored in her own right within the city’s cultic landscape.',
+    ['claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur', 'claim-nanna-ningal-consort']),
+
+  cs('cs-ningal-ancient-textual-evidence', 'deity-ningal', 'Ancient Textual Evidence',
+    'Ningal is directly attested in inscriptions from Ur. One important inscription addresses her as queen of Ekišnugal and beloved of Ur, identifies her as the beloved wife of Sîn, and records the rebuilding of the Gipāru for her. Such evidence is especially valuable because it preserves titles and cultic relationships used for Ningal within the city itself rather than relying only on later summaries of Mesopotamian religion. The inscription confirms her close relationship with the lunar cult while also demonstrating her own distinct status within the sacred institutions of Ur.',
+    ['claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur']),
+
+  cs('cs-ningal-what-we-know', 'deity-ningal', 'What We Actually Know',
+    'The surviving evidence securely identifies Ningal as an important goddess associated with Ur and as the consort of Nanna/Suen/Sîn. Ningal and Nikkal are forms of her name preserved in different Mesopotamian linguistic traditions. An inscription from Ur calls her queen of Ekišnugal and beloved of Ur, identifies her as the beloved wife of Sîn, and records rebuilding of the Gipāru for her. In an important Mesopotamian genealogical tradition, Utu and Inanna are presented as children of Nanna and Ningal. These securely attested relationships should not be expanded into claims that every Mesopotamian text preserved exactly the same genealogy, titles, or theological understanding of Ningal.',
+    ['claim-ningal-nikkal-name', 'claim-nanna-ningal-consort', 'claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur', 'claim-nanna-utu-inanna-children']),
+
+  cs('cs-ningal-why-it-matters', 'deity-ningal', 'Why It Matters',
+    'Ningal matters because her evidence helps reveal the religious world of Ur as more than the cult of a single male deity. Her titles as queen of Ekišnugal and beloved of Ur show that she possessed an important place in the city’s own sacred identity, while her relationship with Nanna/Suen places her within one of Mesopotamia’s most enduring divine households. The rebuilding of the Gipāru for Ningal also demonstrates that rulers invested material resources in maintaining institutions associated specifically with her worship. Studying Ningal therefore gives a fuller picture of divine queenship, temple life, family relationships among the gods, and the religious institutions of ancient Ur.',
+    ['claim-nanna-ningal-consort', 'claim-ningal-queen-ekishnugal-ur', 'claim-ningal-giparu-ur']),
 
   // ---------------- UTU/SHAMASH ----------------
   cs('cs-utu-names', 'deity-utu', 'Names and Languages',
@@ -1636,8 +2413,32 @@ export const expandedContentSections: ContentSection[] = [
 
   // ---------------- PLACES ----------------
   cs('cs-place-eridu-context', 'place-eridu', 'Historical Importance',
-    "Eridu, Enki's primary cult center, is treated in Sumerian tradition (via the Sumerian King List) as the first city where kingship descended from heaven, reinforcing its symbolic status as a place of particular antiquity in Sumerian religious ideology.",
-    ['claim-enki-eridu-oldest-city-tradition']),
+    "Eridu was one of the most ancient and symbolically important cities in Sumerian tradition. The Sumerian King List places Eridu first in the sequence of cities to receive kingship after it descended from heaven, giving the city a special place in Mesopotamian ideas about the beginnings of ordered human society. Archaeologically, the site at Abu Shahrayn preserves occupation extending across several millennia, confirming that Eridu was not only ancient in literary memory but also a long-lived settlement in southern Mesopotamia.",
+    ['claim-enki-eridu-oldest-city-tradition', 'claim-eridu-abu-shahrayn-site', 'claim-eridu-long-occupation']),
+
+  cs('cs-place-eridu-enki', 'place-eridu', 'Enki, the Abzu, and E-abzu',
+    "Eridu was the principal cult center of Enki, the Mesopotamian god closely associated with fresh water, wisdom, craftsmanship, and the Abzu. Mesopotamian texts describe Enki as dwelling in the Abzu, the subterranean fresh-water realm associated with his sanctuary at Eridu. Archaeological research identifies the principal sacred precinct as the E-abzu complex, reinforcing the close connection between the city, its temple institutions, and the theology of Enki.",
+    ['claim-enki-abzu', 'claim-eridu-eabzu-precinct']),
+
+  cs('cs-place-eridu-sacred-precinct', 'place-eridu', 'Sacred Precinct and E-unir',
+    "The sacred landscape of Eridu developed over a long period. The E-abzu monumental complex formed the principal cultic focus of the city, and the later E-unir ziggurat became one of the dominant architectural features of the sanctuary area. Successive rebuilding phases demonstrate that the sacred precinct remained important for many centuries, even as the surrounding settlement changed. The archaeological sequence therefore preserves evidence for a long tradition of rebuilding and maintaining Enki's sanctuary at the site.",
+    ['claim-eridu-eabzu-precinct', 'claim-eridu-long-occupation']),
+
+  cs('cs-place-eridu-ubaid', 'place-eridu', 'Ubaid Period and Early Settlement',
+    "Eridu is especially important for the archaeology of the Ubaid period. Excavations beneath later sacred buildings revealed a sequence of eighteen architectural levels whose pottery and building remains became fundamental for establishing the archaeological periodization of the Ubaid era. These levels show repeated construction and rebuilding over a very long span and provide some of the clearest evidence for the development of early settled communities in southern Mesopotamia before the rise of the great cities of the Uruk period.",
+    ['claim-eridu-temple-sequence', 'claim-eridu-long-occupation']),
+
+  cs('cs-place-eridu-kingship', 'place-eridu', 'Kingship and the First City Tradition',
+    "Sumerian literary tradition gives Eridu a special place at the beginning of political history. The Sumerian King List states that kingship first descended from heaven to Eridu before passing to later cities. The Eridu Genesis similarly places Eridu first among a sequence of early cities established before the flood. These texts preserve a religious and literary conception of Eridu as a foundational city, but that symbolic priority should be distinguished from a modern archaeological claim that Eridu was literally the first city ever built.",
+    ['claim-enki-eridu-oldest-city-tradition', 'claim-eridu-genesis-cities']),
+
+  cs('cs-place-eridu-long-history', 'place-eridu', 'Long Occupation and Changing City',
+    "Archaeological evidence shows that Eridu remained occupied across a long span extending from the sixth millennium BCE through later prehistoric and Bronze Age periods. The site's history therefore reaches far beyond the particular moment represented by the Sumerian literary traditions that describe it as the first city of kingship. Its long sequence of occupation illustrates how sacred centers could preserve religious importance even as settlement patterns, architecture, and political conditions changed across thousands of years.",
+    ['claim-eridu-long-occupation', 'claim-eridu-abu-shahrayn-site']),
+
+  cs('cs-place-eridu-archaeology', 'place-eridu', 'Archaeology and Rediscovery',
+    "Ancient Eridu is identified with Abu Shahrayn in southern Iraq. The site became a major focus of archaeological research in the twentieth century, when excavations exposed the long temple sequence and the monumental sacred precinct. More recent Iraqi-Italian-French fieldwork has returned to the site with modern archaeological methods, reexamining the E-abzu complex, the ziggurat, settlement history, and the surrounding landscape. These investigations have made Eridu central to modern discussions of early Mesopotamian religion, settlement development, and the Ubaid period.",
+    ['claim-eridu-modern-excavations', 'claim-eridu-abu-shahrayn-site', 'claim-eridu-eabzu-precinct', 'claim-eridu-temple-sequence']),
   cs('cs-place-ur-context', 'place-ur', 'Historical Importance',
     "Ur was occupied for several millennia and became one of southern Mesopotamia's major urban centers by the third millennium BCE. Its location near the Euphrates and access to waterways leading toward the Persian Gulf helped support trade and urban growth. Ur was a principal cult center of the moon god Nanna/Suen, later known in Akkadian as Sin. In the late third millennium BCE, Ur-Nammu founded the Third Dynasty of Ur, and the city became the capital of a state that ruled much of Sumer and Akkad. Ur-Nammu and his successors transformed the sacred precinct, including construction of the great ziggurat that still dominates the archaeological site."),
 
@@ -1658,17 +2459,251 @@ export const expandedContentSections: ContentSection[] = [
   cs('cs-place-ur-archaeology', 'place-ur', 'Archaeology and Rediscovery',
     "The ruins of ancient Ur are located at Tell al-Muqayyar in southern Iraq. Although the site attracted archaeological attention during the nineteenth and early twentieth centuries, the most extensive early excavations were carried out from 1922 to 1934 by a joint expedition of the British Museum and the University of Pennsylvania Museum under C. Leonard Woolley. Over twelve seasons, Woolley and his team investigated the great ziggurat and sacred precinct, the Royal Cemetery, city walls, temples, residential neighborhoods, workshops, and deeply buried occupation levels reaching back thousands of years. The discoveries transformed modern understanding of Sumerian civilization and produced some of the best-known objects from ancient Mesopotamia, including the treasures of Puabi, decorated lyres, and the so-called Standard of Ur. Woolley's excavation records remain an important archaeological resource, while later researchers have continued to reexamine the site, its collections, and the enormous body of evidence recovered there using modern archaeological and scientific methods."),
   cs('cs-place-uruk-context', 'place-uruk', 'Historical Importance',
-    "Uruk, home to the E-anna temple complex dedicated to Inanna, was among the largest and most historically significant cities of early Sumer, and is closely associated in later legendary tradition with the figure of Gilgamesh, remembered as one of its kings."),
+    "Uruk was one of the most important cities of ancient Mesopotamia and played a major role in the development of early urban civilization. By the late fourth and early third millennia BCE, it had grown into one of the oldest and largest urban centers in the region. Its monumental architecture, religious institutions, administrative practices, and association with some of the earliest surviving writing make Uruk especially important for understanding the emergence of complex city life in southern Mesopotamia. In later Mesopotamian literary tradition, Uruk was also remembered as the city ruled by Gilgamesh.",
+    ['claim-uruk-early-urban-center', 'claim-uruk-gilgamesh-literary-tradition']),
+
+  cs('cs-place-uruk-urban-growth', 'place-uruk', 'Early Urban Growth',
+    "Uruk became a major urban center during the fourth millennium BCE, a period so closely associated with the city that archaeologists use the term Uruk period for an important phase of Mesopotamian cultural development. Archaeological research shows the growth of monumental architecture, specialized institutions, administration, and dense settlement on a scale that distinguished Uruk from many earlier communities. Its development provides some of the clearest evidence for the transformation of southern Mesopotamian settlements into large and institutionally complex cities.",
+    ['claim-uruk-early-urban-center']),
+
+  cs('cs-place-uruk-sanctuaries', 'place-uruk', 'Eanna and the Sacred Precincts',
+    "Religion occupied a major place in the urban landscape of Uruk. The city contained monumental sanctuary districts, especially the Eanna complex associated with Inanna/Ishtar and the sanctuary traditionally associated with An/Anu. Inanna became one of the deities most strongly identified with Uruk, while An was also worshipped in the city across long periods of Mesopotamian history. These sacred precincts were not simply isolated temples: they formed monumental institutional centers within the city and were repeatedly rebuilt as Uruk developed.",
+    ['claim-uruk-monumental-sanctuaries', 'claim-an-uruk-eanna-cult', 'claim-inanna-ur-cult-attested']),
+
+  cs('cs-place-uruk-writing', 'place-uruk', 'Writing and Administration',
+    "Uruk preserves some of the earliest evidence for the development of cuneiform writing. Late fourth-millennium administrative tablets demonstrate the growing need to record commodities, labor, institutions, and economic transactions within an increasingly complex urban society. These early records were not yet literary texts in the later sense; many were administrative documents produced within institutional systems. Uruk therefore occupies a central place in the history of writing because the earliest cuneiform tradition developed alongside the administrative demands of one of Mesopotamia's first great cities.",
+    ['claim-uruk-early-writing-administration']),
+
+  cs('cs-place-uruk-urban-landscape', 'place-uruk', 'City Wall and Canal Network',
+    "The physical organization of Uruk reflected its enormous scale. Archaeological research identifies an extensive city wall, traditionally associated in later literature with Gilgamesh, together with a network of waterways and canals that formed important parts of the urban landscape. By the beginning of the third millennium BCE, the wall extended for roughly nine kilometers around the settlement. Canals provided movement through and around the city and connected Uruk with the broader riverine landscape of southern Mesopotamia.",
+    ['claim-uruk-wall-canals']),
+
+  cs('cs-place-uruk-gilgamesh', 'place-uruk', 'Gilgamesh and Literary Memory',
+    "Uruk became inseparable from the literary memory of Gilgamesh. Mesopotamian compositions present Gilgamesh as king of Uruk, and the city remains the political and symbolic center of the traditions surrounding him. The later Epic of Gilgamesh repeatedly identifies him with Uruk and its monumental landscape. This literary tradition is historically important evidence for how Mesopotamians remembered the city, but it should not be treated as proof that every event narrated in the Gilgamesh stories occurred as literal history.",
+    ['claim-uruk-gilgamesh-literary-tradition']),
+
+  cs('cs-place-uruk-archaeology', 'place-uruk', 'Archaeology and Rediscovery',
+    "The archaeological site of ancient Uruk is located at modern Warka in southern Iraq. German archaeological work began there in 1912 and developed into one of the longest-running research programs devoted to an ancient Mesopotamian city. Excavations and architectural studies have investigated the Eanna and Anu sanctuary districts, monumental buildings, city defenses, residential and administrative areas, tablets, seals, ceramics, and other remains spanning thousands of years. Continued study of Uruk has been fundamental to modern understanding of early urbanism, monumental architecture, administration, and the beginnings of writing in Mesopotamia.",
+    ['claim-uruk-modern-archaeology', 'claim-uruk-monumental-sanctuaries', 'claim-uruk-early-writing-administration']),
+  cs('cs-place-kish-context', 'place-kish', 'Historical Importance',
+    "Kish was one of the major cities of ancient Mesopotamia and occupied an unusually extensive archaeological landscape composed of many separate mounds. Its importance extended beyond a single political period: Kish remained inhabited for thousands of years and became deeply associated in Mesopotamian tradition with kingship, religious authority, and the warrior god Zababa.",
+    ['claim-kish-large-mound-complex', 'claim-kish-long-occupation', 'claim-kish-zababa-patron']),
+
+  cs('cs-place-kish-kingship', 'place-kish', 'Kingship and Sumerian Memory',
+    "Kish held a special place in Mesopotamian traditions about legitimate rule. In the Sumerian King List, Kish is presented as the first city to receive kingship after the flood. This literary presentation does not establish a literal reconstruction of political events immediately after a historical flood, but it demonstrates the exceptional symbolic prestige attached to Kish within Mesopotamian ideas about royal authority.",
+    ['claim-kish-kingship-after-flood']),
+
+  cs('cs-place-kish-zababa', 'place-kish', 'Zababa and Religious Identity',
+    "The principal patron deity of Kish was Zababa, a Mesopotamian warrior god whose cult was closely tied to the city's religious identity. Zababa's association with Kish is securely attested in Mesopotamian religious tradition. The atlas currently records this relationship historically while leaving a direct deity-profile link for later, when Zababa receives a dedicated profile of his own.",
+    ['claim-kish-zababa-patron']),
+
+  cs('cs-place-kish-landscape', 'place-kish', 'A City of Many Mounds',
+    "Unlike an archaeological site represented by one compact mound, ancient Kish extended across a broad and complex landscape. More than forty mounds have been identified across an area of roughly twenty-four square kilometers. This dispersed pattern means that different neighborhoods, sacred areas, monumental structures, and occupational zones were distributed across a much larger urban complex than the modern name Kish might initially suggest.",
+    ['claim-kish-large-mound-complex']),
+
+  cs('cs-place-kish-hursagkalama', 'place-kish', 'Hursagkalama and Uhaimir',
+    "Two important parts of the Kish archaeological landscape help illustrate the city's scale. In the east, the Ingharra mound complex is associated with ancient Hursagkalama. In the west, the remains at Uhaimir are dominated by a major ziggurat. These separate monumental zones demonstrate that Kish developed through multiple centers rather than around only one single sacred or administrative nucleus.",
+    ['claim-kish-hursagkalama-uhaimir', 'claim-kish-large-mound-complex']),
+
+  cs('cs-place-kish-long-history', 'place-kish', 'Long Occupation and Changing City',
+    "The archaeological record of Kish spans an exceptionally long period. Remains extend from at least around 3000 BCE into the first millennium CE, showing that the site continued to be inhabited and reused under changing political, linguistic, and religious conditions. Kish therefore cannot be understood solely as an Early Dynastic Sumerian city; its archaeological history continued long after the period most closely associated with the Sumerian King List.",
+    ['claim-kish-long-occupation']),
+
+  cs('cs-place-kish-archaeology', 'place-kish', 'Archaeology and Rediscovery',
+    "Modern archaeological investigation of Kish has been fundamental to reconstructing its enormous scale and long history. Major excavations between 1923 and 1933 were conducted by a joint Field Museum and University of Oxford expedition, which investigated numerous mounds across the site. Because ancient Kish consisted of many distinct archaeological areas, the excavation record provides evidence for monumental buildings, settlement zones, long occupational sequences, and the changing organization of the city across millennia.",
+    ['claim-kish-modern-excavations', 'claim-kish-large-mound-complex', 'claim-kish-long-occupation', 'claim-kish-hursagkalama-uhaimir']),
+
+  cs('cs-place-lagash-context', 'place-lagash', 'Historical Importance',
+    "Lagash was one of the major Sumerian urban centers of southern Mesopotamia during the third millennium BCE. Ancient Lagash is identified with Tell al-Hiba in modern Iraq and formed part of a wider city-state that included other important settlements. Archaeological research shows that Lagash was a large and complex city whose religious institutions, neighborhoods, waterways, and productive areas developed across a broad urban landscape.",
+    ['claim-lagash-tell-al-hiba', 'claim-lagash-third-millennium-city']),
+
+  cs('cs-place-lagash-citystate', 'place-lagash', 'Lagash and the City-State',
+    "The name Lagash can refer both to the ancient city at Tell al-Hiba and, in historical discussion, to the wider Sumerian state that included several settlements. This distinction matters because political and religious activity associated with the Lagash state did not all occur within the city of Lagash itself. Understanding the city therefore requires placing Tell al-Hiba within a larger regional network rather than treating every monument, inscription, or ruler connected with the Lagash state as belonging physically to this one urban site.",
+    ['claim-lagash-third-millennium-city', 'claim-lagash-girsu-distinction']),
+
+  cs('cs-place-lagash-temples', 'place-lagash', 'Temples and Sacred Landscape',
+    "Excavations at Lagash have revealed major sacred areas within the city. These include the Ibgal sanctuary associated with Inanna and the Bagara temple associated with Ningirsu. Their presence demonstrates that religious institutions formed an important part of the urban landscape. At the same time, Ningirsu's especially famous cult center at nearby Girsu should not be confused with the city of Lagash itself, even though both belonged to the wider Lagash state.",
+    ['claim-lagash-temples', 'claim-lagash-girsu-distinction']),
+
+  cs('cs-place-lagash-urbanism', 'place-lagash', 'Urban Form and Waterways',
+    "Recent archaeological and geophysical research has changed how Lagash is understood as a city. Rather than forming one uniformly dense mass of buildings, the settlement appears to have contained several densely occupied sectors separated by waterways, open areas, and less intensively built zones. This multi-centered pattern suggests that canals and water channels were not peripheral features but fundamental elements in the organization of the city and movement through its landscape.",
+    ['claim-lagash-multicentric-urbanism']),
+
+  cs('cs-place-lagash-economy', 'place-lagash', 'Craft Production and Economy',
+    "Archaeological excavations have identified areas of specialized production and economic activity within Lagash. Workshops and occupational zones show that different parts of the city supported manufacturing and other forms of organized labor. This evidence helps reconstruct Lagash as a functioning urban economy rather than only as a collection of temples and political monuments.",
+    ['claim-lagash-craft-production', 'claim-lagash-multicentric-urbanism']),
+
+  cs('cs-place-lagash-girsu', 'place-lagash', 'Lagash and Girsu',
+    "Lagash and Girsu were separate ancient cities within the same broader political state. Lagash is identified with Tell al-Hiba, while Girsu is identified with modern Tello. This distinction is particularly important because many famous monuments and inscriptions associated with the rulers of the Lagash state were excavated at Girsu. The atlas therefore treats discoveries from Girsu as evidence for the wider Lagash state when appropriate, but does not automatically relocate them to the city of Lagash.",
+    ['claim-lagash-girsu-distinction']),
+
+  cs('cs-place-lagash-archaeology', 'place-lagash', 'Archaeology and Rediscovery',
+    "Archaeological work at Tell al-Hiba has revealed the scale and complexity of ancient Lagash through excavation, surface survey, remote sensing, and geophysical research. Earlier excavations investigated major temple areas, while newer projects have examined neighborhoods, production zones, waterways, and the overall structure of the settlement. These investigations have made Lagash especially important for understanding how large Sumerian cities were organized and how urban communities interacted with the watery landscape of southern Mesopotamia.",
+    ['claim-lagash-tell-al-hiba', 'claim-lagash-multicentric-urbanism', 'claim-lagash-craft-production', 'claim-lagash-temples']),
+
   cs('cs-place-nippur-context', 'place-nippur', 'Historical Importance',
-    "Nippur, Enlil's primary cult center, functioned as something closer to a religious capital than a political one in Sumer — royal legitimacy across multiple city-states depended on recognition at Nippur even when the city itself held limited direct political power.",
+    "Nippur was one of the most important religious centers of ancient Mesopotamia. Although it was not normally the capital of a territorial empire, its status as the principal cult center of Enlil gave the city exceptional authority within Sumerian religious and political ideology. Kings from different dynasties sponsored temples and building projects at Nippur, and recognition of Enlil's sanctuary could contribute to the religious legitimacy of rulers whose political capitals lay elsewhere.",
+    ['claim-enlil-nippur-neutral-ground', 'claim-nippur-ekur-enlil']),
+
+  cs('cs-place-nippur-ekur', 'place-nippur', 'Enlil and the Ekur',
+    "The religious heart of Nippur was the Ekur, the great sanctuary of Enlil. Enlil's position as one of the leading gods of the Mesopotamian pantheon made his temple a focus of royal patronage across many periods. Archaeological excavation has revealed major portions of the temple complex and associated monumental architecture, confirming that the sacred precinct was one of the defining features of the ancient city.",
+    ['claim-nippur-ekur-enlil']),
+
+  cs('cs-place-nippur-kingship', 'place-nippur', 'Religious Authority and Kingship',
+    "Nippur's importance was unusual because its influence often exceeded its direct political power. Modern scholarship describes the city as functioning in some periods as a kind of religious center whose recognition mattered to rulers from competing Mesopotamian states. Royal investment in Enlil's sanctuary therefore carried political as well as religious significance. This should not be understood as a single constitutional rule applying identically in every period, but as a recurring relationship between Nippur, Enlil, and claims to legitimate kingship.",
     ['claim-enlil-nippur-neutral-ground']),
+
+  cs('cs-place-nippur-scribal', 'place-nippur', 'Scribal Culture and Tablets',
+    "Nippur was also an exceptionally important center for the preservation of written culture. Excavations uncovered substantial tablet collections and a scribal quarter that provide evidence for education, administration, lexical study, mathematics, religion, and literature. Tablets recovered from Nippur preserve many Sumerian compositions that are central to modern knowledge of Mesopotamian literary tradition. The city's archaeological record therefore contributes not only to the study of temples and kingship but also to the history of scribal learning.",
+    ['claim-nippur-scribal-quarter']),
+
+  cs('cs-place-nippur-urban-landscape', 'place-nippur', 'Urban Landscape',
+    "Archaeological work at Nippur has revealed a city composed of sacred precincts, residential districts, administrative areas, defensive works, and waterways. The temple district dominated the religious landscape, while excavated houses and other urban remains show that Nippur was also a lived-in community of priests, scribes, administrators, craftspeople, and families. Canals and watercourses formed important parts of the city's connection to the wider landscape of southern Mesopotamia.",
+    ['claim-nippur-urban-landscape']),
+
+  cs('cs-place-nippur-long-history', 'place-nippur', 'Long Occupation and Changing City',
+    "Archaeological soundings at Nippur document occupation across many periods of Mesopotamian history. The city's political circumstances changed repeatedly, but its religious importance allowed it to remain significant under a succession of Sumerian, Akkadian, Babylonian, and later rulers. Rebuilding within the sacred precinct and continued occupation elsewhere in the city demonstrate that Nippur's history cannot be reduced to a single dynasty or historical phase.",
+    ['claim-nippur-long-occupation']),
+
+  cs('cs-place-nippur-archaeology', 'place-nippur', 'Archaeology and Rediscovery',
+    "Nippur became one of the foundational sites of modern Mesopotamian archaeology. Major excavations began in the late nineteenth century with expeditions associated with the University of Pennsylvania, which recovered enormous numbers of cuneiform tablets and architectural remains. Later University of Chicago excavations investigated the Temple of Enlil, the scribal quarter, residential areas, city defenses, and deep occupational soundings. These discoveries have made Nippur one of the most important archaeological sites for reconstructing Mesopotamian religion, literature, education, and urban history.",
+    ['claim-nippur-modern-excavations', 'claim-nippur-ekur-enlil', 'claim-nippur-scribal-quarter', 'claim-nippur-long-occupation']),
   cs('cs-place-babylon-context', 'place-babylon', 'Historical Importance',
-    "Babylon rose to political and religious prominence in two major phases, first under Hammurabi and later as the center of the Neo-Babylonian Empire, and became closely associated with the god Marduk following his theological elevation to head of the Babylonian pantheon.",
-    ['claim-babylon-marduk-elevation']),
+    "Babylon was one of the most influential cities of ancient Mesopotamia. Its political importance rose dramatically under Hammurabi in the Old Babylonian period and again when it became the capital of the Neo-Babylonian Empire. The city also became one of Mesopotamia's most important religious centers through its close association with Marduk. Although the monumental remains most visible archaeologically belong especially to the Neo-Babylonian period, Babylon's urban history extended across many centuries before and after that imperial peak.",
+    ['claim-babylon-hammurabi-code', 'claim-babylon-neo-babylonian-capital', 'claim-babylon-long-urban-history', 'claim-babylon-marduk-elevation']),
+
+  cs('cs-place-babylon-marduk', 'place-babylon', 'Marduk, Esagila, and Etemenanki',
+    "The religious heart of Babylon centered on Marduk. His principal temple, Esagila, formed part of a monumental sacred district that also included Etemenanki, the great ziggurat traditionally associated with the city. As Babylon's political importance increased, Marduk's theological status also rose, eventually making the city and its patron god inseparable within later Babylonian religious ideology.",
+    ['claim-babylon-esagila-etemenanki', 'claim-babylon-marduk-elevation']),
+
+  cs('cs-place-babylon-ishtar-gate', 'place-babylon', 'Ishtar Gate and Processional Way',
+    "Among the most famous elements of Neo-Babylonian Babylon were the Ishtar Gate and the Processional Way. These monumental ceremonial structures were decorated with glazed bricks bearing animal imagery and formed part of the carefully planned route through the royal and sacred city. Their architecture demonstrates how movement, ritual, royal display, and religious symbolism could be combined within Babylon's urban landscape.",
+    ['claim-babylon-ishtar-processional-way']),
+
+  cs('cs-place-babylon-nebuchadnezzar', 'place-babylon', 'Nebuchadnezzar II and the Monumental City',
+    "Much of the monumental Babylon known from archaeological excavation reflects extensive construction and rebuilding under Nebuchadnezzar II. During his reign, royal palaces, fortifications, ceremonial routes, gates, and major religious buildings were restored, expanded, or rebuilt. This building program helped create the monumental urban form that later generations associated most strongly with Babylon.",
+    ['claim-babylon-nebuchadnezzar-rebuilding', 'claim-babylon-neo-babylonian-capital']),
+
+  cs('cs-place-babylon-urban-landscape', 'place-babylon', 'Walls, Palaces, and Urban Landscape',
+    "Neo-Babylonian Babylon was organized around a monumental combination of defensive walls, gates, palaces, temples, streets, canals, and ceremonial spaces. The Euphrates ran through the urban area and formed part of the city's physical and economic geography. Babylon was therefore not simply a temple center or royal capital: it was a large inhabited city whose religious, administrative, residential, defensive, and commercial spaces were integrated into one complex urban landscape.",
+    ['claim-babylon-neo-babylonian-capital', 'claim-babylon-ishtar-processional-way']),
+
+  cs('cs-place-babylon-long-history', 'place-babylon', 'Long Urban History',
+    "Babylon's history did not begin with Nebuchadnezzar II. The city was already politically important under Hammurabi in the early second millennium BCE and had roots extending still further back. Its fortunes changed repeatedly under different dynasties and empires, but Babylon continued to retain extraordinary cultural and religious prestige. The spectacular Neo-Babylonian city therefore represents one major phase within a much longer history rather than the beginning of Babylon itself.",
+    ['claim-babylon-hammurabi-code', 'claim-babylon-long-urban-history']),
+
+  cs('cs-place-babylon-archaeology', 'place-babylon', 'Archaeology and Rediscovery',
+    "Systematic excavation at Babylon beginning in 1899 transformed modern understanding of the ancient city. German excavators exposed major portions of the Ishtar Gate, Processional Way, palace complexes, temples, streets, and other monumental remains. Architectural fragments and glazed bricks from these excavations became central to museum reconstructions in Berlin, while continuing archaeological and heritage work in Iraq has focused on preserving Babylon itself as an ancient urban landscape.",
+    ['claim-babylon-modern-excavations', 'claim-babylon-ishtar-processional-way', 'claim-babylon-esagila-etemenanki']),
   cs('cs-place-nineveh-context', 'place-nineveh', 'Historical Importance',
-    "Nineveh, an Assyrian city, is best known in the context of this atlas as the site of the library assembled under King Ashurbanipal, which preserved the best-surviving version of the Epic of Gilgamesh along with a wide range of other Mesopotamian literary and scholarly texts.",
-    ['claim-assyria-ashurbanipal-library']),
+    "Nineveh was one of the great cities of northern Mesopotamia and reached its political height as the principal capital of the Neo-Assyrian Empire under Sennacherib and his successors. Its enormous fortifications, royal palaces, monumental gates, temples, and scholarly collections made it one of the most important urban centers of the ancient Near East. Although its imperial prominence belongs especially to the seventh century BCE, the site preserves a much longer history of occupation.",
+    ['claim-nineveh-sennacherib-capital', 'claim-nineveh-long-occupation']),
+
+  cs('cs-place-nineveh-sennacherib', 'place-nineveh', 'Sennacherib and the Imperial Capital',
+    "Around 700 BCE, Sennacherib transformed Nineveh into the principal capital of the Neo-Assyrian Empire. The city became the center of royal administration and an enormous building program that reshaped its palaces, defenses, streets, water systems, and monumental landscape. Nineveh remained the royal center under later Assyrian kings until the destruction of the city in 612 BCE.",
+    ['claim-nineveh-sennacherib-capital', 'claim-nineveh-destruction-612']),
+
+  cs('cs-place-nineveh-walls', 'place-nineveh', 'Walls and Monumental Gates',
+    "Nineveh was protected by one of the most imposing defensive systems of the Neo-Assyrian world. Its city wall extended for more than twelve kilometers and was pierced by numerous monumental gates. These gates controlled movement into the capital while also serving as highly visible expressions of royal power and urban planning.",
+    ['claim-nineveh-walls-gates']),
+
+  cs('cs-place-nineveh-palace', 'place-nineveh', 'Sennacherib’s Southwest Palace',
+    "Sennacherib’s Southwest Palace was one of the major royal complexes at Nineveh. Its rooms and courtyards were lined with carved stone reliefs depicting warfare, royal ceremonies, landscapes, tribute, construction, and other aspects of Assyrian imperial life. These reliefs provide unusually detailed visual evidence for how the Neo-Assyrian court represented kingship, conquest, and the empire it governed.",
+    ['claim-nineveh-southwest-palace']),
+
+  cs('cs-place-nineveh-library', 'place-nineveh', 'Ashurbanipal’s Library',
+    "Nineveh is especially important for the preservation of Mesopotamian literature because more than thirty thousand cuneiform tablets and fragments were recovered from the ruins of the city. Many belonged to scholarly collections associated with King Ashurbanipal. These tablets preserved literary, religious, lexical, medical, divinatory, historical, and scholarly compositions, including important manuscripts of the Standard Babylonian Epic of Gilgamesh.",
+    ['claim-nineveh-ashurbanipal-library-tablets', 'claim-assyria-ashurbanipal-library']),
+
+  cs('cs-place-nineveh-long-history', 'place-nineveh', 'Long Occupation and the Fall of Nineveh',
+    "Nineveh existed for thousands of years before becoming an Assyrian imperial capital. Archaeological evidence from the principal mound indicates settlement extending back approximately to the sixth millennium BCE. The city's most famous political phase ended dramatically in 612 BCE when Nineveh was captured and destroyed, bringing its role as the capital of the Neo-Assyrian Empire to an end. Occupation at the site nevertheless continued in later periods.",
+    ['claim-nineveh-long-occupation', 'claim-nineveh-destruction-612']),
+
+  cs('cs-place-nineveh-archaeology', 'place-nineveh', 'Archaeology and Rediscovery',
+    "Modern excavation of Nineveh revealed royal palaces, monumental gates, fortifications, sculptures, reliefs, and enormous collections of cuneiform tablets. Excavations at Kuyunjik exposed major parts of Sennacherib’s palace and the scholarly collections associated with Ashurbanipal. These discoveries transformed modern understanding of Assyrian history while also preserving texts whose traditions originated much earlier in Sumerian and Babylonian Mesopotamia.",
+    ['claim-nineveh-southwest-palace', 'claim-nineveh-walls-gates', 'claim-nineveh-ashurbanipal-library-tablets', 'claim-assyria-ashurbanipal-library']),
+  cs('cs-place-borsippa-context', 'place-borsippa', 'Historical Importance',
+    "Borsippa was an important Babylonian religious city closely associated with the god Nabu. Ancient textual evidence places Nabu in his sanctuary Ezida at Borsippa and identifies the city as his cult center. The archaeological site is known today as Birs Nimrud, and surviving temple archives provide unusually detailed evidence for the religious and economic life of the city.",
+    ['claim-borsippa-ezida-nabu', 'claim-borsippa-birs-nimrud']),
+
+  cs('cs-place-borsippa-nabu', 'place-borsippa', 'Nabu and the Religious Identity of Borsippa',
+    "Borsippa’s religious identity centered on Nabu, the divine scribe associated with wisdom and learned knowledge. A royal inscription of Šamaš-šuma-ukin explicitly describes Nabu as dwelling in Ezida at Borsippa and identifies the city as his cult center. This direct ancient testimony makes the relationship between Nabu, Ezida, and Borsippa one of the best-attested features of the city.",
+    ['claim-borsippa-ezida-nabu', 'claim-nabu-shamash-shuma-ukin-scribe-wisdom']),
+
+  cs('cs-place-borsippa-ezida', 'place-borsippa', 'The Ezida Temple',
+    "Ezida was the major sanctuary of Nabu at Borsippa. The temple stood at the center of the city’s religious importance and received substantial royal attention during the Babylonian period. Its archives preserve evidence not only for worship but also for the institutional organization required to maintain a major Mesopotamian temple.",
+    ['claim-borsippa-ezida-nabu', 'claim-borsippa-ezida-royal-patronage']),
+
+  cs('cs-place-borsippa-temple-life', 'place-borsippa', 'Temple Personnel and Daily Life',
+    "The surviving archives connected with Ezida reveal the practical labor behind temple worship. They document specialized personnel including brewers, bakers, butchers, and oxherds who supplied food and resources for the regular cult of Nabu. These records show that a major Mesopotamian sanctuary depended on an extensive workforce and economic organization as well as priests and ritual specialists.",
+    ['claim-borsippa-priest-archives', 'claim-borsippa-temple-workforce']),
+
+  cs('cs-place-borsippa-royal-patronage', 'place-borsippa', 'Royal Patronage and Babylonian Religion',
+    "Ezida ranked among the important sanctuaries of the Babylonian religious world and received substantial patronage from sixth-century BCE Babylonian rulers. Borsippa’s importance therefore extended beyond its local cult, because support for Nabu’s sanctuary formed part of the wider religious policies of Babylonian kings.",
+    ['claim-borsippa-ezida-royal-patronage']),
+
+  cs('cs-place-borsippa-archives', 'place-borsippa', 'The Priestly Archives',
+    "More than two hundred cuneiform texts associated with priests and temple personnel at Borsippa provide an important documentary record of the city. The archive spans material from the period of Ashurbanipal through the Neo-Babylonian era and into the early Achaemenid period, allowing temple life at Borsippa to be studied across several generations of political change.",
+    ['claim-borsippa-priest-archives', 'claim-borsippa-archive-chronology']),
+
+  cs('cs-place-borsippa-archaeology', 'place-borsippa', 'Birs Nimrud and the Archaeological Site',
+    "Ancient Borsippa is identified with Birs Nimrud in central Iraq. The surviving ruins and the extensive textual record associated with the city connect the physical archaeological site with the documented cult of Nabu and the Ezida temple. Together, archaeological identification and the priestly archives make Borsippa especially valuable for reconstructing the institutional life of a major Babylonian religious center.",
+    ['claim-borsippa-birs-nimrud', 'claim-borsippa-priest-archives']),
+
+  cs('cs-place-kutha-context', 'place-kutha', 'Historical Importance',
+    "Kutha was an important religious center in central Mesopotamia and was especially associated with the god Nergal. The ancient city is identified with Tell Ibrahim. Although Kutha never achieved the political prominence of cities such as Babylon or Nineveh, its importance in Mesopotamian religion rested on its long-standing role as Nergal’s principal cult center.",
+    ['claim-kutha-tell-ibrahim', 'claim-kutha-nergal-cult-center']),
+
+  cs('cs-place-kutha-nergal', 'place-kutha', 'Nergal and the Religious Identity of Kutha',
+    "Kutha was closely identified with Nergal, a major Mesopotamian deity associated with the underworld and destructive forces. Scholarly tradition identifies Kutha as his principal cult center. The close association between the city and its patron deity made Kutha an important location within the wider religious geography of Mesopotamia even when the city itself was not a major imperial capital.",
+    ['claim-kutha-nergal-cult-center', 'claim-nergal-underworld-role', 'claim-nergal-war-plague-roles']),
+
+  cs('cs-place-kutha-emeslam', 'place-kutha', 'The Emeslam Temple',
+    "The principal sanctuary of Nergal at Kutha was the temple known as Emeslam. A Neo-Babylonian royal inscription of Nebuchadnezzar II directly records work on Emeslam together with construction activity at Cutha. This ancient inscription provides especially valuable evidence because it connects the named temple, the god Nergal, royal building activity, and the city itself within a single historical source.",
+    ['claim-kutha-emeslam-temple', 'claim-kutha-nebuchadnezzar-building']),
+
+  cs('cs-place-kutha-nebuchadnezzar', 'place-kutha', 'Nebuchadnezzar II and Royal Building',
+    "Kutha continued to receive royal attention during the Neo-Babylonian period. Nebuchadnezzar II records construction activity at the city and work on the sanctuary of Nergal. The inscription demonstrates that Kutha’s religious institutions remained significant enough to attract direct royal patronage during the sixth century BCE.",
+    ['claim-kutha-nebuchadnezzar-building']),
+
+  cs('cs-place-kutha-religious-landscape', 'place-kutha', 'Kutha in Mesopotamian Religious Geography',
+    "Kutha’s historical importance is best understood through religion rather than imperial politics. As Nergal’s principal cult center, the city occupied a distinctive place within a broader network of Mesopotamian sacred cities. Nergal’s associations with the underworld, warfare, plague, and destructive power gave the cult at Kutha a religious character different from centers dominated by deities such as Marduk, Nanna, Enlil, or Enki.",
+    ['claim-kutha-nergal-cult-center', 'claim-nergal-underworld-role', 'claim-nergal-war-plague-roles']),
+
+  cs('cs-place-kutha-tell-ibrahim', 'place-kutha', 'Tell Ibrahim and the Archaeological Site',
+    "Ancient Kutha is identified with Tell Ibrahim in central Iraq. Archaeological material recovered from the site includes cuneiform tablets now held in museum collections. The identification of Tell Ibrahim with Kutha allows textual references to the ancient city and its cult of Nergal to be connected with a physical archaeological location.",
+    ['claim-kutha-tell-ibrahim', 'claim-kutha-rassam-excavation']),
+
+  cs('cs-place-kutha-archaeology', 'place-kutha', 'Archaeology and Rediscovery',
+    "Nineteenth-century exploration at Tell Ibrahim included work by Hormuzd Rassam, whose excavations recovered cuneiform material later acquired by the British Museum. These finds helped establish the archaeological importance of the site and provide physical evidence for the ancient settlement identified as Kutha. Compared with some better-excavated Mesopotamian capitals, the surviving archaeological picture of Kutha remains more limited, making its textual evidence especially important.",
+    ['claim-kutha-rassam-excavation', 'claim-kutha-tell-ibrahim']),
+
   cs('cs-place-ashur-context', 'place-ashur', 'Historical Importance',
-    "Ashur, the city that gave its name to both the Assyrian state god and to Assyria itself, served as an early religious and political center of Assyrian civilization."),
+    "Ashur was one of the foundational cities of Assyrian civilization. Located at Qal’at Sherqat on the Tigris in northern Iraq, it developed into Assyria’s earliest major political capital and remained an exceptionally important religious center even after later Assyrian kings established royal capitals elsewhere. Its long occupation, monumental temples, palaces, fortifications, residences, and royal tombs preserve evidence for both the political origins and enduring sacred identity of Assyria.",
+    ['claim-ashur-qalat-sherqat', 'claim-ashur-early-capital', 'claim-ashur-long-occupation']),
+
+  cs('cs-place-ashur-city-god', 'place-ashur', 'The City and the God Aššur',
+    "Ashur possessed an unusual relationship with its principal deity because the city and the god Aššur shared the same name. As Assyria developed politically, the god became increasingly central to royal ideology and state identity. This connection meant that Ashur remained more than an old political capital: it continued to function as a sacred center whose religious importance was closely tied to ideas of Assyrian kingship and legitimate rule.",
+    ['claim-ashur-city-deity-identity']),
+
+  cs('cs-place-ashur-kingship', 'place-ashur', 'Kingship and Royal Authority',
+    "Assyrian royal inscriptions demonstrate how closely political authority could be connected with the god Aššur and the city that bore his name. In the inscription of Aššur-dān II, the god is presented as granting royal authority and directing military action, while captured wealth is brought back to the city of Aššur. Such evidence shows how religion, kingship, warfare, and the sacred identity of the city could operate together within Assyrian royal ideology.",
+    ['claim-ashur-city-deity-identity']),
+
+  cs('cs-place-ashur-sacred-landscape', 'place-ashur', 'Temples, Ziggurats, and Sacred Landscape',
+    "The archaeological remains of Ashur preserve an extensive sacred landscape. Temples and multiple ziggurats stood alongside other monumental buildings, reflecting the city’s long role as a religious center. These structures were repeatedly maintained and rebuilt as rulers invested in the sacred institutions of the city, allowing Ashur to retain religious prestige even during periods when political administration shifted to newer Assyrian capitals.",
+    ['claim-ashur-monumental-sacred-city', 'claim-ashur-early-capital']),
+
+  cs('cs-place-ashur-urban-landscape', 'place-ashur', 'Palaces, Fortifications, and Urban Life',
+    "Ashur was not only a temple center. Archaeological investigation has revealed palaces, fortifications, houses, residential areas, burial structures, and other remains that document a functioning urban community. These different kinds of architecture show a city where royal administration, religious institutions, defense, domestic life, and burial practices occupied the same broader urban landscape.",
+    ['claim-ashur-monumental-sacred-city']),
+
+  cs('cs-place-ashur-long-history', 'place-ashur', 'Long Occupation and Changing Role',
+    "Ashur’s history extended across many centuries. Settlement at the site reaches back into the third millennium BCE, long before the height of the Neo-Assyrian Empire. The city’s political role changed as Assyrian rulers established important capitals elsewhere, but Ashur continued to retain exceptional religious and symbolic importance. Its archaeological sequence therefore records both the early formation of Assyria and the continuing use of the city through later historical periods.",
+    ['claim-ashur-long-occupation', 'claim-ashur-early-capital']),
+
+  cs('cs-place-ashur-archaeology', 'place-ashur', 'Archaeology and Rediscovery',
+    "Large-scale scientific excavation at Ashur began in 1903 under Walter Andrae. Archaeologists investigated temples, ziggurats, palaces, fortifications, residential areas, graves, royal burials, inscriptions, and extensive collections of objects. These excavations established much of the modern archaeological understanding of the city and made Ashur one of the most important sites for reconstructing the origins, religion, political institutions, and urban development of ancient Assyria.",
+    ['claim-ashur-modern-excavations', 'claim-ashur-qalat-sherqat', 'claim-ashur-monumental-sacred-city']),
 ];
 

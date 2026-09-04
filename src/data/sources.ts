@@ -2,6 +2,12 @@ import type { Source } from './types';
 
 export const sources: Source[] = [
   {
+    id: 'src-quenet-et-al-eridu-2022',
+    sourceCategory: 'PeerReviewedArticle',
+    citation: 'Quenet, P. et al., "Archaeological Mission at Eridu: The 2022 Campaign of the University of Strasbourg at Abu Shahrayn. Preliminary Report Part 1: Off-Site Studies and Site 1, the E-abzu Monumental Complex Reconsidered," Iraq 87 (2025): 263–312',
+    url: 'https://doi.org/10.1017/irq.2025.10035',
+  },
+  {
     id: 'src-primary-eridu-genesis',
     sourceCategory: 'PrimaryAncientText',
     citation: 'The Flood Story / Eridu Genesis (Sumerian composition; ETCSL 1.7.4)',
@@ -23,6 +29,18 @@ export const sources: Source[] = [
     id: 'src-lambert-millard-atrahasis',
     sourceCategory: 'AcademicBook',
     citation: "Lambert, W.G. & Millard, A.R., Atra-hasis: The Babylonian Story of the Flood (1969)",
+  },
+  {
+    id: 'src-dai-uruk-warka',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: 'Deutsches Archäologisches Institut, "Uruk (Warka)," Orient-Abteilung archaeological research project',
+    url: 'https://www.dainst.org/en/research/projects/noslug/2604',
+  },
+  {
+    id: 'src-adams-nissen-uruk-countryside',
+    sourceCategory: 'AcademicBook',
+    citation: 'Adams, R. McC. & Nissen, H. J., The Uruk Countryside: The Natural Setting of Urban Societies (University of Chicago Press, 1972)',
+    url: 'https://isac.uchicago.edu/research/publications/misc/uruk-countryside-natural-setting-urban-societies',
   },
   {
     id: 'src-george-gilgamesh-edition',
@@ -71,6 +89,18 @@ export const sources: Source[] = [
     url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/nannasuen/',
   },
   {
+    id: 'src-primary-ningal-ur-inscription',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Royal inscription from Ur mentioning Ningal (ORACC/RINAP 5, Q003844)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q003844',
+  },
+  {
+    id: 'src-oracc-amgg-inanna',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Inana/Ištar"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/inanaitar/',
+  },
+  {
     id: 'src-oracc-amgg-utu',
     sourceCategory: 'UniversityResource',
     citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Utu/Šamaš"',
@@ -81,6 +111,12 @@ export const sources: Source[] = [
     sourceCategory: 'UniversityResource',
     citation: 'Heffron, Y., "Ereškigal (goddess)," Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG, 2019)',
     url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/erekigal/',
+  },
+  {
+    id: 'src-bm-kutha-tell-ibrahim',
+    sourceCategory: 'MuseumCollection',
+    citation: 'British Museum, tablet 42496, excavated at Tell Ibrahim (Kutha) by Hormuzd Rassam',
+    url: 'https://www.britishmuseum.org/collection/object/W_1881-0701-256',
   },
   {
     id: 'src-oracc-amgg-nergal',
@@ -140,6 +176,84 @@ export const sources: Source[] = [
     sourceCategory: 'PrimaryAncientText',
     citation: "Inana's Descent to the Netherworld (Sumerian composition; ETCSL 1.4.1)",
     url: 'https://etcsl.orinst.ox.ac.uk/section1/tr141.htm',
+  },
+  {
+    id: 'src-unesco-ashur-world-heritage',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: `UNESCO World Heritage Centre, "Ashur (Qal'at Sherqat)," World Heritage List 1130`,
+    url: 'https://whc.unesco.org/en/list/1130/',
+  },
+  {
+    id: 'src-met-assyrian-origins-ashur',
+    sourceCategory: 'AcademicBook',
+    citation: 'Harper, P. O., Klengel-Brandt, E., Aruz, J. & Benzel, K., eds., Assyrian Origins: Discoveries at Ashur on the Tigris (Metropolitan Museum of Art, 1995)',
+    url: 'https://www.metmuseum.org/met-publications/assyrian-origins-discoveries-at-ashur-on-the-tigris-antiquities-in-the-vorderasiatisches-museum-be',
+  },
+  {
+    id: 'src-unesco-nineveh-tentative',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: 'UNESCO World Heritage Centre, "The Ancient City of Nineveh," Tentative List 1465',
+    url: 'https://whc.unesco.org/en/tentativelists/1465/',
+  },
+  {
+    id: 'src-bm-assyria-nineveh',
+    sourceCategory: 'MuseumCollection',
+    citation: 'British Museum, "Assyria: Nineveh," Room 9 collection and gallery resource',
+    url: 'https://www.britishmuseum.org/collection/galleries/assyria-nineveh',
+  },
+  {
+    id: 'src-bm-ashurbanipal-library-project',
+    sourceCategory: 'MuseumCollection',
+    citation: `British Museum, "What was Ashurbanipal's Library?" research project`,
+    url: 'https://www.britishmuseum.org/research/projects/what-was-ashurbanipals-library',
+  },
+  {
+    id: 'src-unesco-babylon-world-heritage',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: 'UNESCO World Heritage Centre, "Babylon," World Heritage List 278rev',
+    url: 'https://whc.unesco.org/en/list/278',
+  },
+  {
+    id: 'src-smb-babylon-collection',
+    sourceCategory: 'MuseumCollection',
+    citation: 'Vorderasiatisches Museum, Staatliche Museen zu Berlin, Babylon collection: Ishtar Gate and Processional Way',
+    url: 'https://www.smb.museum/en/museums-institutions/vorderasiatisches-museum/collection-research/collection/',
+  },
+  {
+    id: 'src-isac-kish-studies',
+    sourceCategory: 'AcademicBook',
+    citation: 'Wilson, K. L. & Bekken, D., eds., Where Kingship Descended from Heaven: Studies on Ancient Kish, Studies in Ancient Cultures 1 (Institute for the Study of Ancient Cultures, University of Chicago)',
+    url: 'https://isac.uchicago.edu/research/publications/SAC/sac1',
+  },
+  {
+    id: 'src-oracc-amgg-zababa',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Zababa (god)"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/zababa/',
+  },
+  {
+    id: 'src-penn-lagash-project',
+    sourceCategory: 'UniversityResource',
+    citation: 'Penn Museum, "Lagash Archaeological Project," Tell al-Hiba, Iraq',
+    url: 'https://www.penn.museum/research/project.php?pid=219',
+  },
+  {
+    id: 'src-mcmahon-et-al-lagash-2023',
+    sourceCategory: 'PeerReviewedArticle',
+    citation: 'McMahon, A. et al., "Dense urbanism and economic multi-centrism at third-millennium BC Lagash," Antiquity 97.393 (2023): 596–615',
+    url: 'https://doi.org/10.15184/aqy.2023.36',
+  },
+  {
+    id: 'src-isac-nippur-expedition',
+    sourceCategory: 'UniversityResource',
+    citation: 'Institute for the Study of Ancient Cultures, University of Chicago, "Nippur Expedition: The Holy City of Nippur"',
+    url: 'https://isac.uchicago.edu/research/nippur-expedition',
+  },
+  {
+    id: 'src-mccown-haines-nippur-i',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: 'McCown, D. E. & Haines, R. C., Nippur I: Temple of Enlil, Scribal Quarter, and Soundings, Oriental Institute Publications 78 (University of Chicago Press, 1967)',
+    url: 'https://isac.uchicago.edu/research/publications/oip/oip-78-nippur-i-temple-enlil-scribal-quarter-and-soundings-excavations',
   },
   {
     id: 'src-primary-nanna-journey-nippur',
@@ -221,6 +335,12 @@ export const sources: Source[] = [
     sourceCategory: 'UniversityResource',
     citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Marduk"',
     url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/marduk/',
+  },
+  {
+    id: 'src-oracc-borsippa-priest-archives',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Archival Texts of the Priests of Borsippa',
+    url: 'https://oracc.museum.upenn.edu/borsippa/',
   },
   {
     id: 'src-oracc-amgg-nabu',
