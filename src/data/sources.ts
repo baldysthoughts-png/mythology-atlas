@@ -169,7 +169,8 @@ export const sources: Source[] = [
   {
     id: 'src-primary-enki-ninhursag',
     sourceCategory: 'PrimaryAncientText',
-    citation: 'Enki and Ninhursag (Sumerian composition)',
+    citation: 'Enki and Ninhursag (Sumerian composition; ETCSL 1.1.1)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/tr111.htm',
   },
   {
     id: 'src-primary-inana-ebih',

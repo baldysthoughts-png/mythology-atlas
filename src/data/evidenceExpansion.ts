@@ -119,6 +119,51 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-enki-ninhursag-dilmun-setting',
+    statement: 'At the opening of Enki and Ninhursag, Dilmun is repeatedly described as pure, virginal, and pristine; later in the same opening sequence, fresh water is provided so that its fields and city may flourish.',
+    aboutEntityIds: ['story-enki-ninhursag', 'text-enki-ninhursag'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      {
+        sourceId: 'src-primary-enki-ninhursag',
+        evidenceRole: 'Supports',
+        locator: 'ETCSL 1.1.1, lines 1–62: Dilmun is described as pure and pristine; fresh water later enables fields, grain, and urban prosperity',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-enki-ninhursag-divine-birth-sequence',
+    statement: 'Enki and Ninhursag preserves a sequence of divine births in which Ninhursag gives birth to Ninsar, Ninsar gives birth to Ninkura, and Ninkura gives birth to Uttu.',
+    aboutEntityIds: ['story-enki-ninhursag', 'text-enki-ninhursag', 'deity-enki', 'deity-ninhursag'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      {
+        sourceId: 'src-primary-enki-ninhursag',
+        evidenceRole: 'Supports',
+        locator: 'ETCSL 1.1.1, lines 63–126: sequence of births leading from Ninhursag to Ninsar, Ninkura, and Uttu',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-enki-ninhursag-plants-curse',
+    statement: 'In Enki and Ninhursag, eight plants are grown; Enki has them identified and eats them. Ninhursag then curses Enki and declares that she will not look upon him with a life-giving eye until his dying day.',
+    aboutEntityIds: ['story-enki-ninhursag', 'text-enki-ninhursag', 'deity-enki', 'deity-ninhursag'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      {
+        sourceId: 'src-primary-enki-ninhursag',
+        evidenceRole: 'Supports',
+        locator: 'ETCSL 1.1.1, lines 190–227: eight plants are grown, Enki eats them, and Ninhursag curses him',
+      },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-ninhursag-healing-sequence',
     statement: 'In Enki and Ninhursag, Ninhursag returns to the afflicted Enki and brings forth deities associated with his afflicted body parts, restoring him as the narrative reaches its healing climax.',
     aboutEntityIds: ['deity-ninhursag', 'deity-enki', 'text-enki-ninhursag'],
@@ -1724,9 +1769,111 @@ export const expandedContentSections: ContentSection[] = [
   // (stories.ts / texts.ts / topics.ts) but the ContentSection records
   // were never created, so those pages silently rendered without them.
   // Filling them in here closes that gap as part of this content pass.
+  // ---------------- ENUMA ELISH STORY ----------------
+  cs('cs-enuma-elish-summary', 'story-enuma-elish', 'Full Narrative Overview',
+    'Enūma eliš begins with Apsu and Tiamat in the primordial world before the later generations of gods. Conflict develops when Apsu resolves to destroy the younger gods because their noise prevents him from resting, but Ea learns of the plan, subdues Apsu, and kills him. Tiamat later prepares for war, creates a host of formidable beings, appoints Kingu as their leader, and gives him the Tablet of Destinies. Marduk becomes the champion of the younger gods, is acclaimed as king, confronts and defeats Tiamat, and divides her body to establish part of the cosmic order. In Tablet VI, humanity is created from Kingu’s blood so that human beings may assume the service formerly performed by the gods.',
+    [
+      'claim-enuma-elish-apsu-ea-conflict',
+      'claim-enuma-elish-tiamat-kingu-war-preparation',
+      'claim-marduk-enuma-elish-kingship',
+      'claim-marduk-enuma-elish-defeats-tiamat',
+      'claim-marduk-enuma-elish-creation',
+      'claim-enuma-elish-creation-of-humanity',
+    ]),
+
+  cs('cs-enuma-elish-ancient-source', 'story-enuma-elish', 'Ancient Source Evidence',
+    'The principal evidence for this profile comes directly from Enūma eliš itself. Tablet I preserves the conflict involving Apsu, Ea, Tiamat, and Kingu; Tablet IV presents Marduk’s elevation, battle preparations, defeat of Tiamat, and division of her body; and Tablet VI describes the creation of humanity from Kingu’s blood. These narrative claims are treated here as statements about this particular Babylonian composition rather than timeless descriptions of all Mesopotamian religion.',
+    [
+      'claim-enuma-elish-apsu-ea-conflict',
+      'claim-enuma-elish-tiamat-kingu-war-preparation',
+      'claim-marduk-enuma-elish-kingship',
+      'claim-marduk-enuma-elish-winds',
+      'claim-marduk-enuma-elish-defeats-tiamat',
+      'claim-marduk-enuma-elish-creation',
+      'claim-enuma-elish-creation-of-humanity',
+    ]),
+
+  cs('cs-enuma-elish-apsu-ea', 'story-enuma-elish', 'Apsu, Ea, and the First Conflict',
+    'Tablet I presents an early conflict among the gods when Apsu decides to destroy the younger generation because their activity and noise prevent him from resting. Ea learns of the plan, uses an incantation to place Apsu into a deep sleep, and kills him. This episode establishes the first major divine conflict within the narrative and gives Ea an important role before Marduk becomes its central champion.',
+    ['claim-enuma-elish-apsu-ea-conflict']),
+
+  cs('cs-enuma-elish-tiamat-kingu', 'story-enuma-elish', 'Tiamat, Kingu, and the War Host',
+    'Later in Tablet I, Tiamat prepares for open conflict with the younger gods. She creates a host of powerful beings, appoints Kingu to command them, and gives him the Tablet of Destinies. The episode transforms the dispute among the gods into the organized confrontation that eventually brings Marduk forward as champion.',
+    ['claim-enuma-elish-tiamat-kingu-war-preparation']),
+
+  cs('cs-enuma-elish-marduk', 'story-enuma-elish', 'Marduk as Champion and King',
+    'Tablet IV presents Marduk receiving royal authority from the divine assembly before confronting Tiamat. The gods acclaim him as king and provide the symbols of kingship. He then prepares an array of winds as weapons for the coming battle. Within the composition, divine kingship and military victory are therefore closely linked to Marduk’s role as the champion chosen to face Tiamat.',
+    [
+      'claim-marduk-enuma-elish-kingship',
+      'claim-marduk-enuma-elish-winds',
+    ]),
+
+  cs('cs-enuma-elish-tiamat-defeat', 'story-enuma-elish', 'The Defeat of Tiamat and Cosmic Creation',
+    'In Tablet IV, Marduk traps Tiamat with his net and winds, strikes her with an arrow, defeats her, and extinguishes her life. The narrative then describes him dividing her body and using one half to form the sky. The story thus connects Marduk’s victory in divine combat directly with an act of cosmic ordering and creation.',
+    [
+      'claim-marduk-enuma-elish-defeats-tiamat',
+      'claim-marduk-enuma-elish-creation',
+    ]),
+
+  cs('cs-enuma-elish-humanity', 'story-enuma-elish', 'The Creation of Humanity',
+    'Tablet VI turns from the ordering of the cosmos to the creation of human beings. Marduk proposes creating humanity so that the labor of the gods can be transferred to humans. Kingu is identified as responsible for the rebellion, is put to death, and Ea creates humanity from his blood in accordance with Marduk’s plan. Human service to the gods is therefore built explicitly into the narrative’s explanation of humanity’s creation.',
+    [
+      'claim-enuma-elish-creation-of-humanity',
+      'claim-enuma-elish-kingu-blood-humanity',
+    ]),
+
+  cs('cs-enuma-elish-historical-context', 'story-enuma-elish', 'Historical and Theological Context',
+    'Modern scholarship generally places Enūma eliš within the historical rise of Marduk and Babylon. Marduk’s elevation to head of the Babylonian pantheon is commonly understood as reflecting Babylon’s growing political and religious importance rather than representing an unchanged theological hierarchy inherited from the earliest Mesopotamian periods. This historical interpretation should remain distinct from what the ancient narrative itself directly says.',
+    ['claim-babylon-marduk-elevation']),
   cs('cs-descent-summary', 'story-descent-of-inanna', 'Full Narrative Overview',
     "Inanna decides to travel to the underworld, ostensibly to attend the funeral rites of Ereshkigal's husband, and prepares by dressing in her full regalia and instructing her servant Ninshubur to seek help from the gods if she does not return. At each of the seven gates of the underworld she is required to surrender one item of clothing or power, arriving before Ereshkigal with nothing left. Ereshkigal has her put to death and her corpse hung on a hook. Two beings created by Enki revive her using food and water of life, but underworld law requires she provide a substitute to leave. Returning to the world above accompanied by demons, she finds Dumuzi enthroned rather than mourning her, and designates him as her substitute.",
     ['claim-inanna-descent-seven-gates', 'claim-inanna-dumuzi-substitute']),
+  cs('cs-descent-ancient-source', 'story-descent-of-inanna', 'Ancient Source Evidence',
+    'The Sumerian composition Inanna’s Descent to the Netherworld provides the direct ancient evidence used in this story profile. The text identifies Ereškigal as Inanna’s sister and ruler of the underworld, describes Inanna passing through seven gates and surrendering her regalia, and later presents Dumuzi within the substitution sequence required for Inanna’s return.',
+    [
+      'claim-inanna-ereshkigal-sister',
+      'claim-inanna-descent-seven-gates',
+      'claim-inanna-dumuzi-substitute',
+      'claim-dumuzi-descent-shepherd-seized',
+    ]),
+
+  cs('cs-descent-seven-gates', 'story-descent-of-inanna', 'The Seven Gates',
+    'As Inanna descends through the underworld, she passes through seven gates. At each gate she is required to remove an item of clothing, jewelry, or divine regalia. The repeated sequence is presented in the ancient composition as a fixed condition of her passage toward Ereškigal and progressively strips away the visible markers of Inanna’s status and authority.',
+    ['claim-inanna-descent-seven-gates']),
+
+  cs('cs-descent-ereshkigal', 'story-descent-of-inanna', 'Inanna and Ereškigal',
+    'Within this Sumerian composition, Ereškigal is explicitly identified as Inanna’s sister and as ruler of the underworld. That relationship is directly attested in this particular text and should not automatically be converted into a universal genealogy assumed to apply unchanged across every Mesopotamian period and tradition.',
+    ['claim-inanna-ereshkigal-sister']),
+
+  cs('cs-descent-dumuzi', 'story-descent-of-inanna', 'Dumuzi as Substitute',
+    'After Inanna’s return requires that a substitute be provided to the underworld, Dumuzi becomes the central figure in the substitution sequence. The text identifies him as the shepherd, places him at the great apple tree in the plain of Kulaba, and presents him being seized after Inanna gives him into the demons’ hands.',
+    [
+      'claim-inanna-dumuzi-substitute',
+      'claim-dumuzi-descent-shepherd-seized',
+    ]),
+
+  cs('cs-descent-regalia-interpretation', 'story-descent-of-inanna', 'The Meaning of the Removed Regalia',
+    'Modern scholarship often interprets the staged removal of Inanna’s clothing, jewelry, and divine regalia at the seven gates as a deliberate dismantling of status, authority, and identity. This interpretation builds on the ancient sequence itself but remains a modern scholarly reading rather than wording explicitly supplied by the ancient narrator.',
+    [
+      'claim-inanna-descent-seven-gates',
+      'claim-inanna-descent-power',
+    ]),
+
+  cs('cs-descent-text-specific', 'story-descent-of-inanna', 'A Text-Specific Underworld Tradition',
+    'The relationships and events preserved in Inanna’s Descent belong to this Sumerian literary tradition. Ereškigal is presented here as Inanna’s sister, the seven gates structure her entry into the underworld, and Dumuzi becomes the substitute connected with her return. These features should be kept distinct from later Akkadian and other Mesopotamian underworld traditions rather than blended into a single timeless account.',
+    [
+      'claim-inanna-ereshkigal-sister',
+      'claim-inanna-descent-seven-gates',
+      'claim-inanna-dumuzi-substitute',
+    ]),
+
+  cs('cs-descent-why-it-matters', 'story-descent-of-inanna', 'Why It Matters',
+    'Inanna’s Descent is important because it preserves a detailed Sumerian literary exploration of divine authority, loss of status, underworld rule, and substitution. The seven-gate sequence provides direct ancient evidence for Inanna’s progressive loss of regalia, while modern interpretation helps explain how that removal may function symbolically. The story also demonstrates why individual Mesopotamian compositions must be read in their own textual and historical settings.',
+    [
+      'claim-inanna-descent-seven-gates',
+      'claim-inanna-descent-power',
+      'claim-inanna-dumuzi-substitute',
+    ]),
   cs('cs-atrahasis-flood-summary', 'story-atrahasis-flood', 'Full Narrative Overview',
     "Following an earlier resolution to humanity's original purpose of relieving the gods of labor, the human population grows to the point that its noise disturbs Enlil's rest. After escalating divine responses (plague, drought, famine) fail to sufficiently reduce humanity, the gods agree to send a flood. Enki, bound by an oath not to warn humanity directly, circumvents this by speaking his warning to a reed wall, which Atrahasis is positioned to overhear, instructing him to build a boat. Atrahasis survives the flood; the gods, who had not anticipated the scale of destruction or their own resulting hunger without human offerings, react with a mix of regret and anger, and Enlil is initially furious that a human survived.",
     []),
@@ -1782,8 +1929,52 @@ export const expandedContentSections: ContentSection[] = [
       'claim-gilgamesh-flood-draws-on-atrahasis',
     ]),
   cs('cs-enki-ninhursag-summary', 'story-enki-ninhursag', 'Full Narrative Overview',
-    "Set in Dilmun, described in the text as a pure, pristine land, the narrative follows a sequence of divine births involving Enki and a chain of goddesses born from them, before turning to an episode in which Enki eats forbidden plants grown from his own discarded semen and falls ill in several parts of his body. Ninhursag, initially having withdrawn from the gods in anger, is persuaded to return and heals Enki by giving birth to a series of deities, each corresponding to one of his afflicted body parts."),
+    'Enki and Ninhursag is set in Dilmun, a place described at the opening of the composition as pure and pristine. The narrative preserves a sequence of divine births leading from Ninhursag to Ninsar, Ninkura, and Uttu. Later, eight plants are grown and Enki eats them, after which Ninhursag curses him. The crisis is ultimately resolved when Ninhursag returns to the afflicted Enki and brings forth deities associated with his suffering body parts, restoring him at the narrative’s healing climax.',
+    [
+      'claim-enki-ninhursag-dilmun-setting',
+      'claim-enki-ninhursag-divine-birth-sequence',
+      'claim-enki-ninhursag-plants-curse',
+      'claim-ninhursag-healing-sequence',
+    ]),
 
+  cs('cs-enki-ninhursag-ancient-source', 'story-enki-ninhursag', 'Ancient Source Evidence',
+    'The direct evidence used for this profile comes from the Sumerian composition Enki and Ninhursag. Its surviving narrative describes Dilmun, preserves a sequence of divine births, presents Enki eating a group of plants followed by Ninhursag’s curse, and concludes with a healing sequence in which Ninhursag restores the afflicted Enki.',
+    [
+      'claim-enki-ninhursag-dilmun-setting',
+      'claim-enki-ninhursag-divine-birth-sequence',
+      'claim-enki-ninhursag-plants-curse',
+      'claim-ninhursag-healing-sequence',
+    ]),
+
+  cs('cs-enki-ninhursag-dilmun', 'story-enki-ninhursag', 'Dilmun',
+    'The composition opens by describing Dilmun as pure, virginal, and pristine. Later in the opening sequence, fresh water is supplied so that fields, grain, and urban life can flourish.',
+    ['claim-enki-ninhursag-dilmun-setting']),
+
+  cs('cs-enki-ninhursag-births', 'story-enki-ninhursag', 'The Divine Birth Sequence',
+    'The text preserves a succession of divine births. Ninhursag gives birth to Ninsar, Ninsar gives birth to Ninkura, and Ninkura gives birth to Uttu.',
+    ['claim-enki-ninhursag-divine-birth-sequence']),
+
+  cs('cs-enki-ninhursag-plants', 'story-enki-ninhursag', 'The Plants and Ninhursag’s Curse',
+    'Later in the narrative, eight plants are grown. Enki has the plants identified and eats them. Ninhursag then curses Enki, creating the crisis that leads into the story’s healing sequence.',
+    ['claim-enki-ninhursag-plants-curse']),
+
+  cs('cs-enki-ninhursag-healing', 'story-enki-ninhursag', 'Ninhursag Heals Enki',
+    'The narrative reaches its restorative climax when Ninhursag returns to the afflicted Enki. She brings forth deities associated with the parts of his body that are suffering, and Enki is restored.',
+    ['claim-ninhursag-healing-sequence']),
+
+  cs('cs-enki-ninhursag-scholarly-context', 'story-enki-ninhursag', 'Creation, Birth, and Restoration',
+    'Modern scholarship places Enki and Ninhursag within a wider Sumerian field of birth and creation traditions in which fertility, maternal power, and restoration can be closely connected.',
+    ['claim-ninhursag-creation-birth-tradition']),
+
+  cs('cs-enki-ninhursag-why-it-matters', 'story-enki-ninhursag', 'Why It Matters',
+    'Enki and Ninhursag brings together ideas of place, divine generation, transgression, bodily crisis, and restoration within a single Sumerian composition.',
+    [
+      'claim-enki-ninhursag-dilmun-setting',
+      'claim-enki-ninhursag-divine-birth-sequence',
+      'claim-enki-ninhursag-plants-curse',
+      'claim-ninhursag-healing-sequence',
+      'claim-ninhursag-creation-birth-tradition',
+    ]),
   cs('cs-gilgamesh-overview', 'text-gilgamesh', 'What Is This Text?',
     "The Epic of Gilgamesh is the most extensive surviving work of Mesopotamian literature, following the legendary king Gilgamesh of Uruk through adventures with his companion Enkidu, his grief and quest for immortality after Enkidu's death, and, within that quest, his encounter with the flood survivor Utnapishtim in Tablet XI."),
   cs('cs-atrahasis-overview', 'text-atrahasis', 'What Is This Text?',

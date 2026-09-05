@@ -18,6 +18,9 @@ export function StoryProfilePage() {
   const sections = getContentSections(story.contentSectionIds);
   const storyImageMap: Record<string, string> = {
     'story-atrahasis-flood': '/mythology-atlas/featured-flood-story.png',
+    'story-descent-of-inanna': '/mythology-atlas/featured-descent-inanna.png',
+    'story-enuma-elish': '/mythology-atlas/featured-enuma-elish.png',
+  'story-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag.png',
   };
   const storyImage = storyImageMap[story.id];
 
