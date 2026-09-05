@@ -95,6 +95,12 @@ export const sources: Source[] = [
     url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q003844',
   },
   {
+    id: 'src-oracc-amgg-geshtinanna',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Geštinanna/Belet-ṣeri"',
+    url: 'https://oracc.museum.upenn.edu/amgg/Listofdeities/Geshtinanna/',
+  },
+  {
     id: 'src-oracc-amgg-inanna',
     sourceCategory: 'UniversityResource',
     citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Inana/Ištar"',

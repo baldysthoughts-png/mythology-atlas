@@ -1111,6 +1111,36 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-dumuzi-geshtinanna-sister',
+    statement: 'In Sumerian mythological traditions summarized by ORACC, Geštinanna is identified as the sister of Dumuzi.',
+    aboutEntityIds: ['deity-dumuzi'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-geshtinanna',
+        evidenceRole: 'Supports',
+        locator: 'Divine Genealogy and Functions: Geštinanna identified as the sister of Dumuzi',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-dumuzi-dream-death',
+    statement: 'The Sumerian composition Dumuzi’s Dream presents Dumuzi receiving an ominous dream that foretells his death, attempting to escape his pursuers, and receiving help from his sister Geštinanna before he ultimately dies.',
+    aboutEntityIds: ['deity-dumuzi'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-geshtinanna',
+        evidenceRole: 'Supports',
+        locator: 'Functions: summary of Dumuzi’s Dream and Geštinanna’s attempt to protect Dumuzi',
+      },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-dumuzi-descent-shepherd-seized',
     statement: 'In Inanna’s Descent to the Netherworld, Dumuzi is found at the great apple tree in the plain of Kulaba, is identified as the shepherd, and is seized by the demons after Inanna gives him into their hands.',
     aboutEntityIds: ['deity-dumuzi', 'deity-inanna', 'story-descent-of-inanna'],
@@ -1860,6 +1890,14 @@ export const expandedContentSections: ContentSection[] = [
     "Inanna matters because she helps illuminate how Mesopotamian religion understood divine power, sexuality and fertility, warfare and authority, death and return, and the ritualized loss of status. Her story also offers a clear example of continuity and change between Sumerian and Akkadian religious traditions: the same core figure remains recognizable across languages and periods, but the exact expression of her roles is context-dependent and not identical in every textual setting.",
     ['claim-inanna-ishtar-name-shift', 'claim-inanna-broad-roles', 'claim-inanna-descent-seven-gates', 'claim-inanna-dumuzi-substitute']),
 
+  // ---------------- ERESHKIGAL ----------------
+  cs('cs-ereshkigal-nergal', 'deity-ereshkigal', 'Ereškigal and Nergal',
+    'The Akkadian literary tablet EA 357 preserves a tradition in which Ereškigal tells Nergal that he will become her husband and that kingship in the vast netherworld will be placed in his hand. Modern scholarship identifies this marriage and shared underworld rule as part of a later Mesopotamian tradition. This evidence should therefore be distinguished from earlier Sumerian presentations of Ereškigal.',
+    ['claim-nergal-ea357-underworld-kingship', 'claim-nergal-ereshkigal-later-tradition']),
+
+  cs('cs-ereshkigal-changing-traditions', 'deity-ereshkigal', 'Changing Underworld Traditions',
+    'Different Mesopotamian compositions preserve different presentations of Ereškigal. In the Sumerian Inanna’s Descent to the Netherworld, she is identified as Inanna’s sister and ruler of the underworld. In the later Akkadian Nergal and Ereškigal tradition, she is presented in a marital relationship with Nergal and participates in a narrative in which underworld kingship is transferred or shared. Keeping these traditions separate shows how divine relationships could develop over time.',
+    ['claim-inanna-ereshkigal-sister', 'claim-nergal-ea357-underworld-kingship', 'claim-nergal-ereshkigal-later-tradition']),
   // ---------------- DUMUZI ----------------
   cs('cs-dumuzi-roles', 'deity-dumuzi', 'Roles and Domains',
     'In Inanna’s Descent to the Netherworld, Dumuzi’s securely attested literary roles in this profile are those of shepherd and substitute within the underworld sequence. The text explicitly identifies him as the shepherd and later presents him being seized by the demons after Inanna gives him into their hands. These roles are tied to this particular Sumerian literary composition and should not automatically be expanded into broader claims about fertility, seasonal cycles, or later traditions without separate evidence.',
@@ -1873,6 +1911,17 @@ export const expandedContentSections: ContentSection[] = [
       'claim-dumuzi-descent-shepherd-seized',
       'claim-inanna-dumuzi-substitute',
     ]),
+  cs('cs-dumuzi-inanna', 'deity-dumuzi', 'Dumuzi and Inanna',
+    'In Inanna’s Descent to the Netherworld, Dumuzi becomes directly connected with Inanna’s return from the underworld. After her release requires a substitute, the narrative ultimately presents Dumuzi as the figure seized in her place. This section describes that specific literary relationship without assuming that every Dumuzi and Inanna tradition presents their relationship in exactly the same way.',
+    ['claim-inanna-dumuzi-substitute']),
+
+  cs('cs-dumuzi-geshtinanna', 'deity-dumuzi', 'Geštinanna and Family',
+    'Mesopotamian tradition also connects Dumuzi with the goddess Geštinanna. The ORACC summary used here identifies Geštinanna as Dumuzi’s sister. Their relationship becomes especially important in traditions concerning Dumuzi’s danger and death, where she appears as a figure who attempts to protect him.',
+    ['claim-dumuzi-geshtinanna-sister']),
+
+  cs('cs-dumuzi-dream', 'deity-dumuzi', 'Dumuzi’s Dream',
+    'The Sumerian composition known as Dumuzi’s Dream preserves another important tradition about the god. In the scholarly summary used here, Dumuzi receives an ominous dream foretelling his death, attempts to escape those pursuing him, and receives help from his sister Geštinanna before he ultimately dies. This tradition broadens the profile beyond the substitution episode in Inanna’s Descent.',
+    ['claim-dumuzi-dream-death']),
   cs('cs-dumuzi-what-we-know', 'deity-dumuzi', 'What We Actually Know',
     'The direct ancient evidence currently used for Dumuzi in this profile comes from Inanna’s Descent to the Netherworld. The text identifies Dumuzi as the shepherd, places him at the great apple tree in the plain of Kulaba, and presents him as the figure seized in the substitution sequence after Inanna’s return. These points are directly attested within this Sumerian literary composition. Broader claims about Dumuzi’s fertility associations, seasonal cycles, or later traditions require separate evidence and are not assumed here.',
     [
@@ -1899,6 +1948,17 @@ export const expandedContentSections: ContentSection[] = [
       'claim-ninurta-lugale-defeats-asag',
       'claim-ninurta-lugale-water-fields-harvest',
     ]),
+  cs('cs-ninurta-asag', 'deity-ninurta', 'The Battle with the Asag',
+    'In Ninurta’s Exploits (Lugal-e), Ninurta confronts the Asag in the mountains and defeats it in battle. The composition presents this victory as one of the central heroic episodes in the surviving narrative and provides direct ancient evidence for Ninurta’s martial role within this particular Sumerian text.',
+    ['claim-ninurta-lugale-defeats-asag']),
+
+  cs('cs-ninurta-enlil', 'deity-ninurta', 'Ninurta and Enlil',
+    'Lugal-e repeatedly identifies Ninurta as the son of Enlil. Near the conclusion of the composition, Enlil is explicitly described as Ninurta’s father and blesses him. This provides a securely attested father-son relationship within this particular literary tradition, while allowing for the possibility that divine genealogies could vary in other texts and periods.',
+    ['claim-ninurta-lugale-son-of-enlil']),
+
+  cs('cs-ninurta-assyria', 'deity-ninurta', 'Ninurta in Neo-Assyrian Religion',
+    'Ninurta remained important beyond the Sumerian literary setting of Lugal-e. A scholarly synthesis used in this atlas identifies him among the deities given significant prominence in Neo-Assyrian religious life and notes his close association with the Assyrian capital of Kalhu, known today as Nimrud. This later historical setting should be distinguished from his portrayal in the much older Sumerian composition.',
+    ['claim-assyria-cult-figures']),
   cs('cs-ninurta-what-we-know', 'deity-ninurta', 'What We Actually Know',
     'The direct ancient evidence currently used for Ninurta in this profile comes from Ninurta’s Exploits (Lugal-e). The composition presents him defeating the Asag in the mountains and later gathering mountain waters, directing them toward the Tigris, watering cultivated fields and barley, and raising the harvest. These points are directly attested within this Sumerian literary composition. Broader claims about Ninurta as a universal war god, agricultural god, or heroic champion across all periods require separate evidence and are not assumed here.',
     [
@@ -2088,6 +2148,9 @@ export const expandedContentSections: ContentSection[] = [
       'claim-marduk-enuma-elish-defeats-tiamat',
       'claim-marduk-enuma-elish-creation',
     ]),
+  cs('cs-marduk-tiamat', 'deity-marduk', 'Marduk and Tiamat',
+    'In Enūma eliš Tablet IV, Marduk confronts Tiamat as the principal opponent in the narrative. He traps her with his net and winds, shoots her with an arrow, defeats her, and extinguishes her life. The composition then presents him dividing her body and using part of it to form the sky. These claims describe Marduk’s role within this specific Babylonian creation narrative rather than a universal combat pattern applying unchanged across all Mesopotamian traditions.',
+    ['claim-marduk-enuma-elish-defeats-tiamat', 'claim-marduk-enuma-elish-creation']),
   cs('cs-marduk-what-we-know', 'deity-marduk', 'What We Actually Know',
     'The surviving ancient evidence used here directly shows what Enūma eliš says about Marduk within that Babylonian composition. Tablet IV presents the gods acclaiming him as king, describes him commanding destructive winds in battle, records his defeat of Tiamat, and portrays him forming the sky from her divided body. Modern scholarship places these literary claims within the broader historical rise of Marduk alongside Babylon’s increasing political and religious importance. The ancient narrative and the later historical interpretation should therefore be distinguished rather than treated as identical kinds of evidence.',
     [
@@ -2120,6 +2183,17 @@ export const expandedContentSections: ContentSection[] = [
       'claim-tiamat-enuma-elish-primordial-waters',
       'claim-tiamat-enuma-elish-defeated-by-marduk',
     ]),
+  cs('cs-tiamat-apsu', 'deity-tiamat', 'Tiamat and Apsu',
+    'At the opening of Enūma eliš, Tiamat appears together with Apsu before the later generations of gods have come into being. Their waters are described as mingling, and Tiamat is identified as the one who bore them all. Within this composition, the pair belongs to the primordial setting from which the divine generations emerge.',
+    ['claim-tiamat-enuma-elish-primordial-waters']),
+
+  cs('cs-tiamat-kingu-war-host', 'deity-tiamat', 'Kingu and the War Host',
+    'Tablet I of Enūma eliš presents a major change in Tiamat’s role after conflict develops among the gods. She creates a formidable host of beings for battle, appoints Kingu as leader of her forces, and gives him the Tablet of Destinies. This episode establishes the organized opposition that Marduk later confronts in the narrative.',
+    ['claim-enuma-elish-tiamat-kingu-war-preparation']),
+
+  cs('cs-tiamat-cult-evidence', 'deity-tiamat', 'Cult and Worship Evidence',
+    'Tiamat is a major figure in surviving Babylonian mythology, but the evidence used in this atlas does not attest a civic temple cult for her comparable to those of gods such as Marduk or Nabu. This distinction is important: literary prominence in Enūma eliš should not automatically be treated as evidence for an equivalent civic cult or temple institution.',
+    ['claim-tiamat-not-civic-deity']),
   cs('cs-tiamat-what-we-know', 'deity-tiamat', 'What We Actually Know',
     'The direct ancient evidence used here comes from Enūma eliš. Tablet I presents Tiamat as a primordial figure associated with Apsu before the later gods have come into being and describes her as the one who bore them all. Tablet IV later presents her conflict with Marduk and her defeat. Modern scholarship also distinguishes this literary and mythological role from the kind of civic temple cult attested for deities such as Marduk. The ancient narrative and the later scholarly distinction should therefore remain separate kinds of evidence.',
     [
@@ -2140,6 +2214,17 @@ export const expandedContentSections: ContentSection[] = [
     'In Šamaš-šuma-ukin 4, Nabu’s securely attested roles in this profile center on scribal knowledge and exceptional wisdom. The inscription praises him as the scribe of everything, the wisest of the gods, and one who knows everything. These descriptions come from this particular ancient royal inscription and should not automatically be broadened into universal claims about every aspect of writing, scholarship, or wisdom across all periods of Nabu’s worship.',
     ['claim-nabu-shamash-shuma-ukin-scribe-wisdom']),
 
+  cs('cs-nabu-borsippa', 'deity-nabu', 'Borsippa and the Ezida Temple',
+    'Šamaš-šuma-ukin 4 places Nabu in Ezida at Borsippa and explicitly identifies Borsippa as his cult center. The wider Borsippa evidence preserved in this atlas also documents Ezida as a major sanctuary supported by royal patronage and staffed by an extensive temple workforce. Together, these sources connect Nabu’s literary identity with a documented institutional cult center.',
+    ['claim-nabu-shamash-shuma-ukin-ezida-borsippa', 'claim-borsippa-ezida-nabu']),
+
+  cs('cs-nabu-marduk', 'deity-nabu', 'Nabu and Marduk',
+    'In Šamaš-šuma-ukin 4, Nabu is identified as the most important son of Asari, a name of Marduk. This provides direct ancient evidence for a father-son relationship within this particular Babylonian royal inscription. The relationship should be understood as textually attested rather than automatically treated as an identical genealogy in every Mesopotamian period or tradition.',
+    ['claim-nabu-shamash-shuma-ukin-son-of-marduk']),
+
+  cs('cs-nabu-assyria', 'deity-nabu', 'Nabu in Neo-Assyrian Religion',
+    'Nabu’s importance extended beyond Babylonia. Scholarly evidence used in this atlas identifies him among the deities given significant prominence in Neo-Assyrian religion and notes a dedicated temple of Nabu at Kalhu, the Assyrian capital known today as Nimrud. This later Assyrian setting demonstrates the wider geographic and historical reach of his cult.',
+    ['claim-assyria-cult-figures']),
   // ---------------- SUMER ----------------
   cs('cs-sumer-who', 'civ-sumer', 'Who They Were',
     "Sumer refers to the earliest known urbanized civilization of southern Mesopotamia, associated with the Sumerian language, which is not related to any other known language family — a fact scholars call a language isolate. Sumerian cities are among the earliest known examples of large, complex urban settlements anywhere in the world."),

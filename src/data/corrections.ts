@@ -108,6 +108,17 @@ export const correctionContentSections: ContentSection[] = [
       'claim-ashur-dan-ii-royal-appointment',
       'claim-ashur-dan-ii-command-campaign',
     ]),
+  cs('cs-ashur-state-identity', 'deity-ashur', 'The God Aššur and Assyrian State Identity',
+    'The god Aššur and the city of Ashur shared the same name, and their identities became closely connected with the political and religious development of Assyria. Modern scholarship identifies Aššur as the state god and head of the Assyrian pantheon, while the city remained a major sacred center even after political capitals shifted elsewhere. This relationship between deity, city, and state is a distinctive feature of Assyrian religious history.',
+    ['claim-ashur-state-god', 'claim-ashur-city-deity-identity']),
+
+  cs('cs-ashur-kingship', 'deity-ashur', 'Aššur and Royal Kingship',
+    'Aššur-dān II 1 presents Aššur as the divine authority who designates the king, places a just scepter and exalted crown in his grasp, and establishes him for kingship over Assyria. This inscription provides direct ancient evidence for the connection between Aššur and royal legitimacy in this particular Neo-Assyrian context.',
+    ['claim-ashur-dan-ii-royal-appointment']),
+
+  cs('cs-ashur-military-command', 'deity-ashur', 'Divine Command and Military Campaigns',
+    'In Aššur-dān II 1, the king states that he mustered his troops and campaigned against Muṣri by the command of Aššur, his lord. The inscription presents military action as undertaken under divine authority and records captured booty being brought back to the city of Aššur. This provides direct evidence for the role of Aššur within Assyrian royal campaign ideology.',
+    ['claim-ashur-dan-ii-command-campaign']),
   cs('cs-ashur-what-we-know', 'deity-ashur', 'What We Know',
     'Direct evidence from Aššur-dān II 1 supports two specific conclusions in this profile: Aššur is presented as the divine authority who establishes Aššur-dān II for kingship over Assyria, and a military campaign is described as undertaken by Aššur’s command. Broader claims that Aššur functioned as the state god and head of the Assyrian pantheon come from scholarly synthesis rather than from this inscription alone. The strongest reconstruction therefore keeps the inscription-specific evidence separate from wider historical interpretation.',
     [
