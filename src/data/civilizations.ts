@@ -27,7 +27,7 @@ export const civilizations: Civilization[] = [
     timePeriod: 'c. 2334 – 2154 BCE (approximate, Akkadian Empire)',
     region: 'Central Mesopotamia',
     overview:
-      'The Akkadian Empire unified Sumerian and Semitic-speaking populations under a single state for the first time, and Akkadian gradually became the dominant written language of Mesopotamia. Akkadian scribes preserved, translated, and reworked earlier Sumerian material.',
+      'The Akkadian Empire, conventionally associated with Sargon of Akkad, brought multiple Sumerian city-states under centralized imperial rule. Akkadian scribes preserved, translated, adapted, and continued copying Sumerian literary material, contributing to a long bilingual scribal tradition.',
     majorCityIds: ['place-kish'],
     majorDeityIds: ['deity-inanna', 'deity-enlil', 'deity-an'],
     majorTextIds: [],
@@ -48,7 +48,7 @@ export const civilizations: Civilization[] = [
     majorCityIds: ['place-babylon'],
     majorDeityIds: ['deity-marduk', 'deity-nabu'],
     importantMythologicalFigureIds: ['deity-tiamat'],
-    majorTextIds: ['text-atrahasis', 'text-gilgamesh'],
+    majorTextIds: ['text-atrahasis', 'text-gilgamesh', 'text-enuma-elish'],
     topicIds: ['topic-creation', 'topic-flood-tradition'],
     relatedCivilizationIds: ['civ-sumer', 'civ-akkad', 'civ-assyria'],
     contentSectionIds: ['cs-babylon-who', 'cs-babylon-political', 'cs-babylon-religion', 'cs-babylon-texts', 'cs-babylon-mythological-figures', 'cs-babylon-cities-temples', 'cs-babylon-writing', 'cs-babylon-why-matters'],
