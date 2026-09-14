@@ -97,12 +97,16 @@ export const deities: Deity[] = [
     alternativeNames: ['Shamash'],
     slug: 'utu',
     status: 'published',
-    cultures: ['Sumerian', 'Akkadian', 'Babylonian'],
+    cultures: ['Sumerian', 'Akkadian', 'Babylonian', 'Assyrian'],
     roles: ['Sun', 'Justice', 'Truth'],
     associatedPlaceIds: [],
-    associatedStoryIds: [],
-    ancientTextIds: ['text-gilgamesh'],
-    relatedFigureIds: ['deity-nanna', 'deity-inanna'],
+    associatedStoryIds: ['story-descent-of-inanna', 'story-gilgamesh-flood'],
+    ancientTextIds: ['text-descent-of-inanna', 'text-gilgamesh', 'text-eridu-genesis', 'text-death-ur-namma', 'text-dumuzi-enkimdu', 'text-dumuzi-geshtinanna', 'text-dumuzi-dream', 'text-nungal-a', 'text-ashurbanipal-nanaya-return'
+    , 'text-tiglath-pileser-i-01'
+    , 'text-saa20-049-ashur'
+    , 'text-ashurbanipal-009-ashur'
+    ],
+    relatedFigureIds: ['deity-nanna', 'deity-ningal', 'deity-inanna', 'deity-dumuzi'],
     contentSectionIds: [
       'cs-utu-overview',
       'cs-utu-names',
