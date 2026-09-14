@@ -2176,6 +2176,86 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-kalhu-royal-capital',
+    statement: 'Kalhu, the archaeological site now known as Nimrud, became the principal Assyrian royal capital under Ashurnasirpal II and served as the seat of kingship through much of the ninth and eighth centuries BCE.',
+    aboutEntityIds: ['place-kalhu', 'civ-assyria'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-city',
+        evidenceRole: 'Supports',
+        locator: 'History of Kalhu: Ashurnasirpal II transferred the royal court to Kalhu; the city served as Assyrian royal capital during the ninth and eighth centuries BCE',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kalhu-northwest-palace',
+    statement: 'Ashurnasirpal II constructed the Northwest Palace at Kalhu as a monumental royal complex containing administrative, military, ceremonial, residential, and royal burial spaces.',
+    aboutEntityIds: ['place-kalhu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-northwest-palace',
+        evidenceRole: 'Supports',
+        locator: 'Northwest Palace: approximately 28,000 square metres, organized around major courtyards with public, administrative, military, residential, and burial areas',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kalhu-ziggurat-temples',
+    statement: 'Kalhu possessed a major sacred precinct dominated by a ziggurat associated with the temple of Ninurta, while Ashurnasirpal II claimed extensive construction and restoration of temples throughout his new capital.',
+    aboutEntityIds: ['place-kalhu', 'deity-ninurta'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-ziggurat-temples',
+        evidenceRole: 'Supports',
+        locator: 'Ziggurat and temple precinct at Kalhu; Assurnasirpal II inscriptions record nine temples in the city',
+      },
+      {
+        sourceId: 'src-primary-ashurnasirpal-ii-001-ninurta',
+        evidenceRole: 'Contextualizes',
+        locator: 'Q004455: royal foundation of Ninurta\'s temple at Kalhu, cult statue, festivals, and dais',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kalhu-later-history',
+    statement: 'After Kalhu ceased to function as the principal royal capital at the end of the eighth century BCE, it continued as an Assyrian provincial and scholarly center until its destruction in 612 BCE, with occupation continuing into later periods.',
+    aboutEntityIds: ['place-kalhu', 'civ-assyria'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-city',
+        evidenceRole: 'Supports',
+        locator: 'Kalhu after the eighth century BCE: provincial administration, scholarship, destruction in 612 BCE, and later occupation',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-kalhu-modern-excavation',
+    statement: 'The ruins of ancient Kalhu have been investigated archaeologically since the nineteenth century, with excavations at Nimrud exposing palaces, temples, archives, sculpture, ivories, and other evidence for Assyrian royal and urban life.',
+    aboutEntityIds: ['place-kalhu'],
+    claimType: 'Historical',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-modern-site',
+        evidenceRole: 'Supports',
+        locator: 'Modern Nimrud: archaeological investigation beginning in the nineteenth century and continuing through successive excavation campaigns',
+      },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-ninurta-kalhu-warrior-titles',
     statement: 'Ashurnasirpal II 001 addresses Ninurta as a supreme warrior and king of battle whose attack is unequalled and explicitly calls him the god who dwells in Kalhu.',
     aboutEntityIds: ['text-ashurnasirpal-ii-001-ninurta', 'deity-ninurta', 'place-kalhu'],
@@ -7268,7 +7348,18 @@ export const expandedContentSections: ContentSection[] = [
     "Nanaya held an important place in the religious life of Uruk. Esarhaddon calls her queen of Uruk and records the restoration of Ehiliana, her cella within Eanna. Later royal inscriptions also emphasize her return to Uruk and restoration within that sacred complex.",
     ['claim-nanaya-uruk-ehiliana', 'claim-nanaya-ashurbanipal-return']),
 
-  cs('cs-place-kalhu-context', 'place-kalhu', 'Kalhu and the Cult of Nabu',
+  cs('cs-place-kalhu-history', 'place-kalhu', 'Historical Importance',
+    "Kalhu, known today as the archaeological site of Nimrud, became one of the defining cities of the Neo-Assyrian Empire. Ashurnasirpal II transformed the older settlement into a monumental royal capital during the ninth century BCE. From Kalhu, Assyrian kings governed an expanding imperial state while constructing palaces, temples, administrative buildings, military facilities, and elite residences that made the city a physical expression of royal power.",
+    ['claim-kalhu-royal-capital']),
+
+  cs('cs-place-kalhu-royal-capital', 'place-kalhu', 'Ashurnasirpal II and the Royal Capital',
+    "Ashurnasirpal II's rebuilding of Kalhu fundamentally changed the city's political importance. The Northwest Palace alone covered roughly 28,000 square metres and combined ceremonial reception areas, royal living quarters, administrative and military functions, and burial spaces. Its monumental architecture and decorated rooms turned the palace into one of the clearest surviving expressions of Neo-Assyrian kingship and court culture.",
+    ['claim-kalhu-royal-capital', 'claim-kalhu-northwest-palace']),
+
+  cs('cs-place-kalhu-sacred-landscape', 'place-kalhu', 'Ziggurat, Temples, and Sacred Landscape',
+    "Kalhu was also a major sacred landscape. A monumental ziggurat dominated part of the citadel beside the temple precinct associated with Ninurta, while royal inscriptions attribute extensive temple construction to Ashurnasirpal II. The city's religious architecture therefore stood directly beside its royal institutions, linking kingship, divine patronage, cult practice, and monumental building within the same urban center.",
+    ['claim-kalhu-ziggurat-temples', 'claim-ninurta-kalhu-temple-statue']),
+  cs('cs-place-kalhu-context', 'place-kalhu', 'Nabu and Ezida at Kalhu',
     "Kalhu, the Assyrian city known today as Nimrud, became an important setting for the cult of Nabu. His temple Ezida gained prominence during the eighth and seventh centuries BCE and became increasingly connected with Assyrian kingship and learned culture.",
     ['claim-nabu-assyrian-royal-cult-development']),
 
@@ -7278,6 +7369,13 @@ export const expandedContentSections: ContentSection[] = [
   cs('cs-place-kalhu-ninurta', 'place-kalhu', 'Ninurta and Royal Cult at Kalhu',
     "Ashurnasirpal II 001 provides direct evidence for Ninurta's importance at Kalhu. The inscription addresses him as a supreme warrior and king of battle and explicitly calls him the god who dwells in Kalhu. Later in the same inscription, Ashurnasirpal II records founding Ninurta's temple, making a new cult statue, appointing festivals, and installing the god's dais. Together these passages connect Ninurta's royal and military character with a concrete temple institution and cult at Kalhu.",
     ['claim-ninurta-kalhu-warrior-titles', 'claim-ninurta-kalhu-temple-statue']),
+  cs('cs-place-kalhu-later-history', 'place-kalhu', 'Later History and the End of the Assyrian Empire',
+    "Kalhu's political role changed after the royal court moved elsewhere near the end of the eighth century BCE, but the city did not become irrelevant. It continued to function as a provincial administrative center and as an important location for scholarship and temple life. Kalhu was destroyed during the collapse of the Assyrian Empire in 612 BCE, although occupation at the site continued into later periods.",
+    ['claim-kalhu-later-history', 'claim-nabu-kalhu-scholarship']),
+
+  cs('cs-place-kalhu-archaeology', 'place-kalhu', 'Archaeology and Rediscovery',
+    "Modern archaeological investigation of Nimrud began in the nineteenth century and revealed one of the richest bodies of evidence for the Neo-Assyrian world. Excavations exposed monumental palaces, temples, sculptures, inscriptions, archives, ivories, administrative records, and scholarly tablets. These discoveries allow Kalhu to be studied not only as a royal capital described in inscriptions but as a physical city whose government, religion, scholarship, warfare, art, and domestic life survive archaeologically.",
+    ['claim-kalhu-modern-excavation', 'claim-kalhu-northwest-palace', 'claim-nabu-kalhu-scholarship']),
   // ---------------- SUMER ----------------
   cs('cs-sumer-who', 'civ-sumer', 'Who They Were',
     "Sumer refers to the Sumerian-speaking civilization of southern Mesopotamia associated with some of the region's earliest large urban centers. For most of its history it was not one unified state but a landscape of politically distinct cities whose institutions, rulers, and local traditions developed alongside a wider shared cultural world.",

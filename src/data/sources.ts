@@ -360,4 +360,53 @@ export const sources: Source[] = [
     sourceCategory: 'PrimaryAncientText',
     citation: "Corpus of Neo-Assyrian royal inscriptions (e.g. inscriptions of Ashurnasirpal II, Esarhaddon, Ashurbanipal) repeatedly invoking Aššur as Assyria's state god and the source of royal legitimacy",
   },
+  // ---- Kalhu staged sources ----
+  {
+    id: 'src-oracc-nimrud-city',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "The ancient Assyrian royal city of Kalhu"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thecity/',
+  },
+  {
+    id: 'src-oracc-nimrud-northwest-palace',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "Assurnasirpal\'s Northwest Palace"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thecity/northwestpalace/',
+  },
+  {
+    id: 'src-oracc-nimrud-ziggurat-temples',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "The ziggurat and its temples"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thecity/zigguratandtemples/',
+  },
+  {
+    id: 'src-oracc-nimrud-modern-site',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "Modern Nimrud, from mound to museum"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/modernnimrud/',
+  },
+  {
+    id: 'src-oracc-nimrud-nabu',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "Nabu, god of wisdom"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thepeople/nabu/',
+  },
+  {
+    id: 'src-oracc-nimrud-nabu-temple',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "Ezida, the god Nabu\'s temple of scholarship"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thecity/nabustemple/',
+  },
+  {
+    id: 'src-primary-ashurnasirpal-ii-001-ninurta',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurnasirpal II 001 (RIAo/RIA 4, Q004455)',
+    url: 'https://oracc.museum.upenn.edu/riao/ria4/Q004455',
+  },
+  {
+    id: 'src-oracc-amgg-tashmetu',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Tašmetu"',
+    url: 'https://oracc.museum.upenn.edu/amgg/Listofdeities/Tashmetu/',
+  },
 ];
