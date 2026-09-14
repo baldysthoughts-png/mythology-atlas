@@ -7613,11 +7613,32 @@ export const expandedContentSections: ContentSection[] = [
     "The Mesopotamian flood tradition matters both on its own terms, as one of the best-attested and most narratively developed pieces of Mesopotamian mythology, and comparatively, as a frequently cited reference point in the broader study of flood narratives across ancient Near Eastern literature."),
 
   // ---------------- CREATION OF HUMANITY ----------------
-  cs('cs-creation-examples', 'topic-creation', 'Important Examples',
-    "The Eridu Genesis preserves a Sumerian creation passage in which An, Enlil, Enki, and Ninhursag fashion humanity. Atrahasis gives the most developed surviving labor-crisis account: humans are created to take over work previously imposed on lesser gods. Enūma eliš presents a later Babylonian formulation in which Marduk devises the plan and Ea creates humanity from the blood of the condemned rebel Kingu.",
+  cs('cs-creation-earliest-evidence', 'topic-creation', 'Earliest Surviving Evidence',
+    "The earliest surviving creation account represented on this topic page is the Sumerian Eridu Genesis, preserved in a fragmentary Old Babylonian manuscript. Its surviving creation passage names An, Enlil, Enki, and Ninhursag as the divine figures who fashioned the black-headed people. Because the tablet is badly damaged, the surviving passage should not be forced into the more fully preserved labor-crisis framework found in Atrahasis.",
+    ['claim-eridu-genesis-fragmentary', 'claim-eridu-genesis-creation']),
+
+  cs('cs-creation-eridu-genesis', 'topic-creation', 'Eridu Genesis — Humanity and the Black-Headed People',
+    "The Eridu Genesis preserves a specifically Sumerian presentation of human creation. An, Enlil, Enki, and Ninhursag are described as having fashioned the black-headed people, a conventional Sumerian expression for humanity. The surviving passage also places human creation within a larger account involving animals, cities, kingship, and eventually the flood. What survives does not preserve the developed divine-labor rationale found in the later Akkadian compositions.",
+    ['claim-eridu-genesis-creation', 'claim-eridu-genesis-fragmentary']),
+
+  cs('cs-creation-atrahasis', 'topic-creation', 'Atrahasis — Humanity as the Divine Labor Force',
+    "Atrahasis gives one of the clearest surviving Mesopotamian explanations for why humanity was created. Lesser gods are exhausted by compulsory labor and revolt. The divine solution is to create humans who can assume that work. The birth-goddess carries out the creation within Enki/Ea's plan, combining clay with the flesh and blood of a slain god. Human existence is therefore tied directly to the transfer of labor from gods to mortals.",
+    ['claim-atrahasis-human-creation', 'claim-creation-humanity-labor-relief']),
+
+  cs('cs-creation-enuma-elish', 'topic-creation', "Enūma eliš — Kingu's Blood and Human Service",
+    "Enūma eliš preserves a different Babylonian formulation. In Tablet VI, Marduk proposes the creation of humanity so that the service and labor of the gods can be placed on humans and the gods can rest. Kingu is identified as responsible for the rebellion, is executed, and Ea creates mankind from Kingu's blood in accordance with Marduk's plan. The text therefore distinguishes Marduk's sovereign decision from Ea's direct creative act.",
+    ['claim-enuma-elish-creation-of-humanity']),
+
+  cs('cs-creation-similarities', 'topic-creation', 'Similarities Across the Traditions',
+    "These creation accounts share the broad idea that humanity belongs within a divinely ordered cosmos, but the strongest specific parallel is between Atrahasis and Enūma eliš. Both explicitly connect human creation with transferring work or service from the gods to humanity, and both involve divine material in the creation process. These similarities are significant without requiring every Mesopotamian creation account to be treated as one uniform doctrine.",
+    ['claim-creation-humanity-labor-relief', 'claim-atrahasis-human-creation', 'claim-enuma-elish-creation-of-humanity']),
+
+  cs('cs-creation-differences', 'topic-creation', 'Differences Across the Traditions',
+    "The surviving texts do not describe one standardized Mesopotamian creation story. Eridu Genesis names a group of gods who fashion humanity but does not preserve the same developed labor-crisis explanation. Atrahasis makes human creation the direct solution to a revolt by overworked lesser gods and combines clay with the flesh and blood of a slain deity. Enūma eliš instead places creation after Marduk's victory and kingship, with Marduk devising the plan and Ea creating humanity from Kingu's blood. The creators, materials, narrative setting, and theological purpose therefore vary by composition.",
     ['claim-eridu-genesis-creation', 'claim-atrahasis-human-creation', 'claim-enuma-elish-creation-of-humanity']),
-  cs('cs-creation-scholarly', 'topic-creation', 'Scholarly Interpretation',
-    "Atrahasis and Enūma eliš explicitly connect human creation with transferring divine labor or service to humanity. That recurring motive is important, but it should not automatically be projected onto every Mesopotamian creation passage: the surviving Eridu Genesis identifies divine makers and the creation of humanity without preserving the same developed labor-crisis rationale.",
+
+  cs('cs-creation-scholarly', 'topic-creation', 'Scholarly Interpretation, Evidence Limits, and Why It Matters',
+    "Atrahasis and Enūma eliš explicitly connect human creation with relieving the gods of labor or service, making that motive a major feature of Babylonian creation theology. It should not, however, be projected backward onto every surviving Sumerian passage. The Eridu Genesis is fragmentary and preserves a different formulation, so absence of the same explanation in the surviving text must be treated as an evidentiary limit rather than proof that no related idea ever existed in lost material. Taken together, these traditions show that Mesopotamian thought preserved multiple answers to who created humanity, how humans were made, and what place human beings occupied in the divine order.",
     ['claim-creation-humanity-labor-relief', 'claim-eridu-genesis-creation', 'claim-atrahasis-human-creation', 'claim-enuma-elish-creation-of-humanity']),
   // ---------------- DIVINE COUNCIL ----------------
   cs('cs-divine-council-examples', 'topic-divine-council', 'Important Examples',
