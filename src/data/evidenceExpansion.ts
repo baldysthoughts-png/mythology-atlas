@@ -591,6 +591,61 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-ashur-state-god',
+    statement: 'Aššur functioned as the central state deity of Assyria: Assyrian royal ideology presented kingship and military action under his authority, while the city of Ashur remained the civilization’s principal sacred center.',
+    aboutEntityIds: ['civ-assyria', 'deity-ashur', 'place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-unesco-ashur-world-heritage',
+        evidenceRole: 'Contextualizes',
+        locator: 'Ashur as the ancient Assyrian capital and enduring religious center',
+      },
+      {
+        sourceId: 'src-primary-ashur-dan-ii-1',
+        evidenceRole: 'Supports',
+        locator: 'Aššur-dān II 1: royal authority and military action presented under the command and patronage of Aššur',
+      },
+    ],
+    status: 'Published',
+  },
+  {
+    id: 'claim-assyria-cult-figures',
+    statement: 'Neo-Assyrian religious evidence documents major roles for Aššur and Ištar — especially Ištar of Nineveh and Ištar of Arbela — while also attesting Ninurta at Kalhu, Nabu and Tašmetu in the Ezida complex at Kalhu, and Nergal within Assyrian royal cult.',
+    aboutEntityIds: ['civ-assyria', 'deity-ashur', 'deity-inanna', 'deity-ninurta', 'deity-nabu', 'deity-tashmetu', 'deity-nergal'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-inanna',
+        evidenceRole: 'Supports',
+        locator: 'Neo-Assyrian veneration: Ištar of Nineveh and Ištar of Arbela as major Assyrian forms of the goddess closely associated with kingship',
+      },
+      {
+        sourceId: 'src-primary-ashurnasirpal-ii-001-ninurta',
+        evidenceRole: 'Supports',
+        locator: 'Ashurnasirpal II 001: Ninurta as warrior deity dwelling at Kalhu and recipient of royal cult investment',
+      },
+      {
+        sourceId: 'src-oracc-nimrud-nabu-temple',
+        evidenceRole: 'Supports',
+        locator: 'Ezida at Kalhu and the developing importance of Nabu in Neo-Assyrian royal and scholarly culture',
+      },
+      {
+        sourceId: 'src-oracc-amgg-tashmetu',
+        evidenceRole: 'Supports',
+        locator: 'Tašmetu and Nabu at Neo-Assyrian Kalhu',
+      },
+      {
+        sourceId: 'src-primary-ashurbanipal-227-nergal',
+        evidenceRole: 'Supports',
+        locator: 'Ashurbanipal 227: Nergal as warrior, battle companion of the Assyrian king, and recipient of royal temple patronage',
+      },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-ashur-qalat-sherqat',
     statement: 'Ancient Ashur is identified with the archaeological site of Qal’at Sherqat on the Tigris in northern Iraq.',
     aboutEntityIds: ['place-ashur'],
@@ -7450,14 +7505,36 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-babylon-marduk-elevation', 'claim-babylon-esagila-etemenanki', 'claim-gilgamesh-atrahasis-distinct-recensions', 'claim-enuma-elish-babylon-esagila']),
   // ---------------- ASSYRIA ----------------
   cs('cs-assyria-who', 'civ-assyria', 'Who They Were',
-    "Assyria, centered in northern Mesopotamia, spanned several distinct political periods across roughly fifteen centuries. Its most famous contribution to the preservation of Mesopotamian literature comes from a specific late period: the library assembled at Nineveh under King Ashurbanipal."),
-  cs('cs-assyria-religion', 'civ-assyria', 'Religion',
-    "Assyrian religion shared much of its underlying pantheon and mythology with Babylonian tradition, while centering state and royal ideology on Aššur, the Assyrian state god and namesake of the city of Ashur. Alongside Aššur, Neo-Assyrian religious life gave significant prominence to Ishtar (particularly the cults of Ishtar of Nineveh and Ishtar of Arbela), Ninurta (closely tied to the capital of Kalhu/Nimrud), Nabu (with a dedicated temple at Kalhu), and Nergal — pan-Mesopotamian deities also worshipped elsewhere, but with documented, period-specific importance within Assyria.",
-    ['claim-ashur-state-god', 'claim-assyria-cult-figures']),
-  cs('cs-assyria-legacy', 'civ-assyria', 'Relationships With Later Cultures',
-    "The library assembled at Nineveh under Ashurbanipal preserved a large number of Mesopotamian literary and scholarly texts, including the best-preserved version of the Epic of Gilgamesh, making Assyrian scribal activity central to what survives today of earlier Sumerian and Babylonian literature — without this specific collection, much of what is now known of Gilgamesh would likely be far more fragmentary.",
-    ['claim-assyria-ashurbanipal-library']),
+    "Assyria was a northern Mesopotamian civilization whose political history extended across many centuries rather than one uninterrupted imperial phase. Its earliest major political and sacred center was Ashur on the Tigris. Over time Assyrian rulers developed increasingly powerful territorial states, culminating in the Neo-Assyrian Empire, while the city of Ashur retained exceptional religious and symbolic importance even after royal administration moved elsewhere.",
+    ['claim-ashur-early-capital']),
 
+  cs('cs-assyria-political', 'civ-assyria', 'Political Development — Old, Middle, and Neo-Assyrian Periods',
+    "Assyrian history is best understood as a long sequence of political phases rather than as one static empire. Middle Assyrian rulers already articulated powerful forms of kingship and territorial authority, while later rulers rebuilt Assyrian power after periods of contraction. The inscription of Aššur-dān II provides direct evidence for this renewed expansion in the tenth century BCE: it describes the recovery of territory previously lost to Aramean groups and its reincorporation within the borders of Assyria. That resurgence preceded the much larger imperial expansion of the Neo-Assyrian period.",
+    ['claim-ashur-dan-ii-territorial-restoration']),
+
+  cs('cs-assyria-capitals', 'civ-assyria', 'Royal Capitals — Ashur, Kalhu, and Nineveh',
+    "Assyrian political geography changed as royal power expanded. Ashur was the earliest major capital and remained the civilization's central sacred city. In the ninth century BCE Ashurnasirpal II transformed Kalhu, modern Nimrud, into a monumental royal capital. Around 700 BCE Sennacherib made Nineveh the principal imperial capital and reshaped it through major palace, defensive, urban, and infrastructure projects. These successive capitals show that Assyrian kingship was not tied permanently to one administrative city even though Ashur retained unique religious authority.",
+    ['claim-ashur-early-capital', 'claim-kalhu-royal-capital', 'claim-nineveh-sennacherib-capital']),
+
+  cs('cs-assyria-kingship', 'civ-assyria', 'Kingship, Warfare, and Imperial Expansion',
+    "Assyrian royal inscriptions present warfare and kingship through an explicitly religious framework. Aššur-dān II describes royal authority as granted by Aššur and military campaigns as carried out under divine command, while his inscriptions record territorial recovery, conquest, booty, resettlement, and the restoration of Assyrian control. Under Ashurnasirpal II, Ninurta could be praised as a supreme warrior and king of battle dwelling at Kalhu. These sources show how military expansion, royal legitimacy, divine patronage, and monumental capitals were brought together within Assyrian imperial ideology.",
+    ['claim-ashur-dan-ii-royal-appointment', 'claim-ashur-dan-ii-territorial-restoration', 'claim-ashur-dan-ii-command-campaign', 'claim-ninurta-kalhu-warrior-titles']),
+
+  cs('cs-assyria-religion', 'civ-assyria', 'Religion and the God Aššur',
+    "Assyrian religion belonged to the broader Mesopotamian religious world but developed distinctive political and regional emphases. Aššur, the god who shared his name with the ancient city of Ashur, became the central deity of Assyrian state ideology and kingship. Neo-Assyrian religious life also gave major prominence to forms of Ishtar associated with Nineveh and Arbela, to Ninurta at Kalhu, to Nabu and Tašmetu within the scholarly and royal environment of Ezida at Kalhu, and to Nergal within Assyrian royal cult. These cults show both continuity with wider Mesopotamian traditions and historically specific Assyrian developments.",
+    ['claim-ashur-state-god', 'claim-assyria-cult-figures']),
+
+  cs('cs-assyria-scholarship', 'civ-assyria', 'Temples, Scholarship, and Scribal Culture',
+    "Assyrian temples were not only ritual institutions but could also be centers of learned activity. At Kalhu, the Ezida temple of Nabu became increasingly connected with kingship, literacy, and scholarship during the eighth and seventh centuries BCE. Excavators recovered roughly 250 scholarly tablets near Nabu's shrine, including omen texts, incantations, ritual works, hymns, lexical texts, medical material, literature, and calendrical works. Royal evidence associated with Ashurbanipal likewise connects Nabu and Tašmetu with the king's mastery of scribal knowledge.",
+    ['claim-nabu-assyrian-royal-cult-development', 'claim-nabu-kalhu-scholarship', 'claim-tashmetu-ashurbanipal-understanding']),
+
+  cs('cs-assyria-library', 'civ-assyria', 'Ashurbanipal’s Library and Textual Preservation',
+    "The scholarly collections associated with Ashurbanipal at Nineveh are among Assyria's most important contributions to the survival of Mesopotamian literature. More than thirty thousand cuneiform tablets and fragments were recovered from the ruins of Nineveh, preserving literary, religious, lexical, medical, divinatory, historical, and scholarly compositions. Among them were important manuscripts of the Standard Babylonian Epic of Gilgamesh. The collection did not create these older traditions, but its preservation and copying activity is a major reason substantial portions of them survive today.",
+    ['claim-assyria-ashurbanipal-library', 'claim-nineveh-ashurbanipal-library-tablets']),
+
+  cs('cs-assyria-legacy', 'civ-assyria', 'Fall of the Empire and Historical Legacy',
+    "The political power of the Neo-Assyrian Empire collapsed rapidly near the end of the seventh century BCE. Kalhu was destroyed during this breakdown, and Nineveh was captured and destroyed in 612 BCE, ending its role as the imperial capital. Assyria's political empire disappeared, but its archaeological remains, royal inscriptions, monumental art, temples, palaces, archives, and scholarly collections preserve unusually detailed evidence for ancient Near Eastern imperial life. The literature copied in Assyrian scholarly centers also transmitted traditions far older than the empire itself, giving Assyria an enduring place in the modern recovery of Mesopotamian history.",
+    ['claim-kalhu-later-history', 'claim-nineveh-destruction-612', 'claim-assyria-ashurbanipal-library']),
   // ---------------- ANUNNAKI (extensive) ----------------
   cs('cs-anunnaki-etymology', 'group-anunnaki', 'Name / Etymology',
     "The etymology of Anunna/Anunnaki remains debated. ORACC/AMGG summarizes leading scholarly proposals as yielding a sense like \"those of princely seed.\" Popular renderings such as \"offspring of An\" should therefore be treated as proposed interpretations, not as a universally accepted literal translation.",

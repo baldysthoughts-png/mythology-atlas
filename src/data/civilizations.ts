@@ -62,12 +62,12 @@ export const civilizations: Civilization[] = [
     timePeriod: 'c. 2025 – 609 BCE (approximate, spanning several periods)',
     region: 'Northern Mesopotamia',
     overview:
-      'Assyria preserved and copied much of Mesopotamian literary tradition, most famously in the library assembled at Nineveh under Ashurbanipal, which is the source of the best-preserved version of the Epic of Gilgamesh.',
-    majorCityIds: ['place-nineveh', 'place-ashur'],
+      'Assyria developed from a northern Mesopotamian state centered on Ashur into the Middle and Neo-Assyrian empires. Royal power later shifted to monumental capitals including Kalhu and Nineveh, while Ashur retained exceptional religious importance. Assyrian kings joined military expansion, monumental building, state religion, and scribal scholarship, and the collections associated with Ashurbanipal at Nineveh preserved major works of earlier Mesopotamian literature, including important manuscripts of the Epic of Gilgamesh.',
+    majorCityIds: ['place-ashur', 'place-kalhu', 'place-nineveh'],
     majorDeityIds: ['deity-ashur', 'deity-inanna', 'deity-ninurta', 'deity-nabu', 'deity-nergal'],
-    majorTextIds: ['text-gilgamesh'],
+    majorTextIds: ['text-adad-narari-i-15', 'text-tiglath-pileser-i-01', 'text-ashur-dan-ii-1', 'text-ashurnasirpal-ii-001-ninurta', 'text-gilgamesh'],
     topicIds: ['topic-underworld'],
     relatedCivilizationIds: ['civ-sumer', 'civ-akkad', 'civ-babylon'],
-    contentSectionIds: ['cs-assyria-who', 'cs-assyria-religion', 'cs-assyria-legacy'],
+    contentSectionIds: ['cs-assyria-who', 'cs-assyria-political', 'cs-assyria-capitals', 'cs-assyria-kingship', 'cs-assyria-religion', 'cs-assyria-scholarship', 'cs-assyria-library', 'cs-assyria-legacy'],
   },
 ];
