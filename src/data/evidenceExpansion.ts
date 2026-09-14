@@ -7031,13 +7031,11 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-ningal-queen-ekishnugal-ur', 'claim-ningal-queen-goddesses-q003845', 'claim-ningal-amar-suena-lady-mother-ur']),
 
   cs('cs-ningal-nanna-household', 'deity-ningal', 'Nanna/Suen/Sîn and the Divine Household',
-    'Ningal is widely attested as the consort of Nanna/Suen/Sîn and forms with him the principal divine pair associated with Ur. Q003844 provides direct local evidence by describing Ningal as the beloved wife of Sîn. This relationship is therefore supported both by ancient inscriptional evidence and by broader scholarly reconstruction of the lunar divine household.',
-    ['claim-nanna-ningal-consort', 'claim-ningal-giparu-ur']),
-
+    "Ningal is widely attested as the consort of Nanna/Suen/Sîn and forms with him the principal divine pair associated with Ur. Q003844 provides direct local evidence by describing Ningal as the beloved wife of Sîn. First-millennium royal evidence extends that relationship beyond the local building inscription: the prayer in Ashurbanipal's Nanaya-return inscription invokes Sîn and Ningal together with Šamaš, Aya, and Nusku to look favorably upon the king. The evidence therefore shows Ningal functioning both within the divine household of Ur and within later Assyrian royal religious language.",
+    ['claim-nanna-ningal-consort', 'claim-ningal-giparu-ur', 'claim-ashurbanipal-nanaya-return-divine-prayer']),
   cs('cs-ningal-children', 'deity-ningal', 'Utu, Inanna, and Genealogical Traditions',
-    'In an important Mesopotamian genealogical tradition, Utu and Inanna are presented as children of Nanna and Ningal. This family relationship is well established as a major tradition, but Mesopotamian genealogies can vary by composition, city, language, and period. The profile therefore records the relationship without presenting it as the only genealogy ever used for these deities.',
-    ['claim-nanna-utu-inanna-children']),
-
+    "In an important Mesopotamian genealogical tradition, Utu and Inanna are presented as children of Nanna and Ningal. Direct literary evidence also gives Ningal a maternal relationship to Inanna. In Inana and Bilulu, Inana addresses Ningal as her mother while the passage invokes Suen as her father. Dumuzid-Inanna C1 likewise places Ningal in an active counseling role within Inanna's story. These texts strengthen the family relationship while still requiring source-sensitive treatment because Mesopotamian genealogies could vary by composition, city, language, and period.",
+    ['claim-nanna-utu-inanna-children', 'claim-inana-bilulu-ningal-sheepfold', 'claim-c1-ningal-counsel']),
   cs('cs-ningal-royal-patronage', 'deity-ningal', 'Royal Patronage and Cult Infrastructure',
     'Royal and gubernatorial building inscriptions show material investment in Ningal’s worship at Ur. Q003844 records rebuilding the Gipāru and installing a cult statue, while Q003845 records the construction and permanent establishment of the Puḫilituma well for Ningal. These inscriptions connect divine honor with architecture, water supply, cult maintenance, and elite patronage.',
     ['claim-ningal-giparu-ur', 'claim-ningal-giparu-statue', 'claim-ningal-puhilituma-well']),
@@ -7059,8 +7057,8 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-ningal-nikkal-name', 'claim-ningal-queen-ekishnugal-ur', 'claim-ningal-queen-goddesses-q003845', 'claim-ningal-lament-destruction-exile', 'claim-nanna-utu-inanna-children']),
 
   cs('cs-ningal-significance', 'deity-ningal', 'Historical Significance',
-    'Ningal reveals how a Mesopotamian goddess could be simultaneously a divine spouse, a queen, a civic figure, a recipient of royal patronage, and a literary embodiment of a city’s suffering. Evidence from Ur III royal tradition, first-millennium inscriptions, cult infrastructure, genealogy, and city lamentation makes her an important witness to the religious identity of Ur across many centuries.',
-    []),
+    "Ningal reveals how a Mesopotamian goddess could be simultaneously a divine spouse, queen, civic figure, mother within divine genealogy, recipient of royal patronage, and literary embodiment of a city's suffering. Ur III evidence presents her as lady and mother of Urim; Neo-Assyrian inscriptions document her titles, Gipāru, cult statue, well, and continuing place beside Sîn; literary compositions preserve her maternal relationship to Inanna and her grieving and restored queenship in the Lament for Urim. Taken together, these sources make Ningal an important witness to the religious identity of Ur across many centuries without reducing every period to one unchanged theology.",
+    ['claim-ningal-amar-suena-lady-mother-ur', 'claim-ningal-giparu-ur', 'claim-ningal-puhilituma-well', 'claim-inana-bilulu-ningal-sheepfold', 'claim-ningal-lament-destruction-exile', 'claim-ningal-lament-restoration']),
   // ---------------- UTU/SHAMASH ----------------
   cs('cs-utu-names', 'deity-utu', 'Names and Languages',
     "Utu is the Sumerian name of the sun god; Šamaš, conventionally written Shamash in English, is the corresponding Akkadian name. The continuity of the deity across Sumerian and Akkadian-language traditions is strong, but individual Sumerian, Babylonian, and Assyrian texts still belong to their own historical and literary settings rather than one undifferentiated tradition.",
