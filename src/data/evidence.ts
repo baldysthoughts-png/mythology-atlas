@@ -430,14 +430,6 @@ export const contentSections: ContentSection[] = [
     claimIds: ['claim-inanna-ishtar-name-shift', 'claim-inanna-descent-seven-gates'],
   },
   {
-    id: 'cs-ninhursag-overview',
-    parentEntityId: 'deity-ninhursag',
-    sectionLabel: 'Overview',
-    prose: 'Ninhursag was associated with the earth, mountains, and motherhood, and appears prominently in the Enki and Ninhursag narrative.',
-    claimIds: [],
-    connectiveOnly: true,
-  },
-  {
     id: 'cs-utu-overview',
     parentEntityId: 'deity-utu',
     sectionLabel: 'Overview',
