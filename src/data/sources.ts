@@ -157,7 +157,7 @@ export const sources: Source[] = [
   {
     id: 'src-primary-shamash-shuma-ukin-4-nabu',
     sourceCategory: 'PrimaryAncientText',
-    citation: 'Šamaš-šuma-ukin 4 (Neo-Babylonian royal inscription; RIBo/Babylon 6, Q006314)',
+    citation: 'Šamaš-šuma-ukin 4 (Babylonian royal inscription; RIBo/Babylon 6, Q006314)',
     url: 'https://oracc.museum.upenn.edu/ribo/babylon6/Q006314',
   },
   {
