@@ -7087,33 +7087,44 @@ export const expandedContentSections: ContentSection[] = [
 
   // ---------------- NINHURSAG ----------------
   cs('cs-ninhursag-overview', 'deity-ninhursag', 'Overview',
-    "Ninhursag is a major Sumerian goddess associated with maternal, birth, fertility, and generative power. In the narrative of Enki and Ninhursag, she is a central figure in the birth and healing sequence that restores Enki after a crisis. Her role is strongest when read in the context of the ancient composition itself, where maternal and restorative power are closely linked to the ordering of life.",
-    ['claim-ninhursag-birth-creation-role', 'claim-ninhursag-healing-sequence']),
+    "Ninhursag is a major Sumerian goddess whose surviving literary profile combines maternal and generative power, fertility, healing, human creation, and a mountain-linked domain. In Enki and Ninhursag she stands at the center of divine birth and healing. Lugal-e preserves a distinct passage in which Ninmaḫ is named Ninḫursaĝa and connected with the mountain Ḫursaĝ, while the Eridu Genesis includes Ninhursag with An, Enlil, and Enki in the fashioning of humanity.",
+    ['claim-ninhursag-birth-creation-role', 'claim-ninhursag-healing-sequence', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
+
   cs('cs-ninhursag-names', 'deity-ninhursag', 'Names and Languages',
-    "Ninhursag is the Sumerian name used in the narrative most closely associated with her in the surviving evidence. The names Ninmah, Nintu, Mami, and Ki are not treated as automatic equivalents. In Mesopotamian religion, divine names and identities could overlap in particular contexts or scholarly reconstructions, but the surviving evidence also preserves distinctions between compositions, periods, and traditions. These names are therefore best read as context-sensitive rather than interchangeable."),
+    "Ninhursag is the name used for the goddess in the Sumerian evidence represented here. Lugal-e gives unusually direct evidence for a connection with Ninmaḫ: after Ninmaḫ approaches Ninurta, he names the mountain Ḫursaĝ and declares that she shall henceforth be called Ninḫursaĝa. That text-specific identification should not be converted into an automatic equation of every maternal goddess across every composition. Nintu, Mami, and Ki likewise require source-sensitive treatment rather than being treated as universally interchangeable names.",
+    ['claim-ninurta-lugale-ninmah-ninhursaga', 'claim-atrahasis-nintu-mami-distinction']),
+
   cs('cs-ninhursag-roles', 'deity-ninhursag', 'Roles and Domains',
-    "Ninhursag's role is best understood through the maternal and generative sphere. In Enki and Ninhursag, she is associated with birth, fertility, and the restoration of order after a crisis. Her actions show a strongly maternal dimension: she brings life and healing at the same time that Enki's actions lead to the disorder. This makes her a central figure for understanding Mesopotamian conceptions of creation, birth, and the restoration of bodily and cosmic balance.",
-    ['claim-ninhursag-birth-creation-role', 'claim-ninhursag-healing-sequence']),
+    "Ninhursag's strongest attested roles are maternal and generative, connected with birth and fertility, healing and restoration, and a mountain-linked domain. In Enki and Ninhursag she participates in a sequence of divine births and restores the afflicted Enki. In Lugal-e Ninurta names her Ninḫursaĝa and assigns abundance and resources to her mountain domain. In the Eridu Genesis she appears with An, Enlil, and Enki among the deities who fashion humanity.",
+    ['claim-ninhursag-birth-creation-role', 'claim-ninhursag-healing-sequence', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
+
   cs('cs-ninhursag-family', 'deity-ninhursag', 'Family and Divine Relationships',
-    "The surviving evidence does not support a single universal genealogy for Ninhursag. What it does support is a direct narrative relationship with Enki: in Enki and Ninhursag, Enki's actions lead to the crisis, and Ninhursag is the figure who restores order. This relationship is preserved in the ancient text without forcing a wider family scheme onto the goddess."),
+    "The surviving evidence does not support one universal genealogy for Ninhursag. Enki is directly connected with her through the birth, curse, and healing sequence of Enki and Ninhursag. Lugal-e places her in a direct literary exchange with Ninurta when he names her Ninḫursaĝa and establishes her mountain association. The Eridu Genesis also places her alongside An, Enlil, and Enki in the creation of humanity. These relationships should be attributed to their particular texts rather than forced into one permanent family tree.",
+    ['claim-ninhursag-healing-sequence', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
+
   cs('cs-ninhursag-myths', 'deity-ninhursag', 'Major Myths and Literary Roles',
-    "In Enki and Ninhursag, set in the paradise-like land of Dilmun, Ninhursag is involved in both a sequence of divine births and the healing of Enki after his affliction. The text is one of the clearest surviving examples in Mesopotamian literature in which maternal, generative, and restorative power are expressed through a divine birth sequence. This makes Ninhursag a major figure not simply for fertility as a general domain, but for the relationship between creation, bodily disorder, and divine healing.",
-    ['claim-ninhursag-healing-sequence', 'claim-ninhursag-creation-birth-tradition']),
+    "Enki and Ninhursag supplies the fullest surviving narrative centered on Ninhursag, combining divine generation, curse, bodily affliction, healing, and restoration. Lugal-e gives her a different literary role: Ninmaḫ approaches Ninurta after his ordering of the mountain landscape and is named Ninḫursaĝa in connection with Ḫursaĝ and its abundance. The Eridu Genesis preserves yet another role by including her among the deities responsible for fashioning humanity.",
+    ['claim-ninhursag-healing-sequence', 'claim-ninhursag-creation-birth-tradition', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
+
   cs('cs-ninhursag-textual-tradition', 'deity-ninhursag', 'Ancient Textual Tradition',
-    "The most direct source for Ninhursag's role is the Sumerian composition Enki and Ninhursag itself. As a text, it belongs to a wider Sumerian creation and birth tradition, where divine fertility and restoration are closely linked to the ordering of life. It should be read as a specific narrative with its own concerns and vocabulary rather than as a general encyclopedia of all Mesopotamian mother-goddess traditions.",
-    ['claim-ninhursag-creation-birth-tradition']),
+    "Ninhursag's profile in the surviving Sumerian corpus cannot be reduced to one composition. Enki and Ninhursag provides the most extended narrative treatment of her maternal, generative, and healing activity. Lugal-e directly preserves the Ninmaḫ-Ninḫursaĝa naming episode and a mountain association. The Eridu Genesis places Ninhursag within a collective act of human creation. Read together, these texts show both continuity and variation in how the goddess was represented.",
+    ['claim-ninhursag-creation-birth-tradition', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
+
   cs('cs-ninhursag-ancient-sources', 'deity-ninhursag', 'Ancient Sources',
-    "The principal ancient source is Enki and Ninhursag, a Sumerian narrative text. For broader comparative context, Atrahasis preserves birth and creation traditions in Akkadian, but this comparison must be framed carefully: Ninhursag and Nintu/Mami are not to be treated as automatically identical. The ancient composition remains distinct from the modern edition or translation used to read it.",
-    ['claim-atrahasis-nintu-mami-distinction']),
+    "Three Sumerian compositions provide direct evidence used in this profile. Enki and Ninhursag preserves her divine birth and healing roles. Lugal-e records the naming of Ninmaḫ as Ninḫursaĝa and associates her with the mountain Ḫursaĝ and its resources. The Eridu Genesis includes Ninhursag with An, Enlil, and Enki in fashioning humanity. Atrahasis is useful only as comparative evidence for other Mesopotamian birth and creation traditions involving Nintu or Mami and should not be used to erase distinctions among those divine identities.",
+    ['claim-ninhursag-healing-sequence', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation', 'claim-atrahasis-nintu-mami-distinction']),
+
   cs('cs-ninhursag-scholarly', 'deity-ninhursag', 'Scholarly Interpretation',
-    "Scholars often note that Mesopotamian maternal, birth, and creative goddesses could overlap in meaning, titles, or broader divine networks without being identical in every period or composition. This is especially important for Ninhursag, since the names Ninmah, Nintu, and Ki can enter the discussion in different contexts and traditions. The safest interpretive position is not to collapse them into one figure automatically, but to track which names are supported by which text and which period.",
-    ['claim-atrahasis-nintu-mami-distinction']),
+    "Mesopotamian maternal and birth goddesses could overlap in names, functions, and theological associations without forming one unchanging identity across every period and composition. Lugal-e is especially important because it supplies direct textual evidence for a Ninmaḫ-Ninḫursaĝa connection in that particular narrative. That evidence does not justify automatically equating Ninhursag with Nintu, Mami, Ki, or every other maternal goddess encountered elsewhere.",
+    ['claim-ninurta-lugale-ninmah-ninhursaga', 'claim-atrahasis-nintu-mami-distinction']),
+
   cs('cs-ninhursag-what-we-know', 'deity-ninhursag', 'What We Actually Know',
-    "Directly attested: in Enki and Ninhursag, Ninhursag is a central birth and healing figure whose actions restore Enki after a crisis. Strong scholarly consensus: Ninhursag belongs to a broader Sumerian field of maternal, generative, and fertility-linked divine personae. More complex and context-dependent: the overlaps among Ninhursag, Ninmah, Nintu, Mami, and Ki cannot be flattened into one stable identity without careful source-sensitive analysis.",
-    ['claim-ninhursag-birth-creation-role', 'claim-atrahasis-nintu-mami-distinction']),
+    "Directly attested: Ninhursag participates in divine generation and restores Enki in Enki and Ninhursag; Lugal-e connects Ninmaḫ with the name Ninḫursaĝa and a mountain domain; and the Eridu Genesis includes Ninhursag among the gods who fashion humanity. Strong scholarly evidence also places her within a broader field of maternal, birth, fertility, and generative divine power. What cannot be assumed is that Ninhursag, Ninmaḫ, Nintu, Mami, and Ki were permanently identical in every text and period.",
+    ['claim-ninhursag-birth-creation-role', 'claim-ninhursag-healing-sequence', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation', 'claim-atrahasis-nintu-mami-distinction']),
+
   cs('cs-ninhursag-why-matters', 'deity-ninhursag', 'Why It Matters',
-    "Ninhursag matters because she gives a clear example of how Mesopotamian religion linked divine motherhood, fertility, and birth to the restoration of order after a crisis. Her role in Enki and Ninhursag shows that creation and healing were not separate conceptual worlds; instead, the act of bringing life and restoring the body became part of the same sacred logic. The wider importance of this figure lies in the way it reminds us that Mesopotamian goddess identities were not always fixed across all texts, periods, and languages.",
-    ['claim-ninhursag-creation-birth-tradition']),
+    "Ninhursag matters because the surviving texts preserve several dimensions of divine generative power rather than one narrow fertility role. Enki and Ninhursag links birth with bodily healing and restored order; Lugal-e connects her identity with a mountain and its abundance; and the Eridu Genesis places her within the creation of humanity itself. Together these sources show why Mesopotamian divine identities have to be reconstructed text by text instead of being flattened into a single timeless mythology.",
+    ['claim-ninhursag-creation-birth-tradition', 'claim-ninurta-lugale-ninmah-ninhursaga', 'claim-eridu-genesis-creation']),
 
   // ---------------- MARDUK ----------------
 
