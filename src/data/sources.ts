@@ -151,7 +151,7 @@ export const sources: Source[] = [
   {
     id: 'src-primary-ashur-dan-ii-1',
     sourceCategory: 'PrimaryAncientText',
-    citation: 'Aššur-dān II 1 (Neo-Assyrian royal inscription; RIAo/RIA 3, Q006013)',
+    citation: 'Aššur-dān II 1 (Assyrian royal inscription; RIAo/RIA 3, Q006013)',
     url: 'https://oracc.museum.upenn.edu/riao/ria3/Q006013/',
   },
   {
