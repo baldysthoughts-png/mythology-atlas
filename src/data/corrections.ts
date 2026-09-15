@@ -473,6 +473,177 @@ export const correctionClaims: Claim[] = [
     ],
     status: 'Published',
   },
+
+  {
+    id: 'claim-adad-narari-i-15-enlil-appointment',
+    statement: 'The inscription presents Adad-nārārī I and members of his royal ancestry as rulers appointed by Enlil while also styling them vice-regents of Aššur.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'deity-enlil', 'deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752 lines 1–5: royal ancestry, appointment by Enlil, and vice-regency of Aššur' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-future-ruler-curse',
+    statement: 'The inscription instructs future rulers to restore the building when it deteriorates and preserve the earlier royal inscriptions, while invoking Aššur, Ištar, and Adad against anyone who destroys or removes them.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'deity-ashur', 'deity-inanna'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752 concluding clauses: future restoration, preservation of inscriptions, and divine curse' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-inscription-deposit',
+    statement: 'Adad-nārārī I records depositing commemorative inscriptions as part of the restored building, linking construction with preservation of royal memory.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'place-ashur'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752 concluding building account: commemorative inscriptions deposited in the restored structure' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-ishhara-room',
+    statement: 'The building account also refers to a room associated with the goddess Išḫara within the restored sacred complex.',
+    aboutEntityIds: ['text-adad-narari-i-15'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752 building account: room associated with Išḫara' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-ishtar-temple-history',
+    statement: 'Adad-nārārī I 15 places the temple of Ištar at Aššur within a long history of royal construction and restoration involving earlier Assyrian kings.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'deity-inanna', 'place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752: historical account of earlier construction and restoration of the temple of Ištar at Aššur' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-object-context',
+    statement: 'Adad-nārārī I 15 is a Middle Assyrian royal building inscription associated with the city of Aššur and the reign of Adad-nārārī I.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752: Middle Assyrian royal inscription of Adad-nārārī I from Aššur' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-adad-narari-i-15-restoration-work',
+    statement: 'The inscription records Adad-nārārī I restoring the deteriorated sanctuary with substantial architectural work, including stonework and new wooden structural elements.',
+    aboutEntityIds: ['text-adad-narari-i-15', 'deity-inanna', 'place-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [{ sourceId: 'src-primary-adad-narari-i-15', evidenceRole: 'Supports', locator: 'Q005752 building account: restoration work on the sanctuary of Ištar' }],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-adad-narari-vice-regent',
+    statement: 'Adad-nārārī I 15 identifies Adad-nārārī I and several royal ancestors as vice-regents of the god Aššur.',
+    aboutEntityIds: ['deity-ashur', 'text-adad-narari-i-15'],
+    claimType: 'Historical',
+    evidenceClassification: 'AncientSource',
+    evidenceLinks: [
+      {
+        sourceId: 'src-primary-adad-narari-i-15',
+        evidenceRole: 'Supports',
+        locator: 'Q005752 lines 1–5: Adad-nārārī I and royal ancestors styled vice-regent of Aššur',
+      },
+    ],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-anshar-equation',
+    statement: 'In the Neo-Assyrian period Anšar was sometimes equated with Aššur, a theological identification interpreted as giving Aššur greater primordial seniority within the divine hierarchy.',
+    aboutEntityIds: ['deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-anshar-kishar',
+        evidenceRole: 'Supports',
+        locator: 'Divine Genealogy and Syncretisms: Neo-Assyrian equation of Anšar with Aššur',
+      },
+    ],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-enlil-association',
+    statement: 'Assyrian theological tradition associated Aššur closely with Enlil; Šamši-Adad I promoted their equation while Aššur nevertheless retained a distinct Assyrian identity.',
+    aboutEntityIds: ['deity-ashur', 'deity-enlil'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-ashur',
+        evidenceRole: 'Supports',
+        locator: 'A divine enigma: Aššur in Assyrian scholarship — Šamši-Adad I, Enlil/Ellil, Ekur, and the continuing distinct identity of Aššur',
+      },
+    ],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-mullissu-consort',
+    statement: 'Mullissu, identified with Ninlil, functioned as the wife of Aššur in Assyrian theology.',
+    aboutEntityIds: ['deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-ninlil',
+        evidenceRole: 'Supports',
+        locator: 'Divine Genealogy and Syncretisms: when Enlil was syncretised with Aššur, Ninlil became Aššur’s wife',
+      },
+      {
+        sourceId: 'src-primary-ashurbanipal-009-ashur',
+        evidenceRole: 'Contextualizes',
+        locator: 'Q003708 column i line 1: Aššur and Mullissu named together in Ashurbanipal’s royal genealogy',
+      },
+    ],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-no-known-narrative-myth',
+    statement: 'No known narrative myth features Aššur, and modern ORACC scholarship notes that he was rarely conceptualized in anthropomorphic terms.',
+    aboutEntityIds: ['deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-ashur',
+        evidenceRole: 'Supports',
+        locator: 'A divine enigma: Aššur appears in no known narrative myths and was rarely conceptualised anthropomorphically',
+      },
+    ],
+    status: 'Published',
+  },
+
+  {
+    id: 'claim-ashur-vice-regent-continuity',
+    statement: 'Assyrian rulers used the title vice-regent of Aššur from the early second millennium BCE through the Neo-Assyrian imperial period, expressing the principle that the human king ruled on behalf of the god.',
+    aboutEntityIds: ['deity-ashur'],
+    claimType: 'Historical',
+    evidenceClassification: 'ScholarlyConsensus',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-nimrud-ashur',
+        evidenceRole: 'Supports',
+        locator: 'The Assyrian king: Aššur’s right-hand man — iššiakki Aššur used from the early second millennium through the seventh century BCE',
+      },
+    ],
+    status: 'Published',
+  },
 ];
 
 const cs = (id: string, parentEntityId: string, sectionLabel: string, prose: string, claimIds: string[] = []): ContentSection => ({
@@ -485,12 +656,8 @@ const cs = (id: string, parentEntityId: string, sectionLabel: string, prose: str
 
 export const correctionContentSections: ContentSection[] = [
   cs('cs-ashur-overview', 'deity-ashur', 'Overview',
-    'In Aššur-dān II 1, Aššur is presented as a divine authority directly connected with Assyrian kingship and royal military action. The inscription states that Aššur designated Aššur-dān II, placed the royal scepter and crown in his grasp, and established him for kingship over Assyria. It also presents a military campaign as undertaken by Aššur’s command. Modern scholarship places such evidence within Aššur’s broader role as the state god and head of the Assyrian pantheon. The ancient inscription and the broader scholarly synthesis should remain distinct kinds of evidence.',
-    [
-      'claim-ashur-dan-ii-royal-appointment',
-      'claim-ashur-dan-ii-command-campaign',
-      'claim-ashur-state-god',
-    ]),
+    "Aššur was the namesake god of the city of Ashur and the central state deity of Assyria. His surviving profile differs from those of many Mesopotamian gods because his identity is especially visible through royal ideology, state institutions, temple cult, and scholarly theology rather than through a large body of narrative mythology. Assyrian kings presented their authority as exercised under Aššur, while successive theological developments associated him with older supreme and primordial gods.",
+    ['claim-ashur-state-god', 'claim-ashur-city-deity-identity']),
   cs('cs-ashur-roles', 'deity-ashur', 'Roles and Domains',
     'In this profile, Aššur’s directly attested roles are tied to royal appointment, kingship, and military action carried out under divine command. Aššur-dān II 1 states that Aššur designated the king, placed the scepter and crown in his grasp, established him for kingship over Assyria, and commanded a military campaign. Modern scholarship further identifies Aššur as the state god and head of the Assyrian pantheon. These ancient and scholarly claims should remain distinct rather than being collapsed into broad timeless labels.',
     [
@@ -504,8 +671,8 @@ export const correctionContentSections: ContentSection[] = [
       'claim-ashur-dan-ii-royal-appointment',
       'claim-ashur-dan-ii-command-campaign',
     ]),
-  cs('cs-ashur-state-identity', 'deity-ashur', 'The God Aššur and Assyrian State Identity',
-    'The god Aššur and the city of Ashur shared the same name, and their identities became closely connected with the political and religious development of Assyria. Modern scholarship identifies Aššur as the state god and head of the Assyrian pantheon, while the city remained a major sacred center even after political capitals shifted elsewhere. This relationship between deity, city, and state is a distinctive feature of Assyrian religious history.',
+  cs('cs-ashur-state-identity', 'deity-ashur', 'The God, the City, and the Assyrian State',
+    "The god Aššur and the city of Ashur shared the same name, and their histories became inseparable from the political development of Assyria. Even after royal capitals shifted elsewhere, Ashur remained an exceptional sacred center. Modern scholarship therefore describes Aššur not simply as one member of a pantheon but as the divine focus of Assyrian state identity and royal legitimacy.",
     ['claim-ashur-state-god', 'claim-ashur-city-deity-identity']),
 
   cs('cs-saa20-049-overview', 'text-saa20-049-ashur', 'What Is SAA 20 049?',
@@ -568,12 +735,12 @@ export const correctionContentSections: ContentSection[] = [
   cs('cs-tiglath-pileser-i-01-significance', 'text-tiglath-pileser-i-01', 'Why This Inscription Matters',
     'Tiglath-pileser I 01 is especially valuable because it brings together kingship, warfare, hunting, cult images, temple restoration, divine favor, royal memory, and succession. Its scale shows how Middle Assyrian royal ideology presented nearly every sphere of kingship as operating under divine authority.',
     ['claim-tiglath-pileser-i-01-divine-invocation', 'claim-tiglath-pileser-i-01-campaigns', 'claim-tiglath-pileser-i-01-hunt', 'claim-tiglath-pileser-i-01-future-ruler-curse']),
-  cs('cs-ashur-kingship', 'deity-ashur', 'Aššur and Royal Kingship',
-    'Aššur-dān II 1 presents Aššur as the divine authority who designates the king, places a just scepter and exalted crown in his grasp, and establishes him for kingship over Assyria. This inscription provides direct ancient evidence for the connection between Aššur and royal legitimacy in this particular Neo-Assyrian context.',
-    ['claim-ashur-dan-ii-royal-appointment']),
+  cs('cs-ashur-kingship', 'deity-ashur', 'Scepter, Crown, and Royal Kingship',
+    "Direct royal inscriptions repeatedly connect Aššur with legitimate kingship. Tiglath-pileser I 01 calls him the grantor of scepter and crown and the sustainer of kingship. Centuries later, Aššur-dān II 1 states that Aššur designated the king, placed the royal scepter and crown in his grasp, and established him for kingship over Assyria.",
+    ['claim-ashur-tiglath-kingship', 'claim-ashur-dan-ii-royal-appointment']),
 
-  cs('cs-ashur-military-command', 'deity-ashur', 'Divine Command and Military Campaigns',
-    'In Aššur-dān II 1, the king states that he mustered his troops and campaigned against Muṣri by the command of Aššur, his lord. The inscription presents military action as undertaken under divine authority and records captured booty being brought back to the city of Aššur. This provides direct evidence for the role of Aššur within Assyrian royal campaign ideology.',
+  cs('cs-ashur-military-command', 'deity-ashur', 'Divine Command and Royal Warfare',
+    "Assyrian royal ideology could present military campaigning as action undertaken with Aššur's authority. Aššur-dān II 1 states that the king mustered his troops and campaigned against Muṣri by the command of Aššur, with captured wealth subsequently carried to the city of Aššur.",
     ['claim-ashur-dan-ii-command-campaign']),
   cs('cs-ashur-what-we-know', 'deity-ashur', 'What We Know',
     'Direct evidence from Aššur-dān II 1 supports two specific conclusions in this profile: Aššur is presented as the divine authority who establishes Aššur-dān II for kingship over Assyria, and a military campaign is described as undertaken by Aššur’s command. Broader claims that Aššur functioned as the state god and head of the Assyrian pantheon come from scholarly synthesis rather than from this inscription alone. The strongest reconstruction therefore keeps the inscription-specific evidence separate from wider historical interpretation.',
@@ -623,6 +790,70 @@ export const correctionContentSections: ContentSection[] = [
   cs('cs-babylon-mythological-figures', 'civ-babylon', 'Important Mythological Figures',
     "Not every important figure in Babylonian mythology held an attested civic cult on the same footing as Marduk or Nabu. Tiamat, the primordial sea defeated by Marduk in the Enuma Elish, is a major mythological and literary figure central to Babylonian creation tradition, but surviving evidence does not attest a civic temple cult dedicated to her comparable to Marduk's Esagila or Nabu's temples — this atlas lists her separately from Babylon's major civic deities for that reason, without removing her from Babylonian mythology.",
     ['claim-tiamat-not-civic-deity']),
+
+  cs('cs-adad-narari-i-15-overview', 'text-adad-narari-i-15', 'What Is This Text?',
+    'Adad-nārārī I 15 is a Middle Assyrian royal building inscription associated with the city of Aššur. It combines royal genealogy and divine appointment with the restoration of the temple of Ištar, preservation of earlier building memory, and instructions for future rulers.',
+    ['claim-adad-narari-i-15-object-context', 'claim-ashur-adad-narari-vice-regent']),
+
+  cs('cs-adad-narari-i-15-kingship', 'text-adad-narari-i-15', 'Enlil, Aššur, and Royal Authority',
+    'The inscription presents Adad-nārārī I and members of his royal ancestry as rulers appointed by Enlil while repeatedly styling them vice-regents of Aššur. These titles place Assyrian kingship within a framework of divine authorization.',
+    ['claim-adad-narari-i-15-enlil-appointment', 'claim-ashur-adad-narari-vice-regent']),
+
+  cs('cs-adad-narari-i-15-ishtar-history', 'text-adad-narari-i-15', 'The Temple of Ištar at Aššur',
+    'Adad-nārārī places his building work within a longer history of the sanctuary of Ištar at Aššur. Earlier Assyrian rulers are remembered as builders and restorers, making the temple part of an inherited royal tradition rather than a new foundation.',
+    ['claim-adad-narari-i-15-ishtar-temple-history']),
+
+  cs('cs-adad-narari-i-15-restoration', 'text-adad-narari-i-15', 'Restoring the Sanctuary',
+    'The king describes repairing the deteriorated sacred complex with substantial architectural work, including stone construction and replacement of structural timbers. Temple restoration is presented as one of the central achievements of the inscription.',
+    ['claim-adad-narari-i-15-restoration-work']),
+
+  cs('cs-adad-narari-i-15-ishhara', 'text-adad-narari-i-15', 'The Room of Išḫara',
+    'The building account also refers to a room associated with Išḫara. Although the atlas does not currently have a separate Išḫara deity profile, her presence in the inscription preserves evidence for the wider divine landscape of the restored complex.',
+    ['claim-adad-narari-i-15-ishhara-room']),
+
+  cs('cs-adad-narari-i-15-inscriptions', 'text-adad-narari-i-15', 'Building Inscriptions and Royal Memory',
+    'Adad-nārārī records depositing commemorative inscriptions in the restored building. The practice connected architectural renewal with preservation of the names and achievements of kings who had worked on the sanctuary.',
+    ['claim-adad-narari-i-15-inscription-deposit']),
+
+  cs('cs-adad-narari-i-15-future-ruler', 'text-adad-narari-i-15', 'Future Restoration and the Curse',
+    'The inscription instructs later rulers to restore the building when it deteriorates and to preserve earlier royal inscriptions. It also invokes Aššur, Ištar, and Adad against anyone who destroys, removes, or disregards those records.',
+    ['claim-adad-narari-i-15-future-ruler-curse']),
+
+  cs('cs-adad-narari-i-15-significance', 'text-adad-narari-i-15', 'Why This Inscription Matters',
+    'Adad-nārārī I 15 connects divine appointment, Assyrian vice-regency, temple restoration, inherited building history, sacred space, and the preservation of royal memory. It provides direct evidence for how Middle Assyrian kings presented construction as both religious service and legitimate royal succession.',
+    ['claim-adad-narari-i-15-object-context', 'claim-adad-narari-i-15-enlil-appointment', 'claim-adad-narari-i-15-ishtar-temple-history', 'claim-adad-narari-i-15-future-ruler-curse']),
+
+  cs('cs-ashur-historical-development', 'deity-ashur', 'Historical Development of Aššur',
+    "Aššur's theology developed across many centuries rather than appearing in one fixed form. The concept of the king as vice-regent of Aššur reaches back into the early second millennium BCE and remained important through the Assyrian imperial age. Assyrian scholars and rulers also connected Aššur with Enlil and, later, sometimes with primordial Anšar.",
+    ['claim-ashur-vice-regent-continuity', 'claim-ashur-enlil-association', 'claim-ashur-anshar-equation']),
+
+  cs('cs-ashur-cult-assur', 'deity-ashur', 'Cult at Assur and the Sacred Complex',
+    "Aššur was not merely an abstract symbol of empire. Cultic texts from Assur preserve a structured sacred environment populated by divine figures, cult objects, rooms, and shrines. SAA 20 049 places Aššur at the head of a detailed inventory associated with the holy of holies and adjoining sacred spaces.",
+    ['claim-ashur-cultic-inventory']),
+
+  cs('cs-ashur-vice-regent', 'deity-ashur', 'Vice-Regent of Aššur',
+    "One of the most distinctive expressions of Assyrian kingship was the title vice-regent of Aššur. The title represented the human ruler as governing on behalf of the god rather than replacing him as ultimate sovereign. Adad-nārārī I 15 applies this title to the reigning king and several royal ancestors, while modern scholarship traces its use from the early second millennium BCE into the final centuries of the Assyrian Empire.",
+    ['claim-ashur-adad-narari-vice-regent', 'claim-ashur-vice-regent-continuity']),
+
+  cs('cs-ashur-enlil', 'deity-ashur', 'Aššur and Enlil',
+    "A major strand of Assyrian theology connected Aššur with Enlil, the older Mesopotamian head of the pantheon. Šamši-Adad I explicitly promoted this equation and attempted to associate Aššur's temple with Enlil's Ekur. The equation influenced Aššur's theological status, but Aššur retained a distinct Assyrian identity.",
+    ['claim-ashur-enlil-association']),
+
+  cs('cs-ashur-mullissu', 'deity-ashur', 'Mullissu and the Divine Household',
+    "The theological association between Aššur and Enlil also affected the divine household. Ninlil, the traditional wife of Enlil, became associated with Aššur as Mullissu. Ashurbanipal 009 provides direct royal evidence for their pairing by describing the king as the creation of Aššur and Mullissu.",
+    ['claim-ashur-mullissu-consort', 'claim-ashur-ashurbanipal-mullissu']),
+
+  cs('cs-ashur-anshar', 'deity-ashur', 'Aššur and Anšar',
+    "A later theological development sometimes equated Aššur with Anšar, the primordial deity known from Mesopotamian cosmogonic tradition. Modern scholarship generally interprets this Neo-Assyrian identification as a way of assigning Aššur greater antiquity and seniority within the divine hierarchy rather than evidence that the two gods had always been identical.",
+    ['claim-ashur-anshar-equation']),
+
+  cs('cs-ashur-myth-evidence', 'deity-ashur', 'Myth, Representation, and Evidence Limits',
+    "Aššur presents an unusual evidentiary problem. Modern ORACC scholarship notes that he appears in no known narrative myth and was rarely conceptualized anthropomorphically. Much of what survives instead comes from royal inscriptions, temple and ritual records, archaeology, and learned theological equations. The absence of surviving narrative mythology should therefore not be confused with religious insignificance.",
+    ['claim-ashur-no-known-narrative-myth']),
+
+  cs('cs-ashur-significance', 'deity-ashur', 'Historical Significance',
+    "Aššur is essential for understanding how Assyrian religion, kingship, city identity, and imperial ideology interacted. The god could be presented as the ultimate source of royal office, the authority behind warfare, the focus of a major sacred center, the partner of Mullissu, the Assyrian counterpart of Enlil, and eventually a deity capable of identification with primordial Anšar.",
+    ['claim-ashur-state-god', 'claim-ashur-city-deity-identity', 'claim-ashur-dan-ii-royal-appointment', 'claim-ashur-dan-ii-command-campaign', 'claim-ashur-cultic-inventory', 'claim-ashur-mullissu-consort', 'claim-ashur-enlil-association', 'claim-ashur-anshar-equation']),
 ];
 
 // ---- Rewordings applied to existing (already-published) sections ----

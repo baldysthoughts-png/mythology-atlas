@@ -625,4 +625,32 @@ export const sources: Source[] = [
     citation: 'ETCSL 1.4.4, Inana and Bilulu',
     url: 'https://etcsl.orinst.ox.ac.uk/section1/tr144.htm',
   },
+
+  {
+    id: 'src-oracc-amgg-anshar-kishar',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Anšar and Kišar"',
+    url: 'https://oracc.museum.upenn.edu/amgg/Listofdeities/AnsharandKishar/',
+  },
+
+  {
+    id: 'src-oracc-amgg-ninlil',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Ninlil (Mulliltu, Mullissu, Mylitta)"',
+    url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/ninlil/',
+  },
+
+  {
+    id: 'src-oracc-nimrud-ashur',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "Aššur, divine embodiment of Assyria"',
+    url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thepeople/ashur/',
+  },
+
+  {
+    id: 'src-primary-adad-narari-i-15',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Adad-nārārī I 15 (Middle Assyrian royal inscription; RIAo/RIA 2, Q005752)',
+    url: 'https://oracc.museum.upenn.edu/riao/ria2/Q005752',
+  },
 ];
