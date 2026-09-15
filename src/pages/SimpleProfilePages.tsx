@@ -172,6 +172,9 @@ export function TopicProfilePage() {
 
   const topicImageMap: Record<string, string> = {
     'topic-flood-tradition': '/mythology-atlas/featured-flood-story.png',
+    'topic-creation': '/mythology-atlas/featured-creation-of-humanity.png',
+    'topic-divine-council': '/mythology-atlas/featured-divine-council.png',
+    'topic-underworld': '/mythology-atlas/featured-mesopotamian-underworld.png',
   };
 
   const topicImage = topicImageMap[topic.id];
