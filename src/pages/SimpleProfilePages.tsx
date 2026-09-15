@@ -228,6 +228,7 @@ export function PlaceProfilePage() {
     'place-ashur': '/mythology-atlas/featured-ashur.png',
     'place-kutha': '/mythology-atlas/featured-kutha.png',
     'place-borsippa': '/mythology-atlas/featured-borsippa.png',
+    'place-kalhu': '/mythology-atlas/featured-kalhu.png',
   };
 
   const placeImage = placeImageMap[place.id];
