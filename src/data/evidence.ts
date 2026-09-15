@@ -206,7 +206,7 @@ export const claims: Claim[] = [
   {
     id: 'claim-nabu-shamash-shuma-ukin-scribe-wisdom',
     statement: 'In Šamaš-šuma-ukin 4, Nabu is praised as the scribe of everything, the wisest of the gods, and one who knows everything.',
-    aboutEntityIds: ['deity-nabu'],
+    aboutEntityIds: ['text-shamash-shuma-ukin-4', 'deity-nabu'],
     claimType: 'Descriptive',
     evidenceClassification: 'AncientSource',
     evidenceLinks: [
@@ -217,7 +217,7 @@ export const claims: Claim[] = [
   {
     id: 'claim-nabu-shamash-shuma-ukin-ezida-borsippa',
     statement: 'In Šamaš-šuma-ukin 4, Nabu is described as dwelling in Ezida at Borsippa, which the inscription identifies as his cult center.',
-    aboutEntityIds: ['deity-nabu'],
+    aboutEntityIds: ['text-shamash-shuma-ukin-4', 'deity-nabu', 'place-borsippa'],
     claimType: 'Descriptive',
     evidenceClassification: 'AncientSource',
     evidenceLinks: [
@@ -228,7 +228,7 @@ export const claims: Claim[] = [
   {
     id: 'claim-nabu-shamash-shuma-ukin-son-of-marduk',
     statement: 'In Šamaš-šuma-ukin 4, Nabu is identified as the most important son of Asari (Marduk).',
-    aboutEntityIds: ['deity-nabu', 'deity-marduk'],
+    aboutEntityIds: ['text-shamash-shuma-ukin-4', 'deity-nabu', 'deity-marduk'],
     claimType: 'Descriptive',
     evidenceClassification: 'AncientSource',
     evidenceLinks: [
@@ -338,7 +338,7 @@ export const claims: Claim[] = [
   {
     id: 'claim-ashur-dan-ii-royal-appointment',
     statement: 'In Aššur-dān II 1, Aššur is said to designate Aššur-dān II, place a just scepter and an exalted crown in his grasp, and establish him for kingship over Assyria.',
-    aboutEntityIds: ['deity-ashur'],
+    aboutEntityIds: ['deity-ashur', 'text-ashur-dan-ii-1'],
     claimType: 'Descriptive',
     evidenceClassification: 'AncientSource',
     evidenceLinks: [
@@ -349,7 +349,7 @@ export const claims: Claim[] = [
   {
     id: 'claim-ashur-dan-ii-command-campaign',
     statement: 'In Aššur-dān II 1, the king states that by the command of Aššur, his lord, he mustered his troops, campaigned against the rebellious people of Muṣri, destroyed their cities, and carried their booty to the city of Aššur.',
-    aboutEntityIds: ['deity-ashur'],
+    aboutEntityIds: ['deity-ashur', 'text-ashur-dan-ii-1'],
     claimType: 'Descriptive',
     evidenceClassification: 'AncientSource',
     evidenceLinks: [
