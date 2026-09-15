@@ -99,11 +99,46 @@ export function TextProfilePage() {
   const sections = getContentSections(text.contentSectionIds);
 
   const textImageMap: Record<string, string> = {
-    'text-gilgamesh': '/mythology-atlas/featured-gilgamesh.png',
+    'text-gilgamesh': '/mythology-atlas/featured-gilgamesh-epic.png',
+    'text-ninurta-angim': '/mythology-atlas/featured-ninurta-angim.png',
+    'text-ashurnasirpal-ii-001-ninurta': '/mythology-atlas/featured-ashurnasirpal-ii-001.png',
+    'text-atrahasis': '/mythology-atlas/featured-atrahasis.png',
     'text-eridu-genesis': '/mythology-atlas/featured-eridu-genesis.png',
-    'text-descent-of-inanna': '/mythology-atlas/featured-descent-inanna.png',
-    'text-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag.png',
+    'text-descent-of-inanna': '/mythology-atlas/featured-descent-inanna-text.png',
+    'text-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag-text.png',
     'text-sumerian-king-list': '/mythology-atlas/featured-sumerian-king-list.png',
+    'text-enuma-elish': '/mythology-atlas/featured-enuma-elish-text.png',
+    'text-ashurbanipal-colophon-338-339': '/mythology-atlas/featured-ashurbanipal-colophon-338-339.png',
+    'text-ashurbanipal-009-ashur': '/mythology-atlas/featured-ashurbanipal-009-ashur.png',
+    'text-saa20-049-ashur': '/mythology-atlas/featured-saa20-049-ashur.png',
+    'text-tiglath-pileser-i-01': '/mythology-atlas/featured-tiglath-pileser-i-01.png',
+    'text-adad-narari-i-15': '/mythology-atlas/featured-adad-narari-i-15.png',
+    'text-ashurbanipal-nanaya-return': '/mythology-atlas/featured-ashurbanipal-nanaya-return.png',
+    'text-esarhaddon-136-nanaya': '/mythology-atlas/featured-esarhaddon-136-nanaya.png',
+    'text-nanaya-hymn-sargon-ii': '/mythology-atlas/featured-nanaya-hymn-sargon-ii.png',
+    'text-lipit-eshtar-10add': '/mythology-atlas/featured-lipit-eshtar-10add.png',
+    'text-ashur-dan-ii-1': '/mythology-atlas/featured-ashur-dan-ii-1.png',
+    'text-antiochus-i-1': '/mythology-atlas/featured-antiochus-i-1.png',
+    'text-shamash-shuma-ukin-4': '/mythology-atlas/featured-shamash-shuma-ukin-4.png',
+    'text-ninurta-lugale': '/mythology-atlas/featured-ninurta-lugale-text.png',
+    'text-lament-for-urim': '/mythology-atlas/featured-lament-for-urim.png',
+    'text-death-ur-namma': '/mythology-atlas/featured-death-ur-namma.png',
+    'text-nergal-ereshkigal-ea357': '/mythology-atlas/featured-nergal-ereshkigal-ea357.png',
+    'text-dumuzi-enkimdu': '/mythology-atlas/featured-dumuzid-enkimdu.png',
+    'text-dumuzi-geshtinanna': '/mythology-atlas/featured-dumuzid-geshtinanna.png',
+    'text-dumuzi-dream': '/mythology-atlas/featured-dumuzids-dream.png',
+    'text-inanna-bilulu': '/mythology-atlas/featured-inana-bilulu.png',
+    'text-dumuzi-inanna-c1': '/mythology-atlas/featured-inana-dumuzid-c1.png',
+    'text-nungal-a': '/mythology-atlas/featured-nungal-a.png',
+    'text-ashurbanipal-227-nergal': '/mythology-atlas/featured-ashurbanipal-227-nergal.png',
+    'text-nergal-b': '/mythology-atlas/featured-nergal-b.png',
+    'text-ninurta-turtle': '/mythology-atlas/featured-ninurta-turtle.png',
+    'text-nebuchadnezzar-ii-032-nergal-kutha': '/mythology-atlas/featured-nebuchadnezzar-ii-032.png',
+    'text-sennacherib-214-nergal-tarbisu': '/mythology-atlas/featured-sennacherib-214.png',
+    'text-nebuchadnezzar-ii-034-marduk': '/mythology-atlas/featured-nebuchadnezzar-ii-034.png',
+    'text-ashurbanipal-2005-ningal': '/mythology-atlas/featured-ashurbanipal-2005.png',
+    'text-ashurbanipal-2006-ningal': '/mythology-atlas/featured-ashurbanipal-2006.png',
+    'text-amar-suena-11-ningal': '/mythology-atlas/featured-amar-suena-11.png',
   };
 
   const textImage = textImageMap[text.id];
@@ -115,10 +150,13 @@ export function TextProfilePage() {
           <img
             src={textImage}
             alt={text.canonicalName}
-            className="aspect-[16/9] w-full rounded-md object-cover"
+            className="aspect-[16/9] w-full rounded-md object-cover object-center"
           />
         ) : (
-          <ImagePlaceholder label={`${text.canonicalName} — tablet / manuscript`} aspect="aspect-[16/9]" />
+          <ImagePlaceholder
+            label={`${text.canonicalName} — tablet / manuscript`}
+            aspect="aspect-[16/9]"
+          />
         )}
         <div className="mt-4 flex items-start justify-between gap-3">
           <h1 className="font-display text-2xl font-medium" style={{ color: 'var(--ink)' }}>
