@@ -7297,7 +7297,16 @@ export const expandedContentSections: ContentSection[] = [
     ]),
   cs('cs-tiamat-significance', 'deity-tiamat', 'Historical and Literary Significance',
     'Tiamat is important because En\u016bma eli\u0161 uses one figure to connect primordial generation, divine conflict, political authority, and cosmic creation. Following her role from the opening waters, through her initial resistance to Apsu\'s violence, to the war host, defeat, and transformation into cosmic geography reveals a much more complex literary trajectory than the simplified modern image of a primordial monster. Her profile also demonstrates why mythological importance and institutional cult must be evaluated separately.',
-    []),  // ---------------- NABU ----------------
+    [
+      'claim-tiamat-enuma-elish-primordial-waters',
+      'claim-tiamat-opposes-apsu-destruction',
+      'claim-enuma-elish-apsu-ea-conflict',
+      'claim-enuma-elish-tiamat-kingu-war-preparation',
+      'claim-tiamat-enuma-elish-defeated-by-marduk',
+      'claim-tiamat-body-cosmic-order',
+      'claim-marduk-enuma-elish-creation',
+      'claim-tiamat-not-civic-deity',
+    ]),  // ---------------- NABU ----------------
   cs('cs-nabu-roles', 'deity-nabu', 'Roles and Domains',
     'Nabu’s association with writing and wisdom extends beyond the language of a single royal inscription. Šamaš-šuma-ukin 4 directly praises him as the scribe of everything, the wisest of the gods, and one who knows everything. Modern scholarly synthesis further identifies Nabu as a god of writing and wisdom, patron of scribes, and a deity commonly invoked in scribal colophons. The profile therefore distinguishes the wording of the ancient inscription from the broader historical pattern reconstructed from multiple sources.',
     ['claim-nabu-shamash-shuma-ukin-scribe-wisdom', 'claim-nabu-writing-scribal-patronage']),
