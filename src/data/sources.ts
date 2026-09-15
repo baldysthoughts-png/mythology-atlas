@@ -689,4 +689,80 @@ export const sources: Source[] = [
     citation: 'Adad-nārārī I 15 (Middle Assyrian royal inscription; RIAo/RIA 2, Q005752)',
     url: 'https://oracc.museum.upenn.edu/riao/ria2/Q005752',
   },
+
+  {
+    id: 'src-ashmolean-sumerian-king-list',
+    sourceCategory: 'UniversityResource',
+    citation: 'Ashmolean Museum, University of Oxford, “Sumerian King List,” AN1923.444',
+    url: 'https://ashmolean.web.ox.ac.uk/sumerian-king-list',
+  },
+
+  {
+    id: 'src-cdli-nungal-a-p268936',
+    sourceCategory: 'UniversityResource',
+    citation: 'CDLI Literary 000736, ex. 006 (P268936), Old Babylonian Nippur witness to Nungal A',
+    url: 'https://cdli.earth/P268936',
+  },
+
+  {
+    id: 'src-etcsl-nungal-a-bibliography',
+    sourceCategory: 'UniversityResource',
+    citation: 'ETCSL 4.28.1, A Hymn to Nungal: bibliography and cuneiform sources',
+    url: 'https://etcsl.orinst.ox.ac.uk/section4/b4281.htm',
+  },
+
+  {
+    id: 'src-oracc-aebp-dumuzi-tammuz',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC AEBP divine-name glossary, Dumuzi [TAMMUZ]',
+    url: 'https://oracc.museum.upenn.edu/saao/aebp/cbd/qpn-x-divine/onebigfile.html',
+  },
+
+  {
+    id: 'src-oracc-epsd2-lament-urim',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC ePSD2 Literary, “The lament for Urim” (ETCSL 2.2.2; Q000379)',
+    url: 'https://oracc.museum.upenn.edu/epsd2/literary/Q000379',
+  },
+
+  {
+    id: 'src-penn-ur-city-moon',
+    sourceCategory: 'ArchaeologicalReport',
+    citation: 'Hafford, William B., "City of the Moon: New Excavations at Ur," Expedition Magazine, Penn Museum (2017)',
+    url: 'https://www.penn.museum/sites/expedition/city-of-the-moon/',
+  },
+
+  {
+    id: 'src-primary-amar-suena-11-ningal',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Amar-Suena 11 (RIME 3/2.01.03.11; ORACC/ETCSRI Q001794)',
+    url: 'https://oracc.museum.upenn.edu/etcsri/Q001794',
+  },
+
+  {
+    id: 'src-primary-gilgamesh-vi',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Epic of Gilgamesh, Standard Babylonian version, Tablet VI',
+  },
+
+  {
+    id: 'src-primary-lament-for-urim',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'The Lament for Urim (Sumerian composition; ETCSL 2.2.2)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section2/tr222.htm',
+  },
+
+  {
+    id: 'src-primary-ningal-well-q003845',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurbanipal 2006 / Sîn-balāssu-iqbi inscription for Ningal (ORACC/RINAP 5, Q003845)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q003845',
+  },
+
+  {
+    id: 'src-primary-nungal-a',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'ETCSL 4.28.1, A Hymn to Nungal (Nungal A)',
+    url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.4.28.1',
+  },
 ];
