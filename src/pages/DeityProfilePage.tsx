@@ -160,7 +160,18 @@ export function DeityProfilePage() {
               </h2>
               <div className="space-y-2">
                 {relationships.map((r) => {
-                  const otherId = r.fromEntityId === deity.id ? r.toEntityId : r.fromEntityId;
+                  const isOutgoing = r.fromEntityId === deity.id;
+                  const otherId = isOutgoing ? r.toEntityId : r.fromEntityId;
+                  const displayRelationType =
+                    isOutgoing
+                      ? r.relationType
+                      : r.relationType === 'sonOf' || r.relationType === 'daughterOf'
+                        ? 'parentOf'
+                        : r.relationType === 'parentOf'
+                          ? 'childOf'
+                          : r.relationType === 'childOf'
+                            ? 'parentOf'
+                            : r.relationType;
                   const other = getEntityGeneric(otherId);
                   if (!other) return null;
                   return (
@@ -171,7 +182,7 @@ export function DeityProfilePage() {
                     >
                       <span className="text-sm" style={{ color: 'var(--ink)' }}>
                         <span className="font-mono-label text-[10px] uppercase" style={{ color: 'var(--ink-faint)' }}>
-                          {r.relationType}
+                          {displayRelationType}
                         </span>{' '}
                         <Link to={entityHref(other)} className="underline decoration-dotted underline-offset-2">
                           {other.canonicalName}
