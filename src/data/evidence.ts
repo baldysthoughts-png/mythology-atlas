@@ -988,8 +988,8 @@ export const contentSections: ContentSection[] = [
     id: 'cs-underworld-overview',
     parentEntityId: 'topic-underworld',
     sectionLabel: 'Overview',
-    prose: "Inanna's Descent structures its central character's loss of power through a sequence of seven gates, a structure scholars read as encoding a deliberate cosmological logic.",
-    claimIds: ['claim-inanna-descent-power'],
+    prose: "Mesopotamian literature preserves several different pictures of the underworld rather than one fixed map. Inanna’s Descent presents a seven-gate passage into Ereshkigal’s realm. The Death of Ur-Namma depicts porters, palaces, offerings, rites, and judgment among the dead. The Amarna recension of Nergal and Ereshkigal instead preserves fourteen gates and culminates in Ereshkigal offering Nergal kingship of the broad netherworld.",
+    claimIds: ['claim-inanna-descent-seven-gates', 'claim-death-ur-namma-porters-banquet', 'claim-death-ur-namma-underworld-role', 'claim-ea357-fourteen-gates', 'claim-ea357-ending-marriage-kingship'],
   },
 ];
 
