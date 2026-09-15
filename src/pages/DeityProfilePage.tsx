@@ -54,7 +54,11 @@ export function DeityProfilePage() {
                             ? '/mythology-atlas/ninurta-card.png'
                             : deity.id === 'deity-nabu'
                               ? '/mythology-atlas/nabu-card.png'
-                              : deity.id === 'deity-ashur'
+                              : deity.id === 'deity-tashmetu'
+                                ? '/mythology-atlas/tasmetu-card.png'
+                                : deity.id === 'deity-nanaya'
+                                  ? '/mythology-atlas/nanaya-card.png'
+                                  : deity.id === 'deity-ashur'
                                 ? '/mythology-atlas/ashur-card.png'
                   : undefined;
   // Some deities now have a richer, prose-and-claims "Roles and Domains" / "Symbols
