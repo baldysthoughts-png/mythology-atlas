@@ -13,8 +13,9 @@ export const deities: Deity[] = [
     roles: ['Fresh water', 'Wisdom', 'Creation', 'Magic', 'Craftsmanship'],
     symbols: ['Flowing vase', 'Goat-fish (capricorn-like creature)', 'Turtle'],
     associatedPlaceIds: ['place-eridu'],
-    associatedStoryIds: ['story-enki-ninhursag', 'story-atrahasis-flood', 'story-gilgamesh-flood'],
-    ancientTextIds: ['text-atrahasis', 'text-gilgamesh', 'text-enki-ninhursag'],
+    associatedStoryIds: ['story-enki-ninhursag', 'story-atrahasis-flood', 'story-gilgamesh-flood', 'story-descent-of-inanna', 'story-enuma-elish'],
+    ancientTextIds: ['text-enuma-elish', 'text-descent-of-inanna', 'text-atrahasis', 'text-gilgamesh', 'text-eridu-genesis', 'text-enki-ninhursag', 'text-death-ur-namma', 'text-nergal-ereshkigal-ea357', 'text-saa20-049-ashur'
+    ],
     relatedFigureIds: ['deity-enlil', 'deity-an', 'deity-ninhursag', 'deity-inanna', 'deity-marduk'],
     contentSectionIds: ['cs-enki-overview', 'cs-enki-names', 'cs-enki-roles', 'cs-enki-cult-centers', 'cs-enki-historical-development', 'cs-enki-family', 'cs-enki-myths', 'cs-enki-texts', 'cs-enki-symbols', 'cs-enki-worship', 'cs-enki-archaeology', 'cs-enki-scholarly', 'cs-enki-debated', 'cs-enki-later-reception', 'cs-enki-why-matters'],
   },
@@ -28,8 +29,11 @@ export const deities: Deity[] = [
     primaryCultCenterId: 'place-nippur',
     roles: ['Divine authority', 'Assembly leadership', 'Kingship and religious legitimacy'],
     associatedPlaceIds: ['place-nippur'],
-    associatedStoryIds: ['story-atrahasis-flood'],
-    ancientTextIds: ['text-atrahasis', 'text-gilgamesh'],
+    associatedStoryIds: ['story-atrahasis-flood', 'story-descent-of-inanna', 'story-gilgamesh-flood'],
+    ancientTextIds: ['text-ninurta-lugale', 'text-descent-of-inanna', 'text-atrahasis', 'text-gilgamesh', 'text-eridu-genesis', 'text-lament-for-urim', 'text-death-ur-namma', 'text-nungal-a', 'text-nergal-b', 'text-ashurbanipal-227-nergal', 'text-adad-narari-i-15'
+    , 'text-tiglath-pileser-i-01'
+    , 'text-saa20-049-ashur'
+    ],
     relatedFigureIds: ['deity-enki', 'deity-an', 'deity-ninurta'],
     contentSectionIds: ['cs-enlil-overview', 'cs-enlil-roles', 'cs-enlil-cult-center', 'cs-enlil-family', 'cs-enlil-myths', 'cs-enlil-ancient-textual-tradition', 'cs-enlil-ancient-sources', 'cs-enlil-scholarly', 'cs-enlil-debated', 'cs-enlil-what-we-know', 'cs-enlil-why-matters'],
   },
@@ -45,7 +49,9 @@ export const deities: Deity[] = [
     roles: ['Sky', 'High formal status in the pantheon'],
     associatedPlaceIds: ['place-uruk'],
     associatedStoryIds: [],
-    ancientTextIds: [],
+    ancientTextIds: ['text-gilgamesh', 'text-eridu-genesis', 'text-lament-for-urim', 'text-nungal-a', 'text-nergal-b', 'text-tiglath-pileser-i-01'
+    , 'text-saa20-049-ashur'
+    ],
     relatedFigureIds: ['deity-enlil', 'deity-enki', 'deity-inanna'],
     contentSectionIds: ['cs-an-overview', 'cs-an-names', 'cs-an-roles', 'cs-an-ancient-textual-tradition', 'cs-an-scholarly-interpretation', 'cs-an-cult-center', 'cs-an-what-we-know', 'cs-an-why-it-matters', 'cs-an-historical-development'],
   },
@@ -59,9 +65,13 @@ export const deities: Deity[] = [
     cultures: ['Sumerian', 'Akkadian', 'Babylonian', 'Assyrian'],
     primaryCultCenterId: 'place-uruk',
     roles: ['Love', 'War', 'Fertility', 'Political power'],
-    associatedPlaceIds: ['place-uruk', 'place-ur'],
+    associatedPlaceIds: ['place-uruk', 'place-ur', 'place-nineveh'],
     associatedStoryIds: ['story-descent-of-inanna'],
-    ancientTextIds: ['text-descent-of-inanna'],
+    ancientTextIds: ['text-gilgamesh', 'text-descent-of-inanna', 'text-death-ur-namma', 'text-dumuzi-enkimdu', 'text-dumuzi-geshtinanna', 'text-dumuzi-dream', 'text-inanna-bilulu', 'text-dumuzi-inanna-c1', 'text-nungal-a', 'text-lipit-eshtar-10add', 'text-adad-narari-i-15'
+    , 'text-tiglath-pileser-i-01'
+    , 'text-saa20-049-ashur'
+    , 'text-ashurbanipal-009-ashur'
+    ],
     relatedFigureIds: ['deity-nanna', 'deity-ningal', 'deity-utu', 'deity-ereshkigal', 'deity-dumuzi'],
     contentSectionIds: ['cs-inanna-overview', 'cs-inanna-names', 'cs-inanna-roles', 'cs-inanna-cult-centers', 'cs-inanna-family', 'cs-inanna-myths', 'cs-inanna-textual-tradition', 'cs-inanna-ancient-sources', 'cs-inanna-scholarly', 'cs-inanna-what-we-know', 'cs-inanna-why-matters'],
   },
