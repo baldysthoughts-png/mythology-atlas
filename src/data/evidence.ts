@@ -476,8 +476,8 @@ export const relationships: Relationship[] = [
     id: 'rel-ninurta-enlil-parentage',
     fromEntityId: 'deity-ninurta',
     toEntityId: 'deity-enlil',
-    relationType: 'relatedTo',
-    certaintyTier: 'WellEstablished',
+    relationType: 'sonOf',
+    certaintyTier: 'Documented',
     evidenceLinks: [
       {
         sourceId: 'src-primary-ninurta-lugale',
@@ -491,8 +491,8 @@ export const relationships: Relationship[] = [
     id: 'rel-nabu-marduk-parentage',
     fromEntityId: 'deity-nabu',
     toEntityId: 'deity-marduk',
-    relationType: 'relatedTo',
-    certaintyTier: 'WellEstablished',
+    relationType: 'sonOf',
+    certaintyTier: 'Documented',
     evidenceLinks: [
       {
         sourceId: 'src-primary-shamash-shuma-ukin-4-nabu',
