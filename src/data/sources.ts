@@ -368,6 +368,12 @@ export const sources: Source[] = [
   },
   // ---- Kalhu staged sources ----
   {
+    id: 'src-primary-ashurbanipal-colophon-338-339',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurbanipal Library Colophon BAK 338/339 (Q009339)',
+    url: 'https://oracc.museum.upenn.edu/asbp/rlasb/Q009339/',
+  },
+  {
     id: 'src-oracc-nimrud-city',
     sourceCategory: 'UniversityResource',
     citation: 'ORACC, Nimrud: Materialities of Assyrian Knowledge Production, "The ancient Assyrian royal city of Kalhu"',
@@ -564,6 +570,12 @@ export const sources: Source[] = [
     sourceCategory: 'UniversityResource',
     citation: 'Pintér, Anna Krisztina, “Dumuzi and Ĝeštinanna,” Acta Orientalia Academiae Scientiarum Hungaricae 75/3 (2022), 349–370',
     url: 'https://real.mtak.hu/153681/',
+  },
+  {
+    id: 'src-primary-esarhaddon-136-nanaya',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Esarhaddon 136 (RIBo/Babylon 6, Q003365)',
+    url: 'https://oracc.museum.upenn.edu/ribo/babylon6/Q003365',
   },
   {
     id: 'src-primary-tiglath-pileser-i-01',
