@@ -409,4 +409,52 @@ export const sources: Source[] = [
     citation: 'Ancient Mesopotamian Gods and Goddesses (ORACC/AMGG), "Tašmetu"',
     url: 'https://oracc.museum.upenn.edu/amgg/Listofdeities/Tashmetu/',
   },
+  {
+    id: 'src-etcsl-death-ur-namma-bibliography',
+    sourceCategory: 'UniversityResource',
+    citation: 'ETCSL 2.4.1.1 bibliography and cuneiform sources, “The death of Ur-Namma (Ur-Namma A)”',
+    url: 'https://etcsl.orinst.ox.ac.uk/section2/b2411.htm',
+  },
+  {
+    id: 'src-etcsl-nergal-b-bibliography',
+    sourceCategory: 'UniversityResource',
+    citation: 'ETCSL 4.15.2, A Hymn to Nergal (Nergal B): bibliography and cuneiform sources',
+    url: 'https://etcsl.orinst.ox.ac.uk/section4/b4152.htm',
+  },
+  {
+    id: 'src-gurney-nergal-ereshkigal-sultantepe',
+    sourceCategory: 'UniversityResource',
+    citation: 'Gurney, O. R., “The Sultantepe Tablets (continued) VII. The Myth of Nergal and Ereshkigal,” Anatolian Studies 10 (1960), 105–131',
+    url: 'https://www.cambridge.org/core/journals/anatolian-studies/article/abs/sultantepe-tablets-continued-vii-the-myth-of-nergal-and-ereshkigal/84F26239ADFFBDF3FD1D42D65A91F557',
+  },
+  {
+    id: 'src-novotny-nergal-fourteen-gates',
+    sourceCategory: 'UniversityResource',
+    citation: 'Novotny, J. R., “Were there Seven or Fourteen Gates of the Netherworld?”',
+    url: 'https://epub.ub.uni-muenchen.de/31859/1/Jamie_Novotny_Were_there_seven_or_fourteen_gates_of_the_netherworld.pdf',
+  },
+  {
+    id: 'src-oracc-epsd2-death-ur-namma',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC ePSD2 Literary, “The death of Ur-Namma (Ur-Namma A)” (ETCSL 2.4.1.1; Q000386)',
+    url: 'https://oracc.museum.upenn.edu/epsd2/literary/Q000386',
+  },
+  {
+    id: 'src-primary-death-ur-namma',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'ETCSL 2.4.1.1, The Death of Ur-Namma (Ur-Namma A)',
+    url: 'https://etcsl.orinst.ox.ac.uk/section2/tr2411.htm',
+  },
+  {
+    id: 'src-primary-nergal-b',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'ETCSL 4.15.2, A Hymn to Nergal (Nergal B)',
+    url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?charenc=j&text=t.4.15.2',
+  },
+  {
+    id: 'src-primary-sennacherib-214-nergal-tarbisu',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Sennacherib 214 (Neo-Assyrian royal inscription; RINAP 3/2, Q004019)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap3/Q004019/',
+  },
 ];
