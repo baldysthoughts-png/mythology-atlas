@@ -275,6 +275,12 @@ export const sources: Source[] = [
     url: 'https://etcsl.orinst.ox.ac.uk/section1/tr162.htm',
   },
   {
+    id: 'src-wagensonner-lugale-transmission',
+    sourceCategory: 'AcademicBook',
+    citation: 'Wagensonner, K., “Sumerian in the Middle Assyrian Period,” in Multilingualism, Lingua Franca and Lingua Sacra (2018)',
+    url: 'https://www.mprl-series.mpg.de/studies/10/11/index.html',
+  },
+  {
     id: 'src-primary-sumerian-king-list',
     sourceCategory: 'PrimaryAncientText',
     citation: 'The Sumerian King List (Sumerian composition; ETCSL 2.1.1)',
@@ -398,6 +404,18 @@ export const sources: Source[] = [
     url: 'https://oracc.museum.upenn.edu/nimrud/ancientkalhu/thecity/nabustemple/',
   },
   {
+    id: 'src-primary-ninurta-angim',
+    sourceCategory: 'PrimaryAncientText',
+    citation: "Ninurta's Return to Nibru (Angim; Sumerian composition; ETCSL 1.6.1)",
+    url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.6.1',
+  },
+  {
+    id: 'src-primary-ninurta-turtle',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ninurta and the Turtle (Sumerian composition; ETCSL 1.6.3)',
+    url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.6.3',
+  },
+  {
     id: 'src-primary-ashurnasirpal-ii-001-ninurta',
     sourceCategory: 'PrimaryAncientText',
     citation: 'Ashurnasirpal II 001 (RIAo/RIA 4, Q004455)',
@@ -420,6 +438,18 @@ export const sources: Source[] = [
     sourceCategory: 'UniversityResource',
     citation: 'ETCSL 4.15.2, A Hymn to Nergal (Nergal B): bibliography and cuneiform sources',
     url: 'https://etcsl.orinst.ox.ac.uk/section4/b4152.htm',
+  },
+  {
+    id: 'src-etcsl-ninurta-turtle-bibliography',
+    sourceCategory: 'UniversityResource',
+    citation: 'ETCSL 1.6.3, Ninurta and the Turtle: bibliography and cuneiform sources',
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/b163.htm',
+  },
+  {
+    id: 'src-etcsl-ninurta-angim-bibliography',
+    sourceCategory: 'UniversityResource',
+    citation: "ETCSL 1.6.1, Ninurta's Return to Nibru (Angim): bibliography and cuneiform sources",
+    url: 'https://etcsl.orinst.ox.ac.uk/section1/b161.htm',
   },
   {
     id: 'src-gurney-nergal-ereshkigal-sultantepe',
@@ -534,6 +564,24 @@ export const sources: Source[] = [
     sourceCategory: 'UniversityResource',
     citation: 'Pintér, Anna Krisztina, “Dumuzi and Ĝeštinanna,” Acta Orientalia Academiae Scientiarum Hungaricae 75/3 (2022), 349–370',
     url: 'https://real.mtak.hu/153681/',
+  },
+  {
+    id: 'src-primary-tiglath-pileser-i-01',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Tiglath-pileser I 01 (Middle Assyrian royal inscription; RIAo/RIA 3, Q005926)',
+    url: 'https://oracc.museum.upenn.edu/riao/ria3/Q005926',
+  },
+  {
+    id: 'src-primary-saa20-049-ashur',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'SAA 20 049, The Gods, Shrines and Holy Palaces of Assur (Q004802)',
+    url: 'https://oracc.museum.upenn.edu/saao/saa20/Q004802',
+  },
+  {
+    id: 'src-primary-ashurbanipal-009-ashur',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurbanipal 009 (Neo-Assyrian royal inscription; RINAP 5, Q003708)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q003708',
   },
   {
     id: 'src-primary-dumuzi-dream',
