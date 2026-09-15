@@ -19,9 +19,9 @@ export function StoryProfilePage() {
   const storyImageMap: Record<string, string> = {
     'story-atrahasis-flood': '/mythology-atlas/featured-atrahasis-flood.png',
     'story-gilgamesh-flood': '/mythology-atlas/featured-gilgamesh-flood.png',
-    'story-descent-of-inanna': '/mythology-atlas/featured-descent-inanna.png',
+    'story-descent-of-inanna': '/mythology-atlas/featured-descent-inanna-text.png',
     'story-enuma-elish': '/mythology-atlas/featured-enuma-elish.png',
-  'story-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag.png',
+  'story-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag-text.png',
   };
   const storyImage = storyImageMap[story.id];
 
@@ -104,8 +104,8 @@ export function TextProfilePage() {
     'text-ashurnasirpal-ii-001-ninurta': '/mythology-atlas/featured-ashurnasirpal-ii-001.png',
     'text-atrahasis': '/mythology-atlas/featured-atrahasis.png',
     'text-eridu-genesis': '/mythology-atlas/featured-eridu-genesis.png',
-    'text-descent-of-inanna': '/mythology-atlas/featured-descent-inanna-text.png',
-    'text-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag-text.png',
+    'text-descent-of-inanna': '/mythology-atlas/featured-descent-inanna.png',
+    'text-enki-ninhursag': '/mythology-atlas/featured-enki-ninhursag.png',
     'text-sumerian-king-list': '/mythology-atlas/featured-sumerian-king-list.png',
     'text-enuma-elish': '/mythology-atlas/featured-enuma-elish-text.png',
     'text-ashurbanipal-colophon-338-339': '/mythology-atlas/featured-ashurbanipal-colophon-338-339.png',
