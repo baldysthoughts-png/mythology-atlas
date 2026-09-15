@@ -765,4 +765,29 @@ export const sources: Source[] = [
     citation: 'ETCSL 4.28.1, A Hymn to Nungal (Nungal A)',
     url: 'https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.4.28.1',
   },
+
+  {
+      id: 'src-met-ur-ziggurat',
+      sourceCategory: 'MuseumCollection',
+      citation: 'Department of Ancient Near Eastern Art, "Ur: The Ziggurat," Heilbrunn Timeline of Art History, The Metropolitan Museum of Art (2002)',
+      url: 'https://www.metmuseum.org/essays/ur-the-ziggurat',
+    },
+  {
+      id: 'src-met-ur-royal-graves',
+      sourceCategory: 'MuseumCollection',
+      citation: 'Department of Ancient Near Eastern Art, "Ur: The Royal Graves," Heilbrunn Timeline of Art History, The Metropolitan Museum of Art (2003)',
+      url: 'https://www.metmuseum.org/essays/ur-the-royal-graves',
+    },
+  {
+      id: 'src-bm-ur-royal-cemetery-jewellery',
+      sourceCategory: 'MuseumCollection',
+      citation: 'British Museum, jewellery from the Royal Cemetery at Ur, collection object 122414',
+      url: 'https://www.britishmuseum.org/collection/object/W_1929-1017-226',
+    },
+  {
+      id: 'src-penn-ur-texts-teaching',
+      sourceCategory: 'UniversityResource',
+      citation: 'Tinney, Steve, "Texts, Tablets, and Teaching," Expedition Magazine 40.2, Penn Museum (1998)',
+      url: 'https://www.penn.museum/sites/expedition/texts-tablets-and-teaching/',
+    },
 ];
