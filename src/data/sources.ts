@@ -572,6 +572,30 @@ export const sources: Source[] = [
     url: 'https://real.mtak.hu/153681/',
   },
   {
+    id: 'src-oracc-epsd2-nanaya',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC ePSD2, "Nanaya [1] (DN)"',
+    url: 'https://oracc.museum.upenn.edu/epsd2/cbd/sux/o0046571.html',
+  },
+  {
+    id: 'src-oracc-aebp-nanaya',
+    sourceCategory: 'UniversityResource',
+    citation: 'ORACC, Assyrian Empire Builders, People, gods & places: "Nanaya"',
+    url: 'https://oracc.museum.upenn.edu/saao/aebp/People%2Cgodsplaces/',
+  },
+  {
+    id: 'src-primary-lipit-eshtar-10add',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Lipit-Eštar 10add (ETCSRI Q004103)',
+    url: 'https://oracc.museum.upenn.edu/etcsri/Q004103',
+  },
+  {
+    id: 'src-primary-saa03-004-nanaya',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'SAA 03 004, Nanaya Hymn of Sargon II (P334931)',
+    url: 'https://oracc.museum.upenn.edu/saao/saa03/P334931',
+  },
+  {
     id: 'src-primary-esarhaddon-136-nanaya',
     sourceCategory: 'PrimaryAncientText',
     citation: 'Esarhaddon 136 (RIBo/Babylon 6, Q003365)',
@@ -640,6 +664,18 @@ export const sources: Source[] = [
     url: 'https://oracc.museum.upenn.edu/amgg/listofdeities/ninlil/',
   },
 
+  {
+    id: 'src-primary-ashurbanipal-nanaya-return',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Ashurbanipal inscription concerning the return of Nanaya to Uruk (RINAP 5, Q007562)',
+    url: 'https://oracc.museum.upenn.edu/rinap/rinap5/Q007562',
+  },
+  {
+    id: 'src-primary-uruk-new-year-nanaya',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'TCL 6, 39, Uruk New Year ritual (CAMS/GKAB P363711)',
+    url: 'https://oracc.museum.upenn.edu/cams/gkab/P363711',
+  },
   {
     id: 'src-oracc-nimrud-ashur',
     sourceCategory: 'UniversityResource',
