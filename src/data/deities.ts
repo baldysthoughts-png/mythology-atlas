@@ -500,4 +500,35 @@ export const deities: Deity[] = [
       'cs-ashur-significance',
     ],
   },
+
+  {
+    id: 'deity-tashmetu',
+    entityType: 'Deity',
+    canonicalName: 'Tašmetu',
+    alternativeNames: ['Tashmetu'],
+    slug: 'tashmetu',
+    status: 'published',
+    cultures: ['Assyrian'],
+    roles: [
+      'Consort of Nabu in first-millennium Assyrian tradition',
+      'Goddess associated with wisdom',
+      'Goddess associated with sexual attractiveness',
+    ],
+    associatedPlaceIds: ['place-kalhu'],
+    associatedStoryIds: [],
+    ancientTextIds: ['text-ashurbanipal-colophon-338-339', 'text-saa20-049-ashur'
+    ],
+    relatedFigureIds: ['deity-nabu', 'deity-nanaya'],
+    contentSectionIds: [
+      'cs-tashmetu-overview',
+      'cs-tashmetu-identity',
+      'cs-tashmetu-nabu',
+      'cs-tashmetu-kalhu',
+      'cs-tashmetu-ritual-love-poetry',
+      'cs-tashmetu-wisdom-scribal-learning',
+      'cs-tashmetu-historical-attestation',
+      'cs-tashmetu-iconography-limits',
+      'cs-tashmetu-significance',
+    ],
+  },
 ];
