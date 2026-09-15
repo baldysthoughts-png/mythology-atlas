@@ -457,4 +457,16 @@ export const sources: Source[] = [
     citation: 'Sennacherib 214 (Neo-Assyrian royal inscription; RINAP 3/2, Q004019)',
     url: 'https://oracc.museum.upenn.edu/rinap/rinap3/Q004019/',
   },
+  {
+    id: 'src-primary-antiochus-i-1',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Antiochus I 1 (Seleucid royal inscription from Borsippa; CAMS/Seleucid Building Inscriptions, Q004179)',
+    url: 'https://oracc.museum.upenn.edu/cams/selbi/Q004179',
+  },
+  {
+    id: 'src-primary-nebuchadnezzar-ii-034-marduk',
+    sourceCategory: 'PrimaryAncientText',
+    citation: 'Nebuchadnezzar II 034 (Neo-Babylonian royal inscription; RIBo Q005505)',
+    url: 'https://oracc.museum.upenn.edu/ribo/Q005505',
+  },
 ];

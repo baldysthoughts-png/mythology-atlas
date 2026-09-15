@@ -7220,7 +7220,18 @@ export const expandedContentSections: ContentSection[] = [
 
   cs('cs-marduk-significance', 'deity-marduk', 'Historical Significance',
     'Marduk is one of the clearest examples of how political history, urban cult, literary theology, and divine genealogy interacted in ancient Mesopotamia. His rise alongside Babylon transformed a city patron into the dominant god of later Babylonian theology. Enūma eliš gave that supremacy a cosmic narrative, while Esagila, royal inscriptions, processions, Nabu’s developing sonship, and enduring divine symbols grounded his authority in Babylonian religious life.',
-    []),
+    [
+      'claim-marduk-patron-babylon',
+      'claim-babylon-marduk-elevation',
+      'claim-marduk-enuma-elish-kingship',
+      'claim-marduk-enuma-elish-defeats-tiamat',
+      'claim-marduk-enuma-elish-creation',
+      'claim-enuma-elish-creation-of-humanity',
+      'claim-marduk-nebuchadnezzar-esagil',
+      'claim-marduk-nebuchadnezzar-procession',
+      'claim-nabu-marduk-relationship-development',
+      'claim-marduk-iconography-spade-dragon',
+    ]),
   // ---------------- TIAMAT ----------------
   cs('cs-tiamat-overview-expanded', 'deity-tiamat', 'Overview',
     'Tiamat is best known from the Babylonian creation epic En\u016bma eli\u0161, where her role changes substantially over the course of the narrative. She begins as a primordial watery progenitor associated with Apsu and initially resists Apsu\'s proposal to destroy the younger gods. After Apsu is killed, the conflict escalates: Tiamat creates a war host, appoints Kingu, and gives him the Tablet of Destinies. Marduk later defeats her, and the poem makes her body part of its explanation of cosmic order. This profile therefore follows the sequence of the text rather than reducing Tiamat to a timeless image of a monster or dragon.',
