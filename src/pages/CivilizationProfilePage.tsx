@@ -20,8 +20,8 @@ export function CivilizationProfilePage() {
   const sections = getContentSections(civ.contentSectionIds);
 
   const civilizationImages: Record<string, string> = {
-    'civ-sumer': '/mythology-atlas/sumer-card.png',
-    'civ-akkad': '/mythology-atlas/akkad-card.png',
+    'civ-sumer': '/mythology-atlas/featured-sumer.png',
+    'civ-akkad': '/mythology-atlas/featured-akkad.png',
     'civ-babylon': '/mythology-atlas/babylon-card.png',
     'civ-assyria': '/mythology-atlas/assyria-card.png',
   };
