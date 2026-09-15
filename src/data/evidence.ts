@@ -502,6 +502,51 @@ export const relationships: Relationship[] = [
     ],
     notes: 'In Šamaš-šuma-ukin 4, Nabu is explicitly presented as a son of Marduk. This relationship records that ancient textual parentage and should not automatically be treated as an unchanged genealogy across every Mesopotamian tradition.',
   },
+  {
+    id: 'rel-ningal-nanna-consort',
+    fromEntityId: 'deity-ningal',
+    toEntityId: 'deity-nanna',
+    relationType: 'consortOf',
+    certaintyTier: 'Documented',
+    evidenceLinks: [
+      {
+        sourceId: 'src-primary-ningal-ur-inscription',
+        evidenceRole: 'Supports',
+        locator: 'Q003844, lines 5–17: Ningal is described as the beloved wife of Sîn while the Gipāru is rebuilt for her',
+      },
+    ],
+    notes: 'Q003844 directly attests Ningal as the beloved wife of Sîn at Ur. The relationship is symmetric for display purposes, while titles and genealogical details can vary across periods and traditions.',
+  },
+  {
+    id: 'rel-ningal-utu-parent',
+    fromEntityId: 'deity-ningal',
+    toEntityId: 'deity-utu',
+    relationType: 'parentOf',
+    certaintyTier: 'WellEstablished',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-nanna',
+        evidenceRole: 'Supports',
+        locator: 'Nanna/Suen/Sin entry: family and divine relationships; Utu is included in the major tradition identifying Nanna and Ningal as parents',
+      },
+    ],
+    notes: 'This records an important Mesopotamian genealogical tradition and should not be treated as the only genealogy preserved in every source.',
+  },
+  {
+    id: 'rel-ningal-inanna-parent',
+    fromEntityId: 'deity-ningal',
+    toEntityId: 'deity-inanna',
+    relationType: 'parentOf',
+    certaintyTier: 'WellEstablished',
+    evidenceLinks: [
+      {
+        sourceId: 'src-oracc-amgg-nanna',
+        evidenceRole: 'Supports',
+        locator: 'Nanna/Suen/Sin entry: family and divine relationships; Inanna is included in the major tradition identifying Nanna and Ningal as parents',
+      },
+    ],
+    notes: 'This records an important Mesopotamian genealogical tradition and should not be treated as the only genealogy preserved in every source.',
+  },
 ];
 
 // --- Content Sections -----------------------------------------------------
