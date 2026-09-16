@@ -105,7 +105,7 @@ export const stories: Story[] = [
     canonicalName: 'Enki and Ninhursag',
     slug: 'enki-and-ninhursag',
     status: 'published',
-    summary: "A Sumerian composition set in idealized Dilmun, following its transformation through fresh water, a repeated sequence of divine generation, the Uttu and plant episodes, Enki's curse and bodily affliction, and Ninhursag's eventual return and healing.",
+    summary: "A Sumerian composition set in idealized Dilmun, following its transformation through fresh water, a repeated sequence of divine generation, the Uttu and plant episodes, Ninhursag's curse on Enki and his bodily affliction, and Ninhursag's eventual return and healing.",
     cultures: ['Sumerian'],
     characterIds: ['deity-enki', 'deity-ninhursag'],
     textIds: ['text-enki-ninhursag'],
