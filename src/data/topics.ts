@@ -75,7 +75,7 @@ export const topics: Topic[] = [
     canonicalName: 'Mesopotamian Underworld',
     slug: 'mesopotamian-underworld',
     status: 'published',
-    overview: 'Mesopotamian texts do not describe the underworld in one completely uniform way. Inanna’s Descent presents seven gates under Ereshkigal’s authority; The Death of Ur-Namma depicts porters, palaces, offerings, and judgment among the dead; and the Amarna recension of Nergal and Ereshkigal preserves fourteen gates and a struggle over underworld kingship. The structure and hierarchy therefore vary across compositions and periods.',
+    overview: 'Mesopotamian texts do not describe the underworld in one completely uniform way. Inanna’s Descent presents seven gates under Ereshkigal’s authority; The Death of Ur-Namma depicts porters, palaces, offerings, and judgment among the dead; and the Amarna recension of Nergal and Ereshkigal numbers fourteen bābu in a passage whose gate architecture is debated, while also presenting a struggle over underworld kingship. The structure and hierarchy therefore vary across compositions and periods.',
     relatedDeityIds: ['deity-ereshkigal', 'deity-nergal', 'deity-inanna'],
     relatedStoryIds: ['story-descent-of-inanna'],
     relatedTextIds: ['text-descent-of-inanna', 'text-death-ur-namma', 'text-nergal-ereshkigal-ea357'],

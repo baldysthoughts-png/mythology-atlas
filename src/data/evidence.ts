@@ -988,7 +988,7 @@ export const contentSections: ContentSection[] = [
     id: 'cs-underworld-overview',
     parentEntityId: 'topic-underworld',
     sectionLabel: 'Overview',
-    prose: "Mesopotamian literature preserves several different pictures of the underworld rather than one fixed map. Inanna’s Descent presents a seven-gate passage into Ereshkigal’s realm. The Death of Ur-Namma depicts porters, palaces, offerings, rites, and judgment among the dead. The Amarna recension of Nergal and Ereshkigal instead preserves fourteen gates and culminates in Ereshkigal offering Nergal kingship of the broad netherworld.",
+    prose: "Mesopotamian literature preserves several different pictures of the underworld rather than one fixed map. Inanna’s Descent presents a seven-gate passage into Ereshkigal’s realm. The Death of Ur-Namma depicts porters, palaces, offerings, rites, and judgment among the dead. The Amarna recension of Nergal and Ereshkigal numbers fourteen bābu while Nergal stations fourteen accompanying agents; whether those represent fourteen separate gates or paired elements of seven gates is debated. The narrative culminates in Ereshkigal offering Nergal kingship of the broad netherworld.",
     claimIds: ['claim-inanna-descent-seven-gates', 'claim-death-ur-namma-porters-banquet', 'claim-death-ur-namma-underworld-role', 'claim-ea357-fourteen-gates', 'claim-ea357-ending-marriage-kingship'],
   },
 ];

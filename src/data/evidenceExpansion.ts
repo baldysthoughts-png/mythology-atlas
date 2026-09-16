@@ -110,6 +110,21 @@ export const expandedClaims: Claim[] = [
     status: 'Published',
   },
   {
+    id: 'claim-sumerian-king-list-ur-iii-manuscript',
+    statement: 'An Ur III manuscript of the Sumerian King List is attested from Umma. CDLI identifies related artifact P200889 as an Ur III tablet dated approximately 2100–2000 BCE, demonstrating that the King List tradition was already in circulation before the Old Babylonian period.',
+    aboutEntityIds: ['text-sumerian-king-list'],
+    claimType: 'Descriptive',
+    evidenceClassification: 'ArchaeologicalEvidence',
+    evidenceLinks: [
+      {
+        sourceId: 'src-cdli-sumerian-king-list-ur-iii',
+        evidenceRole: 'Supports',
+        locator: 'Steinkeller 2003, pp. 267–292; CDLI related artifact P200889: Ur III (ca. 2100–2000 BCE), provenience Umma (modern Tell Jokha)',
+      },
+    ],
+    status: 'Published',
+  },
+  {
     id: 'claim-sumerian-king-list-antediluvian-reigns',
     statement: 'At the beginning of the Sumerian King List, kingship descends from heaven to Eridu and passes through five antediluvian cities. Eight kings are assigned extraordinarily long reigns totaling 241,200 years before the text states that the flood swept over.',
     aboutEntityIds: ['text-sumerian-king-list'],
@@ -4692,20 +4707,20 @@ export const expandedClaims: Claim[] = [
   },
   {
     id: 'claim-ea357-fourteen-gates',
-    statement: 'Unlike later recensions that use seven gates, the Amarna recension of Nergal and Ereshkigal explicitly distributes Nergal’s accompanying agents across fourteen gates leading into the underworld complex.',
+    statement: 'EA 357 numbers fourteen bābu while distributing Nergal’s fourteen accompanying agents. Whether those fourteen bābu denote fourteen separate gates or paired components of seven gates is debated; Novotny argues that they can be understood as door leaves or inner and outer doorway elements belonging to seven gates.',
     aboutEntityIds: ['text-nergal-ereshkigal-ea357', 'deity-nergal', 'topic-underworld'],
     claimType: 'Descriptive',
-    evidenceClassification: 'ScholarlyConsensus',
+    evidenceClassification: 'ScholarlyDebate',
     evidenceLinks: [
       {
         sourceId: 'src-primary-nergal-ereshkigal-ea357',
         evidenceRole: 'Supports',
-        locator: 'EA 357 reverse lines 26–32: numbered sequence continues through the fourteenth gate',
+        locator: 'EA 357 reverse lines 26–32: numbered sequence continues through the fourteenth bābu',
       },
       {
         sourceId: 'src-novotny-nergal-fourteen-gates',
         evidenceRole: 'Contextualizes',
-        locator: 'Discussion of EA 357 as the fourteen-gate recension, contrasted with the seven gates of the Neo-Assyrian and Seleucid versions',
+        locator: 'Argument that EA 357’s fourteen bābu may represent paired door leaves or inner and outer doorway elements within seven gates; comparison with the seven-gate Neo-Assyrian and Seleucid recensions',
       },
     ],
     status: 'Published',
@@ -4755,7 +4770,7 @@ export const expandedClaims: Claim[] = [
       {
         sourceId: 'src-novotny-nergal-fourteen-gates',
         evidenceRole: 'Supports',
-        locator: 'Discussion of Amarna, Sultantepe, and Uruk copies and the fourteen-gate versus seven-gate distinction',
+        locator: 'Discussion of the Amarna, Sultantepe, and Uruk copies and the interpretation of EA 357’s fourteen bābu within the wider seven-gate tradition',
       },
     ],
     status: 'Published',
@@ -7731,7 +7746,7 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-divine-council-collective-decision', 'claim-enlil-assembly-deliberation', 'claim-enuma-elish-champion-kingship-condition', 'claim-enuma-elish-command-test', 'claim-lament-urim-ningal-appeals', 'claim-lament-urim-divine-decree']),
   // ---------------- UNDERWORLD ----------------
   cs('cs-underworld-variation', 'topic-underworld', 'No Single Map of the Underworld',
-    "Mesopotamian literature does not preserve one universally fixed geography of the realm of the dead. Inanna’s Descent describes seven gates through which Inanna passes while surrendering her regalia. The Death of Ur-Namma instead emphasizes chief porters, divine palaces, offerings, banqueting, dwellings, and judicial activity. The Amarna recension of Nergal and Ereshkigal distributes Nergal's agents across fourteen gates. These accounts overlap in presenting a structured realm below while differing substantially in architecture, personnel, and political organization.",
+    "Mesopotamian literature does not preserve one universally fixed geography of the realm of the dead. Inanna’s Descent describes seven gates through which Inanna passes while surrendering her regalia. The Death of Ur-Namma instead emphasizes chief porters, divine palaces, offerings, banqueting, dwellings, and judicial activity. The Amarna recension of Nergal and Ereshkigal numbers fourteen bābu while distributing Nergal's fourteen accompanying agents. Whether this means fourteen separate gates or paired components of seven gates is debated. These accounts overlap in presenting a structured realm below while differing substantially in architecture, personnel, and political organization.",
     ['claim-inanna-descent-seven-gates', 'claim-death-ur-namma-porters-banquet', 'claim-ea357-fourteen-gates']),
 
   cs('cs-underworld-inanna-descent', 'topic-underworld', 'Inanna’s Descent — Seven Gates, Judgment, and Substitution',
@@ -7742,8 +7757,8 @@ export const expandedContentSections: ContentSection[] = [
     "The Death of Ur-Namma preserves a different picture of the netherworld. Ur-Namma gives gifts to chief porters and offerings to numerous underworld powers, including Nergal, Ereshkigal, Dumuzid, Namtar, and others associated with their own palaces or functions. The dead king is eventually seated on a great dais, receives a dwelling, and is associated with Gilgamesh in rendering judgments and decisions concerning the dead under Ereshkigal's authority. Death therefore removes Ur-Namma from earthly kingship without making him socially or institutionally invisible in the realm below.",
     ['claim-death-ur-namma-porters-banquet', 'claim-death-ur-namma-offering-sequence', 'claim-death-ur-namma-underworld-role', 'claim-ereshkigal-ur-namma-authority']),
 
-  cs('cs-underworld-nergal-ereshkigal', 'topic-underworld', 'Nergal and Ereshkigal — Fourteen Gates and Underworld Kingship',
-    "The Amarna recension of Nergal and Ereshkigal preserves yet another organization of the underworld. Nergal assigns accompanying agents across fourteen gates before advancing into Ereshkigal's palace. At the climax of the surviving narrative, Ereshkigal proposes marriage and offers to place kingship of the broad netherworld in Nergal's hand. This account should not be projected unchanged backward onto earlier Sumerian texts: it is one historically situated witness to developing traditions about Ereshkigal, Nergal, and rulership below.",
+  cs('cs-underworld-nergal-ereshkigal', 'topic-underworld', 'Nergal and Ereshkigal — Gate Architecture and Underworld Kingship',
+    "The Amarna recension of Nergal and Ereshkigal preserves a debated description of underworld gate architecture. Nergal distributes fourteen accompanying agents through a sequence numbering fourteen bābu. Novotny argues that these may represent paired door leaves or inner and outer doorway elements belonging to seven gates rather than fourteen separate gates. At the climax of the surviving narrative, Ereshkigal proposes marriage and offers to place kingship of the broad netherworld in Nergal's hand. This account should not be projected unchanged backward onto earlier Sumerian texts: it is one historically situated witness to developing traditions about Ereshkigal, Nergal, and rulership below.",
     ['claim-ea357-fourteen-gates', 'claim-ea357-ending-marriage-kingship', 'claim-nergal-ea357-underworld-kingship']),
 
   cs('cs-underworld-institutions', 'topic-underworld', 'Rulers, Judges, and Institutions Below',
@@ -7755,7 +7770,7 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-underworld-no-moral-judgment', 'claim-death-ur-namma-underworld-role', 'claim-anunnaki-underworld-judges-later']),
 
   cs('cs-underworld-scholarly', 'topic-underworld', 'Scholarly Interpretation, Evidence Limits, and Why It Matters',
-    "The Mesopotamian underworld is best understood through comparison of distinct compositions rather than by flattening them into a single map or theology. Inanna’s Descent emphasizes seven gates, judgment, death, and substitution; The Death of Ur-Namma provides palaces, offerings, rites, social hierarchy, and a remarkable role for a dead king; and the Amarna Nergal and Ereshkigal tradition preserves fourteen gates and a changing model of underworld kingship. Their differences are historically important. Together they show a persistent conception of the realm below as structured and governed, while also demonstrating that its geography, institutions, rulers, and narrative rules could change across texts and periods.",
+    "The Mesopotamian underworld is best understood through comparison of distinct compositions rather than by flattening them into a single map or theology. Inanna’s Descent emphasizes seven gates, judgment, death, and substitution; The Death of Ur-Namma provides palaces, offerings, rites, social hierarchy, and a remarkable role for a dead king; and the Amarna Nergal and Ereshkigal tradition numbers fourteen bābu in a debated passage about gate architecture while presenting a changing model of underworld kingship. Their differences are historically important. Together they show a persistent conception of the realm below as structured and governed, while also demonstrating that its geography, institutions, rulers, and narrative rules could change across texts and periods.",
     ['claim-inanna-descent-seven-gates', 'claim-death-ur-namma-porters-banquet', 'claim-death-ur-namma-underworld-role', 'claim-ea357-fourteen-gates', 'claim-ea357-ending-marriage-kingship', 'claim-underworld-no-moral-judgment']),
   // ---------------- INANNA'S DESCENT TEXT ----------------
   cs('cs-inanna-descent-text-preparation', 'text-descent-of-inanna', 'Inanna’s Preparation and Instructions to Ninshubur',
@@ -7919,8 +7934,8 @@ export const expandedContentSections: ContentSection[] = [
     ]),
   // ---------------- SUMERIAN KING LIST TEXT ----------------
   cs('cs-sumerian-king-list-manuscripts', 'text-sumerian-king-list', 'Manuscripts and the Weld-Blundell Prism',
-    'The Sumerian King List survives in more than one textual version rather than in a single uniform manuscript. The best-known witness is the four-sided Weld-Blundell Prism, now in the Ashmolean Museum. Each side carries two columns of Sumerian cuneiform, and the prism preserves the most extensive and complete surviving version. Comparison among witnesses is essential because the manuscripts can disagree over numerical data and details of dynastic sequence.',
-    ['claim-sumerian-king-list-weld-blundell', 'claim-sumerian-king-list-mixed-memory']),
+    'The Sumerian King List survives in more than one textual version rather than in a single uniform manuscript. An Ur III manuscript from Umma, approximately 2100–2000 BCE, shows that the tradition was already in circulation before the Old Babylonian period. The best-known and most complete surviving witness is the four-sided Weld-Blundell Prism, now in the Ashmolean Museum. Each side carries two columns of Sumerian cuneiform. Comparison among witnesses is essential because the manuscripts can disagree over numerical data and details of dynastic sequence.',
+    ['claim-sumerian-king-list-ur-iii-manuscript', 'claim-sumerian-king-list-weld-blundell', 'claim-sumerian-king-list-mixed-memory']),
 
   cs('cs-sumerian-king-list-antediluvian', 'text-sumerian-king-list', 'Before the Flood — Five Cities, Eight Kings',
     'The opening antediluvian sequence is deliberately extraordinary. Kingship first descends to Eridu and then moves through Bad-tibira, Larak, Sippar, and Šuruppak. Eight rulers are assigned reigns measured in tens of thousands of years, totaling 241,200 years in the principal numerical tradition used by the ETCSL translation. The section ends abruptly with the statement that the flood swept over, making the flood the boundary between primordial kingship and the post-flood sequence.',
@@ -7945,8 +7960,8 @@ export const expandedContentSections: ContentSection[] = [
     ]),
 
   cs('cs-sumerian-king-list-dating', 'text-sumerian-king-list', 'Approximate Date',
-    'The King List is best understood as a textual tradition that was copied and revised rather than as a document created once in a single final form. Major surviving witnesses belong to the early second millennium BCE. The most complete exemplar, the Weld-Blundell Prism, is dated by the Ashmolean Museum to about 1800 BCE; its date should be distinguished from the broader history of the composition and its earlier forms.',
-    ['claim-sumerian-king-list-weld-blundell']),
+    'The King List is best understood as a textual tradition that was copied and revised rather than as a document created once in a single final form. An Ur III manuscript from Umma, dating to approximately 2100–2000 BCE, demonstrates that the tradition is already attested before the Old Babylonian period. Major surviving witnesses belong to the early second millennium BCE. The most complete exemplar, the Weld-Blundell Prism, is dated by the Ashmolean Museum to about 1800 BCE; these manuscript dates should be distinguished from the broader history of composition and revision.',
+    ['claim-sumerian-king-list-ur-iii-manuscript', 'claim-sumerian-king-list-weld-blundell']),
   cs('cs-sumerian-king-list-kingship', 'text-sumerian-king-list', 'Kingship Descends from Heaven',
     'The composition presents kingship as something bestowed from the divine realm rather than simply created by human political institutions. This literary framework gives royal authority a sacred origin and structures the movement of legitimate rule between cities.',
     [
@@ -9049,8 +9064,8 @@ export const expandedContentSections: ContentSection[] = [
     'Before the confrontation, Ea equips Nergal with “seven and seven” accompanying beings. The list includes figures whose names are associated with diseases, seizures, dizziness, affliction, and other dangerous forces. Within the narrative they function as Nergal’s supernatural force for entering and controlling the approaches to Ereshkigal’s domain.',
     ['claim-ea357-fourteen-disease-agents']),
 
-  cs('cs-ea357-fourteen-gates', 'text-nergal-ereshkigal-ea357', 'Fourteen Gates — A Distinctive Feature of EA 357',
-    'The Amarna tablet distributes these agents through a numbered sequence reaching the fourteenth gate. This is one of the clearest places where the Amarna recension must not be silently blended with later versions: the Neo-Assyrian and later traditions use a seven-gate system. The difference is evidence of real recensional variation in how the underworld’s architecture was imagined.',
+  cs('cs-ea357-fourteen-gates', 'text-nergal-ereshkigal-ea357', 'Fourteen bābu — Seven or Fourteen Gates?',
+    'The Amarna tablet distributes Nergal’s fourteen accompanying agents through a numbered sequence reaching the fourteenth bābu. The wording is certain, but the architecture is debated. Novotny argues that the fourteen bābu may represent paired door leaves or inner and outer doorway elements belonging to seven gates, while acknowledging that this interpretation cannot be conclusively demonstrated from the terminology alone. The later Neo-Assyrian and Seleucid recensions explicitly use seven gates. EA 357 should therefore be presented as a seven-versus-fourteen interpretive problem rather than as proof of fourteen separate gates.',
     ['claim-ea357-fourteen-gates']),
 
   cs('cs-ea357-assault', 'text-nergal-ereshkigal-ea357', 'Nergal Breaks into Ereshkigal’s Palace',
@@ -9066,7 +9081,7 @@ export const expandedContentSections: ContentSection[] = [
     ['claim-ea357-later-recensions', 'claim-nergal-ereshkigal-later-tradition']),
 
   cs('cs-ea357-why-matters', 'text-nergal-ereshkigal-ea357', 'Why It Matters — and What It Does Not Prove',
-    'EA 357 matters for several reasons at once. It is a Middle Babylonian Akkadian literary tablet found in Egypt, evidence for the international circulation of Mesopotamian learned culture; it preserves a distinctive fourteen-gate form of the underworld; and it directly narrates Nergal’s acquisition of marriage and kingship alongside Ereshkigal. But it does not prove that this divine relationship or underworld hierarchy existed unchanged in every earlier Sumerian or later Mesopotamian tradition. The tablet is one historically situated recension with its own literary theology.',
+    'EA 357 matters for several reasons at once. It is a Middle Babylonian Akkadian literary tablet found in Egypt, evidence for the international circulation of Mesopotamian learned culture; it preserves a debated passage numbering fourteen bābu in its description of underworld gate architecture; and it directly narrates Nergal’s acquisition of marriage and kingship alongside Ereshkigal. But it does not prove that this divine relationship or underworld hierarchy existed unchanged in every earlier Sumerian or later Mesopotamian tradition. The tablet is one historically situated recension with its own literary theology.',
     ['claim-ea357-tablet-metadata', 'claim-ea357-scribal-context', 'claim-ea357-fourteen-gates', 'claim-ea357-ending-marriage-kingship', 'claim-nergal-ereshkigal-later-tradition']),
 
   // ---------------- DUMUZID AND ENKIMDU ----------------

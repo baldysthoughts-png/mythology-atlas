@@ -691,6 +691,12 @@ export const sources: Source[] = [
   },
 
   {
+    id: 'src-cdli-sumerian-king-list-ur-iii',
+    sourceCategory: 'UniversityResource',
+    citation: 'Steinkeller, Piotr. 2003. “An Ur III Manuscript of the Sumerian King List.” In Literatur, Politik und Recht in Mesopotamien. Festschrift für Claus Wilcke, 267–292. Wiesbaden: Harrassowitz.',
+    url: 'https://cdli.earth/publications/1693027',
+  },
+  {
     id: 'src-ashmolean-sumerian-king-list',
     sourceCategory: 'UniversityResource',
     citation: 'Ashmolean Museum, University of Oxford, “Sumerian King List,” AN1923.444',

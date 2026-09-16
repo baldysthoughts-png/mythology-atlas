@@ -182,7 +182,7 @@ export const texts: AncientText[] = [
     slug: 'sumerian-king-list',
     status: 'published',
     language: 'Sumerian',
-    compositionPeriod: 'Literary tradition developed in the early second millennium BCE; major Old Babylonian witnesses include the Weld-Blundell Prism (c. 1800 BCE)',
+    compositionPeriod: 'Tradition attested by the Ur III period (ca. 2100–2000 BCE) and extensively transmitted and revised in the Old Babylonian period; major witnesses include the Weld-Blundell Prism (c. 1800 BCE)',
     storyIds: [],
     characterIds: [],
     themes: [
@@ -509,7 +509,7 @@ export const texts: AncientText[] = [
       'Namtar',
       'Divine banquet',
       'Messenger protocol',
-      'Fourteen gates',
+      'Gate architecture (seven/fourteen debate)',
       'Disease-demons',
       'Marriage',
       'Textual transmission',
